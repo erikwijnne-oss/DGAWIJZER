@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TB4V1KSN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2TB4V1KSN7');
+</script>
+<meta charset="UTF-8"/><meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Gebruikelijk loon DGA 2026: €58.000 — Regels, uitzonderingen en tips | DGAwijzer</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2d52'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter,system-ui,sans-serif' font-weight='800' font-size='14' fill='%232d8a4e'%3EDG%3C/text%3E%3C/svg%3E"/>
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   DGAwijzer.nl — Design System 3.0
+   Eigen identiteit: donkerblauw (#0f2d52) + groen (#2d8a4e)
+   Structuur: overzichtelijk, professioneel, niet teal/mintgroen
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Primair — donkerblauw (eigen, niet Meesterknecht) */
+  --navy:       #0f2d52;
+  --navy-dark:  #091e38;
+  --navy-mid:   #1a4070;
+  --navy-light: #e8eef5;
+  --navy-xlight:#f0f4f8;
+
+  /* Accent — groen (eigen, niet teal/mint) */
+  --green:      #2d8a4e;
+  --green-dark: #236b3d;
+  --green-light:#e6f4ec;
+  --green-xlight:#f0f9f3;
+
+  /* Neutraal */
+  --white:      #ffffff;
+  --gray-50:    #f9fafb;
+  --gray-100:   #f3f4f6;
+  --gray-200:   #e5e7eb;
+  --gray-300:   #d1d5db;
+  --gray-500:   #6b7280;
+  --gray-700:   #374151;
+  --gray-900:   #111827;
+
+  /* Tekst */
+  --text-h:     #0f2d52;
+  --text-body:  #374151;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+
+  /* Schaduwen */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:  0 2px 6px rgba(0,0,0,0.06);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.1);
+
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-pill:50px;
+
+  --f: 'Inter', system-ui, -apple-system, sans-serif;
+  --max-w: 1160px;
+  --nav-h: 68px;
+}
+
+/* ── RESET ─────────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--text-body);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+
+/* ── TYPOGRAFIE ─────────────────────────────────────────────── */
+h1,h2,h3,h4{color:var(--text-h);font-weight:700;line-height:1.2;letter-spacing:-0.01em}
+h1{font-size:clamp(2rem,4vw,2.75rem);font-weight:800;letter-spacing:-0.025em}
+h2{font-size:clamp(1.5rem,3vw,2rem)}
+h3{font-size:clamp(1rem,2vw,1.2rem);font-weight:600}
+p{line-height:1.7;color:var(--text-body)}
+
+.overline{
+  display:inline-block;
+  font-size:11px;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* ── KNOPPEN ───────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--f);font-size:14px;font-weight:600;
+  padding:11px 22px;border-radius:var(--radius-pill);
+  border:none;cursor:pointer;transition:all 0.18s;
+  white-space:nowrap;line-height:1;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-dark)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dark)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--gray-300)}
+.btn-outline:hover{border-color:var(--navy);color:var(--navy)}
+.btn-lg{padding:14px 28px;font-size:15px}
+.btn-sm{padding:8px 16px;font-size:13px}
+.btn-full{width:100%;justify-content:center}
+
+/* ── NAVIGATIE ─────────────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:200;
+  background:var(--white);
+  border-bottom:1px solid var(--gray-200);
+  height:var(--nav-h);
+}
+.nav-inner{
+  max-width:var(--max-w);margin:0 auto;padding:0 5%;
+  height:100%;display:flex;align-items:center;
+  justify-content:space-between;gap:16px;
+}
+.nav-logo img{height:34px;width:auto}
+.nav-logo-fb{font-size:1.2rem;font-weight:800;color:var(--navy)}
+.nav-logo-fb span{color:var(--green)}
+
+/* Desktop nav links — strak, geen pills, simpele underline */
+.nav-links{list-style:none;display:flex;align-items:center;gap:2px}
+.nav-links a{
+  display:block;padding:8px 14px;
+  font-size:14px;font-weight:500;color:var(--text-muted);
+  border-radius:var(--radius-sm);transition:color 0.15s,background 0.15s;
+}
+.nav-links a:hover{color:var(--navy);background:var(--gray-50)}
+.nav-links a.active{color:var(--navy);font-weight:600;background:var(--navy-xlight)}
+
+.nav-ctas{display:flex;gap:8px;align-items:center;flex-shrink:0}
+
+/* Hamburger */
+.nav-hamburger{display:none;flex-direction:column;gap:4px;padding:8px;background:none;border:none;cursor:pointer}
+.nav-hamburger span{display:block;width:20px;height:2px;background:var(--navy);border-radius:2px;transition:all .2s}
+
+/* Mobile nav */
+.nav-mobile{
+  display:none;position:fixed;
+  top:0;right:0;bottom:0;width:min(300px,85vw);
+  background:var(--white);
+  box-shadow:-4px 0 32px rgba(0,0,0,0.12);
+  z-index:300;flex-direction:column;padding:24px;overflow-y:auto;
+}
+.nav-mobile.open{display:flex}
+.nav-mobile-close{align-self:flex-end;background:none;border:none;font-size:20px;cursor:pointer;color:var(--gray-500);margin-bottom:20px;padding:4px}
+.nav-mobile-links{list-style:none;flex:1;display:flex;flex-direction:column;gap:2px}
+.nav-mobile-links a{display:block;padding:12px 14px;font-size:15px;font-weight:500;color:var(--text-body);border-radius:var(--radius-md);transition:background .15s,color .15s}
+.nav-mobile-links a:hover,.nav-mobile-links a.active{background:var(--navy-xlight);color:var(--navy)}
+.nav-mobile-ctas{margin-top:20px;padding-top:20px;border-top:1px solid var(--gray-200);display:flex;flex-direction:column;gap:8px}
+.nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.25);z-index:250}
+.nav-overlay.open{display:block}
+
+/* ── BREADCRUMB ─────────────────────────────────────────────── */
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-light);flex-wrap:wrap;margin-bottom:20px}
+.breadcrumb a{color:var(--green);transition:color .15s}
+.breadcrumb a:hover{color:var(--green-dark)}
+.breadcrumb-sep{color:var(--gray-300)}
+
+/* ── LAYOUT HELPERS ─────────────────────────────────────────── */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 5%}
+.section{padding:72px 0}
+.section-sm{padding:40px 0}
+.section-white{background:var(--white)}
+.section-gray{background:var(--gray-50)}
+.section-navy{background:var(--navy)}
+.section-green-light{background:var(--green-xlight)}
+
+/* ── HERO ───────────────────────────────────────────────────── */
+.hero{background:var(--white);padding:72px 0 88px;border-bottom:1px solid var(--gray-200)}
+.hero-grid{
+  max-width:var(--max-w);margin:0 auto;padding:0 5%;
+  display:grid;grid-template-columns:58fr 42fr;gap:56px;align-items:center;
+}
+.hero-eyebrow{margin-bottom:16px}
+.hero-title{margin-bottom:18px}
+.hero-desc{font-size:16px;color:var(--text-muted);max-width:500px;margin-bottom:28px;line-height:1.7}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Kerncijfers visual rechts */
+.hero-card{
+  background:var(--navy);border-radius:var(--radius-xl);
+  padding:32px 28px;
+}
+.hero-card-top{
+  display:flex;align-items:baseline;gap:8px;
+  margin-bottom:6px;
+}
+.hero-card-amount{font-size:2.75rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1}
+.hero-card-suffix{font-size:1rem;font-weight:600;color:rgba(255,255,255,0.5)}
+.hero-card-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);margin-bottom:24px}
+.hero-rates{display:flex;flex-direction:column;gap:10px}
+.rate-row{display:flex;align-items:center;gap:10px}
+.rate-label{width:48px;font-size:12px;color:rgba(255,255,255,0.5);text-align:right;flex-shrink:0}
+.rate-track{flex:1;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.rate-fill{height:100%;background:var(--green);border-radius:3px}
+.rate-val{width:44px;font-size:12px;font-weight:600;color:#fff}
+
+/* ── STATS BALK ─────────────────────────────────────────────── */
+.stats-bar{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:32px 0}
+.stats-grid{max-width:var(--max-w);margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat-num{font-size:24px;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px}
+.stat-lbl{font-size:13px;color:var(--text-light)}
+
+/* ── SECTIE HEADER ──────────────────────────────────────────── */
+.section-hdr{margin-bottom:40px}
+.section-hdr h2{margin-bottom:10px}
+.section-hdr p{color:var(--text-muted);font-size:15px;max-width:480px}
+
+/* ── TOOL SECTIE (Vergelijkbaar Loon) ──────────────────────── */
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.tool-content .overline{color:var(--green)}
+.tool-content h2{margin-bottom:14px}
+.tool-content p{color:var(--text-muted);margin-bottom:20px;max-width:440px;font-size:15px}
+.tool-bullets{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:10px}
+.tool-bullets li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-body)}
+.bullet-check{
+  width:20px;height:20px;border-radius:50%;
+  background:var(--green-light);color:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;flex-shrink:0;
+}
+
+/* Preview kaart */
+.tool-preview{
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  padding:20px;
+}
+.preview-header{
+  display:flex;align-items:center;gap:8px;
+  padding-bottom:14px;border-bottom:1px solid var(--gray-100);
+  margin-bottom:14px;
+}
+.preview-icon{
+  width:28px;height:28px;background:var(--navy);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;color:#fff;font-weight:800;flex-shrink:0;
+}
+.preview-title{font-size:13px;font-weight:700;color:var(--navy)}
+.preview-subtitle{font-size:11px;color:var(--text-light)}
+.preview-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--gray-50);border:1px solid var(--gray-200);
+  border-radius:var(--radius-pill);padding:9px 14px;margin-bottom:12px;
+}
+.preview-search-txt{font-size:12px;color:var(--text-light)}
+.preview-result{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--gray-100);
+}
+.preview-result:last-of-type{border-bottom:none;margin-bottom:0}
+.preview-name{font-size:13px;font-weight:500;color:var(--navy)}
+.preview-val{font-size:13px;font-weight:700;color:var(--green)}
+.preview-footer{
+  margin-top:12px;padding-top:12px;
+  border-top:1px solid var(--gray-100);
+  font-size:11px;color:var(--text-light);
+  display:flex;align-items:center;gap:6px;
+}
+
+/* ── CALCULATOR GRID ────────────────────────────────────────── */
+.calc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.calc-card{
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);
+  padding:24px;
+  display:block;color:inherit;
+  transition:box-shadow .2s,border-color .2s,transform .2s;
+  position:relative;overflow:hidden;
+}
+.calc-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--navy);transition:background .2s;
+}
+.calc-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy-light);transform:translateY(-2px)}
+.calc-card:hover::before{background:var(--green)}
+.calc-card-icon{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--navy-xlight);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;margin-bottom:14px;
+}
+.calc-card h3{font-size:1rem;margin-bottom:6px}
+.calc-card p{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:16px}
+.calc-card-link{font-size:13px;font-weight:600;color:var(--green);display:flex;align-items:center;gap:4px}
+
+/* ── KENNISBANK GRID ────────────────────────────────────────── */
+.kb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kb-card{
+  background:var(--white);border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);padding:24px;display:block;
+  color:inherit;transition:box-shadow .2s,border-color .2s,transform .2s;
+}
+.kb-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy-light);transform:translateY(-2px)}
+.kb-cat{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--text-light);margin-bottom:8px}
+.kb-card h3{font-size:15px;margin-bottom:8px;line-height:1.4}
+.kb-card p{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:14px}
+.kb-more{font-size:13px;font-weight:600;color:var(--green)}
+
+/* ── TARIEVEN BANNER ────────────────────────────────────────── */
+.tarieven-banner{background:var(--navy-xlight);border-top:1px solid var(--navy-light);border-bottom:1px solid var(--navy-light);padding:48px 0;text-align:center}
+.tarieven-banner h3{font-size:1.35rem;margin-bottom:8px}
+.tarieven-banner p{color:var(--text-muted);font-size:15px;margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto}
+
+/* ── ADVERTENTIE ────────────────────────────────────────────── */
+.ad-bar{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:10px 0;text-align:center}
+.ad-placeholder{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--gray-100);border:1px dashed var(--gray-300);
+  border-radius:var(--radius-sm);
+  color:var(--text-light);font-size:11px;font-weight:500;
+  letter-spacing:.05em;text-transform:uppercase;
+}
+.ad-728x90{width:min(728px,100%);height:90px}
+.ad-300x250{width:300px;height:250px}
+.ad-300x600{width:300px;height:600px}
+
+/* ── FOOTER ─────────────────────────────────────────────────── */
+.footer{background:var(--navy-dark);padding:56px 0 28px}
+.footer-grid{max-width:var(--max-w);margin:0 auto;padding:0 5%;display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-logo img{height:26px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);opacity:0.9}
+.footer-logo-fb{font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-logo-fb span{color:var(--green)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.7}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.footer-col a{font-size:13px;color:rgba(255,255,255,0.55);transition:color .15s}
+.footer-col a:hover{color:var(--green)}
+.footer-bottom{max-width:var(--max-w);margin:0 auto;padding:20px 5% 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.25)}
+
+/* ── DISCLAIMER ─────────────────────────────────────────────── */
+.disclaimer-bar{background:#fefce8;border-top:1px solid #fef08a;padding:10px 5%}
+.disclaimer-bar p{max-width:var(--max-w);margin:0 auto;font-size:12px;color:#854d0e}
+
+/* ── PAGE HEADER ────────────────────────────────────────────── */
+.page-header{background:var(--white);padding:36px 0;border-bottom:1px solid var(--gray-200)}
+.page-header-inner{max-width:var(--max-w);margin:0 auto;padding:0 5%}
+.page-header h1{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:8px}
+.page-header .lead{font-size:15px;color:var(--text-muted);max-width:580px}
+
+/* ── CALCULATOR PAGINA ──────────────────────────────────────── */
+.calc-layout{max-width:var(--max-w);margin:0 auto;padding:36px 5%;display:grid;grid-template-columns:55fr 45fr;gap:28px;align-items:start}
+.calc-sticky{position:sticky;top:calc(var(--nav-h) + 20px)}
+
+.form-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.form-card-head{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:18px 24px}
+.form-card-head h2{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.form-card-head p{font-size:12px;color:var(--text-light)}
+.form-card-body{padding:24px}
+
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:13px;font-weight:600;color:var(--text-h);margin-bottom:6px}
+.fg input[type=number],.fg input[type=text],.fg select{
+  width:100%;height:44px;padding:0 12px;
+  background:var(--gray-50);border:1.5px solid var(--gray-200);
+  border-radius:var(--radius-md);font-family:var(--f);font-size:14px;
+  color:var(--text-h);outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.fg input:focus,.fg select:focus{border-color:var(--navy);background:var(--white);box-shadow:0 0 0 3px var(--navy-xlight)}
+.fg .hint{margin-top:4px;font-size:12px;color:var(--text-light)}
+.slider-wrap{display:flex;align-items:center;gap:10px}
+.slider-wrap input[type=range]{flex:1;height:4px;appearance:none;-webkit-appearance:none;background:var(--gray-200);border-radius:2px;outline:none;cursor:pointer;border:none;padding:0}
+.slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--navy);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.slider-val{min-width:100px;height:38px;padding:0 10px;background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);font-size:13px;font-weight:600;color:var(--navy);text-align:right;outline:none;font-family:var(--f)}
+.checkbox-row{display:flex;align-items:center;gap:10px;padding:11px 12px;background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);cursor:pointer;transition:border-color .15s}
+.checkbox-row:hover{border-color:var(--navy)}
+.checkbox-row input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy);cursor:pointer;flex-shrink:0}
+.checkbox-row span{font-size:13px;color:var(--text-body)}
+
+/* Results */
+.results-panel{display:none;animation:fadeUp .3s ease}
+.results-panel.show{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.result-banner{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:14px;text-align:center}
+.result-banner-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:4px}
+.result-banner-amount{font-size:2rem;font-weight:800;color:var(--green);letter-spacing:-.02em;line-height:1;margin-bottom:4px}
+.result-banner-sub{font-size:12px;color:rgba(255,255,255,.4)}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.kpi{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:12px 10px;text-align:center}
+.kpi-val{font-size:1.05rem;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px}
+.kpi-lbl{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-light)}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;margin-bottom:14px}
+.tbl-hdr{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--navy);color:rgba(255,255,255,.8);padding:9px 11px;text-align:left;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+thead th:last-child{text-align:right}
+tbody td{padding:9px 11px;border-bottom:1px solid var(--gray-100);color:var(--text-body)}
+tbody td:last-child{text-align:right}
+tbody tr:nth-child(even) td{background:var(--gray-50)}
+tbody tr.row-opt td{background:var(--green-xlight);font-weight:600}
+tbody tr.row-opt td:first-child::before{content:"★ ";color:var(--green)}
+td.neg{color:#dc2626}
+td.pos{color:var(--green);font-weight:600}
+td.bold{font-weight:700;color:var(--navy)}
+
+/* Chart */
+.chart-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:18px;margin-bottom:14px}
+.chart-card-title{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+
+/* Insight / info boxes */
+.insight{background:var(--green-xlight);border:1px solid var(--green-light);border-left:3px solid var(--green);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px}
+.insight strong{color:var(--navy)}
+.warnbox{background:#fffbeb;border:1px solid #fef08a;border-left:3px solid #f59e0b;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px;color:#92400e}
+.infobox{background:var(--navy-xlight);border:1px solid var(--navy-light);border-left:3px solid var(--navy);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px}
+
+/* ── KENNISBANK ARTIKEL ──────────────────────────────────────── */
+.article-layout{max-width:var(--max-w);margin:0 auto;padding:36px 5%;display:grid;grid-template-columns:1fr 270px;gap:48px;align-items:start}
+.article-body{min-width:0}
+.article-body h2{font-size:1.3rem;margin:2rem 0 .65rem;padding-bottom:8px;border-bottom:2px solid var(--green-light)}
+.article-body h3{font-size:1rem;margin:1.5rem 0 .45rem}
+.article-body p{font-size:15px;margin-bottom:14px;line-height:1.8;color:var(--text-body)}
+.article-body ul,.article-body ol{padding-left:20px;margin-bottom:14px}
+.article-body li{font-size:15px;margin-bottom:5px;line-height:1.7}
+.article-body a{color:var(--green);text-decoration:underline;text-underline-offset:2px}
+.article-body strong{font-weight:600;color:var(--text-h)}
+.toc{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:18px 20px;margin-bottom:28px}
+.toc h4{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-light);margin-bottom:10px}
+.toc ol{padding-left:16px}
+.toc li{margin-bottom:5px}
+.toc a{font-size:13px;color:var(--text-body);transition:color .15s}
+.toc a:hover{color:var(--green)}
+.art-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;align-items:center}
+.art-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;background:var(--green-light);color:var(--green);padding:3px 9px;border-radius:4px}
+.art-date{font-size:12px;color:var(--text-light)}
+.article-sidebar{position:sticky;top:calc(var(--nav-h) + 20px);display:flex;flex-direction:column;gap:14px}
+.sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden}
+.sidebar-card-hd{padding:11px 15px;background:var(--gray-50);border-bottom:1px solid var(--gray-200)}
+.sidebar-card-hd h3{font-size:12px;font-weight:700;color:var(--navy)}
+.sidebar-card-bd{padding:12px 15px}
+.srow{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--gray-100);font-size:12px}
+.srow:last-child{border-bottom:none}
+.srow .sl{color:var(--text-muted)}
+.srow .sv{font-weight:600;color:var(--navy)}
+.sidebar-link{display:block;padding:9px 15px;font-size:13px;color:var(--text-body);border-bottom:1px solid var(--gray-100);transition:background .15s,color .15s}
+.sidebar-link:last-child{border-bottom:none}
+.sidebar-link:hover{background:var(--gray-50);color:var(--navy)}
+.sidebar-cta{background:var(--navy);border-radius:var(--radius-md);padding:16px;text-align:center}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:12px}
+.sidebar-cta h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
+
+/* FAQ */
+.faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden;margin-bottom:8px}
+.faq-q{padding:14px 16px;font-weight:600;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--gray-50);color:var(--text-h);user-select:none;transition:background .15s}
+.faq-q:hover{background:var(--gray-100)}
+.faq-icon{width:20px;height:20px;border-radius:50%;background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-muted);flex-shrink:0;transition:background .15s}
+.faq-item.open .faq-icon{background:var(--green-light);color:var(--green)}
+.faq-a{display:none;padding:14px 16px;font-size:13px;color:var(--text-body);line-height:1.75;border-top:1px solid var(--gray-200);background:var(--white)}
+.faq-a a{color:var(--green)}
+.faq-item.open .faq-a{display:block}
+
+/* CTA box */
+.cta-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:24px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.cta-box h3{font-size:.95rem;color:#fff;margin-bottom:4px}
+.cta-box p{font-size:13px;color:rgba(255,255,255,.55)}
+
+/* Jurisprudentie */
+.juribox{background:var(--gray-50);border:1px solid var(--gray-200);border-left:3px solid var(--navy);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:14px 16px;margin:16px 0;font-size:13px}
+.juri-titel{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-light);margin-bottom:6px}
+.juribox p{font-size:13px;line-height:1.7;margin-bottom:6px;color:var(--text-body)}
+.juribox p:last-child{margin-bottom:0}
+.juribox strong{color:var(--text-h)}
+
+/* Stappen */
+.stappen{counter-reset:s;list-style:none;padding:0}
+.stappen li{counter-increment:s;display:flex;gap:14px;margin-bottom:10px;padding:14px 16px;background:var(--gray-50);border-radius:var(--radius-md);border:1px solid var(--gray-200)}
+.stappen li::before{content:counter(s);display:flex;align-items:center;justify-content:center;min-width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
+.stappen li div{font-size:13px;color:var(--text-body);line-height:1.65}
+.stappen li div strong{display:block;color:var(--text-h);margin-bottom:2px;font-size:14px}
+
+/* Vergelijkbaar loon tool */
+.vl-search-wrap{position:relative}
+.vl-search-input{width:100%;height:50px;padding:0 16px 0 44px;border:1.5px solid var(--gray-200);border-radius:var(--radius-pill);font-family:var(--f);font-size:14px;color:var(--text-h);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s}
+.vl-search-input:focus{border-color:var(--navy);box-shadow:0 0 0 3px var(--navy-xlight)}
+.vl-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-light);font-size:16px;pointer-events:none}
+.vl-dropdown{position:absolute;top:calc(100% + 5px);left:0;right:0;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);z-index:100;max-height:280px;overflow-y:auto;display:none}
+.vl-dropdown.open{display:block}
+.vl-item{padding:11px 14px;cursor:pointer;border-bottom:1px solid var(--gray-100);transition:background .12s}
+.vl-item:last-child{border-bottom:none}
+.vl-item:hover{background:var(--gray-50)}
+.vl-item-name{font-size:13px;font-weight:600;color:var(--navy)}
+.vl-item-sector{font-size:11px;color:var(--text-light);margin-top:2px}
+.vl-highlight{color:var(--green)}
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.filter-pill{padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-muted);background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-pill);cursor:pointer;transition:all .15s}
+.filter-pill:hover{border-color:var(--navy);color:var(--navy)}
+.filter-pill.active{background:var(--navy-xlight);border-color:var(--navy);color:var(--navy);font-weight:600}
+.vl-verdict{border-radius:var(--radius-md);padding:14px 18px;margin-bottom:18px;font-size:13px;line-height:1.65}
+.vl-verdict.boven{background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #dc2626}
+.vl-verdict.onder{background:var(--green-xlight);border:1px solid var(--green-light);border-left:3px solid var(--green)}
+.vl-verdict strong{display:block;font-size:14px;color:var(--text-h);margin-bottom:5px}
+.beroepen-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.beroep-card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);padding:14px 16px;cursor:pointer;transition:box-shadow .2s,border-color .2s,transform .15s}
+.beroep-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy);transform:translateY(-2px)}
+.beroep-sector{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-light);margin-bottom:3px}
+.beroep-naam{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.beroep-mediaan{font-size:17px;font-weight:800;color:var(--green)}
+.beroep-med-lbl{font-size:11px;color:var(--text-light)}
+.corr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px}
+.corr-item{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-sm);padding:8px 6px;text-align:center}
+.corr-val{font-size:.95rem;font-weight:700;color:var(--navy)}
+.corr-lbl{font-size:10px;color:var(--text-light);margin-top:2px}
+
+/* Tarieven pagina */
+.tarieven-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.tarieven-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.tarieven-card-hd{background:var(--navy);padding:14px 18px}
+.tarieven-card-hd h3{font-size:14px;font-weight:700;color:#fff;margin-bottom:2px}
+.tarieven-card-hd p{font-size:11px;color:rgba(255,255,255,.45)}
+.tarieven-card tbody td:last-child{font-weight:700;color:var(--navy)}
+.tarieven-card tr.hl td{background:var(--green-xlight)}
+.tarieven-card tr.hl td:last-child{color:var(--green)}
+.tarieven-note{padding:7px 12px;font-size:11px;color:var(--text-light);background:var(--gray-50);border-top:1px solid var(--gray-100)}
+
+/* Print */
+@media print{
+  .nav,.footer,.ad-bar,.disclaimer-bar,.nav-mobile,.nav-overlay,.btn,.btn-calc,.btn-print,.beroepen-grid,.filter-pills,.calc-sticky{display:none!important}
+  body{font-size:11pt;color:#000;background:#fff;font-family:Arial,sans-serif}
+  .calc-layout,.article-layout{display:block}
+  .article-sidebar,.calc-sticky{display:none}
+  @page{size:A4;margin:2cm}
+}
+
+/* Responsive */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-card{display:none}
+  .tool-grid{grid-template-columns:1fr;gap:28px}
+  .calc-layout{grid-template-columns:1fr}
+  .calc-sticky{position:static}
+  .article-layout{grid-template-columns:1fr}
+  .article-sidebar{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .corr-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  :root{--nav-h:60px}
+  .nav-links,.nav-ctas{display:none}
+  .nav-hamburger{display:flex}
+  .hero{padding:48px 0 60px}
+  .section{padding:48px 0}
+  .calc-grid{grid-template-columns:1fr}
+  .kb-grid{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{width:100%;justify-content:center}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .corr-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .cta-box{flex-direction:column}
+}
+@media(max-width:480px){
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+}
+
+</style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+<meta name="description" content="Het gebruikelijk loon voor DGA's in 2026 is €58.000. Lees alles over de regels, wanneer je mag afwijken en bereken je optimale salaris."/>
+<link rel="canonical" href="https://dgawijzer.nl/kennisbank/gebruikelijk-loon-2026/"/>
+<meta property="og:title" content="Gebruikelijk loon DGA 2026: €58.000 | DGAwijzer"/>
+<meta property="og:description" content="Alles over het gebruikelijk loon DGA 2026: normbedrag €58.000, drie toetsen, uitzonderingen en fiscale optimalisatietips."/>
+<meta property="og:image" content="https://dgawijzer.nl/images/logo.png"/>
+<meta property="og:type" content="article"/>
+<meta name="robots" content="index,follow"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Article",
+  "headline":"Gebruikelijk loon DGA 2026: alles wat je moet weten",
+  "datePublished":"2026-01-01",
+  "dateModified":"2026-05-12",
+  "author":{"@type":"Organization","name":"DGAwijzer.nl"},
+  "publisher":{"@type":"Organization","name":"DGAwijzer.nl","url":"https://dgawijzer.nl"},
+  "description":"Volledig artikel over het gebruikelijk loon voor DGA's in 2026. Normbedrag €58.000, drie toetsen, uitzonderingen, historische bedragen en optimalisatietips."
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {
+      "@type":"Question",
+      "name":"Wat is het gebruikelijk loon DGA in 2026?",
+      "acceptedAnswer":{"@type":"Answer","text":"In 2026 is het normbedrag voor het gebruikelijk loon van een DGA €58.000 bruto per jaar. Dit is verhoogd ten opzichte van €53.000 in 2024 en €56.000 in 2025. U moet uzelf minimaal dit bedrag als salaris uitkeren, tenzij u kunt aantonen dat een lager bedrag gebruikelijk is voor uw functie."}
+    },
+    {
+      "@type":"Question",
+      "name":"Wanneer mag een DGA afwijken van het gebruikelijk loon?",
+      "acceptedAnswer":{"@type":"Answer","text":"U kunt afwijken van het normbedrag van €58.000 als: (1) u in deeltijd werkt voor de BV, (2) de BV structureel verlies lijdt en het loon aantoonbaar niet kan betalen, (3) u gebruik maakt van de startersfaciliteit (eerste drie jaar van een innovatieve startup), of (4) het loon in uw branche aantoonbaar lager ligt dan €58.000."}
+    },
+    {
+      "@type":"Question",
+      "name":"Wat zijn de gevolgen als u te weinig gebruikelijk loon uitkeert?",
+      "acceptedAnswer":{"@type":"Answer","text":"Als u een te laag DGA-salaris uitkeert, kan de Belastingdienst een naheffingsaanslag loonbelasting opleggen, vermeerderd met belastingrente en mogelijk een vergrijpboete van 25% tot 100%. De Belastingdienst kan tot vijf jaar terugvorderen, bij fraude zelfs twaalf jaar."}
+    },
+    {
+      "@type":"Question",
+      "name":"Is het gebruikelijk loon ook van toepassing op een holding?",
+      "acceptedAnswer":{"@type":"Answer","text":"Ja. Als u werkzaamheden verricht via een holdingstructuur, geldt de gebruikelijkloonregeling voor de holding. In een holdingstructuur met een werkmaatschappij moet het gebruikelijk loon worden verrekend bij de entiteit waar u feitelijk werkt."}
+    },
+    {
+      "@type":"Question",
+      "name":"Wat is het verschil tussen het gebruikelijk loon en het optimale DGA-salaris?",
+      "acceptedAnswer":{"@type":"Answer","text":"Het gebruikelijk loon (€58.000) is het wettelijke minimum dat u zichzelf moet uitkeren. Het optimale DGA-salaris is het salarisniveau waarbij uw totale belastingdruk (IB + VPB + Box 2 + Zvw) het laagst is. Dit optimale punt ligt bij hogere BV-winsten soms iets boven het minimum. Bereken uw optimum met de Optimaal DGA Salaris Calculator op DGAwijzer.nl."}
+    }
+  ]
+}
+</script>
+
+</head>
+<body>
+<nav class="nav" aria-label="Hoofdnavigatie">
+  <div class="nav-inner">
+    <a href="../../" class="nav-logo"><img src="../../images/logo.png" alt="DGAwijzer.nl" height="36" onerror="this.parentElement.innerHTML='&lt;span class=nav-logo-fallback&gt;DGA&lt;span&gt;wijzer&lt;/span&gt;.nl&lt;/span&gt;'"/></a>
+    <ul class="nav-links">
+      <li><a href="../../" class="">Home</a></li>
+      <li><a href="../../calculators/optimaal-salaris/" class="">Calculators</a></li>
+      <li><a href="../../tools/vergelijkbaar-loon/" class="">Vergelijkbaar loon</a></li>
+      <li><a href="../../kennisbank/gebruikelijk-loon-2026/" class="active">Kennisbank</a></li>
+      <li><a href="../../tarieven-2026/" class="">Tarieven 2026</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="../../calculators/optimaal-salaris/" class="btn btn-dark btn-sm">Bereken salaris &#x2192;</a>
+      <a href="../../tools/vergelijkbaar-loon/" class="btn btn-accent btn-sm">Zoek loon &#x2192;</a>
+    </div>
+    <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Menu openen"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<header class="ph">
+  <div class="phi">
+    <nav class="bc"><a href="../../">Home</a> › <a href="#">Kennisbank</a> › Gebruikelijk loon 2026</nav>
+    <div class="article-meta">
+      <span class="badge">Actueel 2026</span>
+      <span class="meta-txt">📅 Bijgewerkt: mei 2026</span>
+      <span class="meta-txt">⏱️ 10 minuten leestijd</span>
+    </div>
+    <h1>Gebruikelijk loon DGA 2026:<br>alles wat u moet weten</h1>
+    <p class="lead">In 2026 stijgt het normbedrag van het gebruikelijk loon naar €58.000. Wat betekent dat voor u als DGA, wanneer kunt u afwijken, en hoe optimaliseert u uw salaris fiscaal?</p>
+  </div>
+</header>
+
+<div class="ad"><div class="adp">Advertentie · 728×90</div></div>
+
+<div class="layout">
+  <article class="art">
+
+    <nav class="toc" aria-label="Inhoudsopgave">
+      <h4>Inhoudsopgave</h4>
+      <ol>
+        <li><a href="#wat-is">Wat is het gebruikelijk loon?</a></li>
+        <li><a href="#normbedrag-2026">Normbedrag 2026: €58.000</a></li>
+        <li><a href="#drie-toetsen">De drie toetsen</a></li>
+        <li><a href="#afwijken">Wanneer mag u afwijken?</a></li>
+        <li><a href="#historisch">Historische normbedragen</a></li>
+        <li><a href="#optimalisatie">Fiscale optimalisatie: salaris + dividend</a></li>
+        <li><a href="#faq">Veelgestelde vragen</a></li>
+      </ol>
+    </nav>
+
+    <h2 id="wat-is">Wat is het gebruikelijk loon?</h2>
+    <p>Als u directeur-grootaandeelhouder (DGA) bent van een BV, bent u in de meeste gevallen werknemer van uw eigen vennootschap. Dit betekent dat u loonbelasting en premies moet afdragen over uw salaris. Maar omdat een DGA zelf bepaalt hoe hoog dat salaris is, heeft de wetgever een speciale regeling in het leven geroepen: de <strong>gebruikelijkloonregeling</strong>.</p>
+    <p>De gebruikelijkloonregeling is vastgelegd in <strong>artikel 12a van de Wet op de loonbelasting 1964</strong>. Het uitgangspunt is simpel: een DGA moet zichzelf een salaris uitkeren dat gebruikelijk is voor de werkzaamheden die hij of zij verricht. Zonder deze regeling zouden DGA's hun salaris zo laag mogelijk kunnen houden en de resterende winst als dividend (Box 2, lager tarief) uitkeren, waarmee zij inkomstenbelasting (Box 1, hoger tarief) zouden ontwijken.</p>
+
+    <div class="infobox"><strong>Kernregel:</strong> Het gebruikelijk loon is het hoogste van de drie toetsen (zie hieronder), met een wettelijk minimum van <strong>€58.000</strong> in 2026.</div>
+
+    <h2 id="normbedrag-2026">Normbedrag 2026: €58.000</h2>
+    <p>In 2026 bedraagt het normbedrag voor het gebruikelijk loon <strong>€58.000 bruto per jaar</strong>. Dit is een stijging ten opzichte van de €53.000 (2024) en €56.000 (2025) die golden. Het normbedrag wordt jaarlijks door de staatssecretaris van Financiën vastgesteld en volgt globaal de loonontwikkeling.</p>
+    <p>Het normbedrag is een <em>ondergrens</em>: u moet uzelf minimaal €58.000 uitkeren, tenzij de toetsen (zie hieronder) aanleiding geven tot een hoger bedrag, of tenzij u kunt aantonen dat een lager bedrag in uw situatie gerechtvaardigd is.</p>
+
+    <div class="warnbox"><strong>Let op:</strong> Het normbedrag is een bruto jaarsalaris. Over dit bedrag betaalt u loonheffing. Het netto bedrag is afhankelijk van uw persoonlijke situatie, heffingskortingen en eventuele aftrekposten.</div>
+
+    <h2 id="drie-toetsen">De drie toetsen</h2>
+    <p>De wet schrijft voor dat het gebruikelijk loon het <em>hoogste</em> bedrag is van de drie onderstaande toetsen:</p>
+
+    <h3>Toets 1: Het normbedrag (€58.000)</h3>
+    <p>Het wettelijk minimum van €58.000. Als geen van de andere twee toetsen een hoger bedrag oplevert, geldt dit als uw gebruikelijk loon.</p>
+
+    <h3>Toets 2: Het loon van de meest vergelijkbare dienstbetrekking</h3>
+    <p>Wat verdient iemand in een vergelijkbare functie bij een andere werkgever, zonder de aandeelhoudersrelatie? Dit is het <em>marktloon</em> voor uw werkzaamheden. Als een CFO van een vergelijkbaar bedrijf €90.000 verdient, is dat uw gebruikelijk loon — ook als het normbedrag lager is.</p>
+    <p>De bewijslast ligt in eerste instantie bij de DGA. U kunt marktconformiteit aantonen met salarisonderzoeken, functieprofielen of vergelijking met vergelijkbare werknemers in uw sector.</p>
+
+    <h3>Toets 3: Het loon van de meestverdienende werknemer</h3>
+    <p>Verdient een andere werknemer (niet de DGA) in de BV meer dan €58.000? Dan is dat hogere bedrag uw gebruikelijk loon. Dit voorkomt dat een DGA zichzelf minder betaalt dan zijn of haar eigen personeel.</p>
+
+    <div class="infobox"><strong>Praktijkvoorbeeld:</strong> U bent DGA van een IT-bedrijf. Uw beste ontwikkelaar verdient €75.000. Uw gebruikelijk loon is dan minimaal €75.000, ook al ligt het normbedrag op €58.000.</div>
+
+    <h2 id="afwijken">Wanneer mag u afwijken van het normbedrag?</h2>
+    <p>In een aantal situaties kunt u een lager gebruikelijk loon hanteren dan €58.000:</p>
+
+    <h3>1. Deeltijdwerkzaamheden</h3>
+    <p>Werkt u minder dan fulltime voor uw BV? Dan mag het gebruikelijk loon naar rato worden verlaagd. Bij een 50%-dienstverband is het gebruikelijk loon 50% van het normbedrag, dus €29.000. U moet wel kunnen aantonen dat u daadwerkelijk in deeltijd werkzaam bent.</p>
+
+    <h3>2. Structureel verlieslijdende BV</h3>
+    <p>Als uw BV structureel verlies lijdt en het salaris aantoonbaar niet kan worden betaald zonder de continuïteit van de onderneming te bedreigen, kan de Belastingdienst instemmen met een lager gebruikelijk loon. Dit vereist een goed onderbouwd verzoek en bewijs van de financiële situatie.</p>
+
+    <h3>3. Startersfaciliteit</h3>
+    <p>Bent u DGA van een <em>innovatieve startup</em> die in aanmerking komt voor de WBSO (Wet Bevordering Speur- en Ontwikkelingswerk)? Dan mag u gedurende maximaal drie jaar een lager gebruikelijk loon hanteren. Het loon mag worden vastgesteld op het wettelijk minimumloon. Deze regeling is bedoeld om de liquiditeitsdruk bij startende R&D-bedrijven te verlichten.</p>
+
+    <h3>4. Branchenorm lager dan normbedrag</h3>
+    <p>Als in uw specifieke branche aantoonbaar een lager loon gebruikelijk is dan €58.000, kunt u dit onderbouwen bij de Belastingdienst. Dit is een hoge lat: u moet met objectief bewijs aantonen dat vergelijkbare functies structureel minder betalen.</p>
+
+    <h2 id="historisch">Historische normbedragen gebruikelijk loon</h2>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Jaar</th><th>Normbedrag</th><th>Wijziging</th></tr></thead>
+        <tbody>
+          <tr><td>2020</td><td>€46.000</td><td>—</td></tr>
+          <tr><td>2021</td><td>€47.000</td><td>+€1.000</td></tr>
+          <tr><td>2022</td><td>€48.000</td><td>+€1.000</td></tr>
+          <tr><td>2023</td><td>€51.000</td><td>+€3.000</td></tr>
+          <tr><td>2024</td><td>€53.000</td><td>+€2.000</td></tr>
+          <tr><td>2025</td><td>€56.000</td><td>ongewijzigd</td></tr>
+          <tr class="highlight"><td><strong>2026</strong></td><td><strong>€58.000</strong></td><td><strong>+€2.000</strong></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p>De stijging van het normbedrag is de afgelopen jaren aanzienlijk geweest. Van €46.000 in 2020 naar €58.000 in 2026 — een stijging van 26% in zes jaar tijd. Dit heeft directe gevolgen voor de loonheffing en de belastingdruk van DGA's.</p>
+
+    <h2 id="optimalisatie">Fiscale optimalisatie: salaris + dividend</h2>
+    <p>Als DGA heeft u twee manieren om geld uit uw BV te halen: via <strong>salaris</strong> (belast in Box 1, progressief tot 49,50%) en via <strong>dividend</strong> (belast in Box 2, 24,5% tot €68.843, 31% daarboven). De kunst is de juiste mix te vinden.</p>
+
+    <h3>De basisstrategie: salaris op het minimum houden</h3>
+    <p>Veel DGA's houden hun salaris op het gebruikelijk loon minimum (€58.000) en keren de resterende BV-winst na VPB uit als dividend. Bij een BV-winst van €150.000 werkt dit als volgt:</p>
+    <ol>
+      <li>DGA-salaris: €58.000 → IB en Zvw → netto circa €40.000–€44.000 afhankelijk van kortingen</li>
+      <li>BV-winst na salaris: ca. €88.000 → VPB 19% = €16.720 → netto BV-winst ca. €71.280</li>
+      <li>Dividenduitkering: €71.280 → Box 2 24,5% = €17.464 → netto dividend ca. €53.816</li>
+      <li>Totaal netto beschikbaar: ±€94.000–€98.000</li>
+    </ol>
+
+    <div class="cta-box">
+      <div>
+        <h3>🎯 Bereken uw optimale salaris</h3>
+        <p>Onze calculator berekent voor elke BV-winst het fiscale optimum — inclusief grafiek en vergelijkingstabel.</p>
+      </div>
+      <a href="../../calculators/optimaal-salaris/" class="cta-btn">Bereken nu →</a>
+    </div>
+
+    <h3>Wanneer is een hoger salaris beter?</h3>
+    <p>Bij zeer hoge BV-winsten (boven ca. €300.000) kan een iets hoger salaris — dat meer gebruik maakt van de arbeidskorting en het opbouwen van pensioengrondslag — voordelig zijn. De <a href="../../calculators/optimaal-salaris/">Optimaal DGA Salaris Calculator</a> berekent dit exact voor uw situatie.</p>
+
+    <h3>Pensioenopbouw als DGA</h3>
+    <p>Houd bij uw salarisoptimalisatie ook rekening met pensioenopbouw. Als DGA bouwt u geen pensioen op via de BV (pensioen in eigen beheer is afgeschaft), maar u kunt bijdragen aan een lijfrenterekening of bankspaarrekening. De premiegrondslag is gebaseerd op uw salaris, dus een hoger salaris betekent meer pensioenruimte.</p>
+
+    <h2 id="faq">Veelgestelde vragen</h2>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Wat is het gebruikelijk loon DGA in 2026?</div>
+      <div class="faq-a">In 2026 is het normbedrag voor het gebruikelijk loon van een DGA <strong>€58.000 bruto per jaar</strong>. Dit is verhoogd ten opzichte van €53.000 in 2024 en €56.000 in 2025. U moet uzelf minimaal dit bedrag als salaris uitkeren, tenzij u kunt aantonen dat een lager bedrag gebruikelijk is voor uw functie.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Wanneer mag een DGA afwijken van het gebruikelijk loon?</div>
+      <div class="faq-a">U kunt afwijken van het normbedrag van €58.000 als: (1) u in deeltijd werkt voor de BV, (2) de BV structureel verlies lijdt en het loon aantoonbaar niet kan worden betaald, (3) u gebruik maakt van de startersfaciliteit, of (4) het loon in uw branche aantoonbaar lager ligt. Documenteer uw onderbouwing altijd zorgvuldig.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Wat zijn de gevolgen als ik een te laag gebruikelijk loon hanteer?</div>
+      <div class="faq-a">De Belastingdienst kan een naheffingsaanslag loonbelasting opleggen, vermeerderd met belastingrente (2026: 7,5% per jaar) en mogelijk een vergrijpboete van 25% tot 100%. De Belastingdienst kan tot vijf jaar terugvorderen, bij fraude zelfs twaalf jaar.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Geldt het gebruikelijk loon ook voor mijn holding?</div>
+      <div class="faq-a">Ja. Als u werkzaamheden verricht via een holdingstructuur, geldt de gebruikelijkloonregeling voor de entiteit waar u feitelijk werkt. In een holding-werkmaatschappijstructuur moet het gebruikelijk loon worden betaald door de holding of worden doorbelast aan de werkmaatschappij.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Wat is het verschil tussen gebruikelijk loon en optimaal DGA-salaris?</div>
+      <div class="faq-a">Het gebruikelijk loon (€58.000) is het wettelijk minimum. Het optimale DGA-salaris is het salarisniveau waarbij uw <em>totale</em> belastingdruk (IB + VPB + Box 2 + Zvw) het laagst is. Dit optimale punt ligt bij hogere BV-winsten soms boven het minimum. Gebruik de <a href="../../calculators/optimaal-salaris/">Optimaal DGA Salaris Calculator</a> om uw persoonlijke optimum te berekenen.</div>
+    </div>
+
+    <div class="faq-item">
+      <div class="faq-q" onclick="toggle(this)">Moet ik maandelijks salaris uitkeren?</div>
+      <div class="faq-a">Nee, de wet schrijft geen vaste uitkeringsfrequentie voor. Veel DGA's keren maandelijks een bedrag uit voor liquiditeitsredenen, maar jaarlijks of kwartaalsgewijs is ook mogelijk. Zorg wel dat het totaal op jaarbasis minimaal het gebruikelijk loon bedraagt en dat de loonheffing correct en tijdig wordt afgedragen.</div>
+    </div>
+
+    <div style="margin-top:2rem;padding:1rem;background:var(--bga);border-radius:var(--r);font-size:.82rem;color:var(--mu)">
+      <strong>Bronnen:</strong> Belastingdienst.nl (gebruikelijkloonregeling), Wet op de loonbelasting 1964 art. 12a, Staatsblad 2025 (Belastingplan 2026), Deloitte Belastingplan 2026 analyse. Cijfers gebaseerd op gepubliceerde tarieven voor belastingjaar 2026.
+    </div>
+
+  </article>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="adps">Advertentie · 300×250</div>
+
+    <div class="scard">
+      <div class="sch"><h3>Kerncijfers 2026</h3></div>
+      <div class="scb">
+        <div class="tr2"><span class="tl">Gebruikelijk loon min.</span><span class="tv">€58.000</span></div>
+        <div class="tr2"><span class="tl">IB schijf 1 (t/m €38.883)</span><span class="tv">35,75%</span></div>
+        <div class="tr2"><span class="tl">IB schijf 2 (t/m €78.426)</span><span class="tv">37,56%</span></div>
+        <div class="tr2"><span class="tl">IB schijf 3</span><span class="tv">49,50%</span></div>
+        <div class="tr2"><span class="tl">Box 2 laag (t/m €68.843)</span><span class="tv">24,5%</span></div>
+        <div class="tr2"><span class="tl">Box 2 hoog</span><span class="tv">31,0%</span></div>
+        <div class="tr2"><span class="tl">VPB laag (t/m €200.000)</span><span class="tv">19%</span></div>
+        <div class="tr2"><span class="tl">Zvw DGA</span><span class="tv">4,85%</span></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="sch"><h3>Gerelateerd</h3></div>
+      <div class="scb" style="padding:0">
+        <a href="../../calculators/optimaal-salaris/" style="display:block;padding:.8rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.85rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">🎯 Optimaal DGA Salaris Calculator →</a>
+        <a href="../../kennisbank/dividend-uitkeren/" style="display:block;padding:.8rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.85rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">📄 Dividend uitkeren als DGA →</a>
+        <a href="../../kennisbank/holding-structuur/" style="display:block;padding:.8rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.85rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">📄 Holdingstructuur uitgelegd →</a>
+        <a href="../../tools/vergelijkbaar-loon/" style="display:block;padding:.8rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.85rem;color:var(--tx);transition:background .15s;font-weight:600;color:#27ae60" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">⚖️ Vergelijkbaar Loon Zoeker →</a><a href="../../tarieven-2026/" style="display:block;padding:.8rem 1.1rem;text-decoration:none;font-size:.85rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">📊 Alle tarieven 2026 →</a>
+      </div>
+    </div>
+
+    <div class="adps" style="min-height:600px">Advertentie · 300×600</div>
+  </aside>
+</div>
+
+<div class="ad"><div class="adp">Advertentie · 728×90</div></div>
+
+<footer class="footer"><div class="footer-grid"><div><div class="footer-logo"><img src="../../images/logo.png" alt="DGAwijzer.nl" height="26" onerror="this.parentElement.innerHTML='DGAwijzer.nl'"/></div><p class="footer-desc">Onafhankelijk fiscaal portaal voor directeur-grootaandeelhouders. Actuele tools voor belastingjaar 2026.</p></div><div class="footer-col"><h4>Calculators</h4><ul><li><a href="../../calculators/optimaal-salaris/">Optimaal DGA Salaris</a></li><li><a href="../../calculators/bruto-netto-dga/">Bruto-Netto DGA</a></li><li><a href="../../calculators/salaris-vs-dividend/">Salaris vs. Dividend</a></li><li><a href="../../calculators/bv-vs-eenmanszaak/">BV vs. Eenmanszaak</a></li><li><a href="../../tools/vergelijkbaar-loon/">Vergelijkbaar Loon Zoeker</a></li></ul></div><div class="footer-col"><h4>Kennisbank</h4><ul><li><a href="../../kennisbank/gebruikelijk-loon-2026/">Gebruikelijk loon 2026</a></li><li><a href="../../kennisbank/meest-vergelijkbare-dienstbetrekking/">Vergelijkbaar loon</a></li><li><a href="../../kennisbank/dividend-uitkeren/">Dividend uitkeren</a></li><li><a href="../../kennisbank/holding-structuur/">Holdingstructuur</a></li><li><a href="../../tarieven-2026/">Tarieven 2026</a></li></ul></div><div class="footer-col"><h4>Over</h4><ul><li><a href="../../over-dgawijzer/">Over DGAwijzer</a></li><li><a href="../../tarieven-2026/">Tarieven 2026</a></li><li><a href="../../over-dgawijzer/">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 DGAwijzer.nl</p><p>Raadpleeg altijd een fiscaal adviseur.</p></div></footer><div class="disclaimer-bar"><p>&#x26A0;&#xFE0F; <strong>Disclaimer:</strong> DGAwijzer.nl biedt algemene informatie. Raadpleeg altijd een fiscaal adviseur voor persoonlijk advies.</p></div>
+<script>
+function toggle(el){
+  const item=el.closest('.faq-item');
+  item.classList.toggle('open');
+}
+</script>
+</body>
+</html>

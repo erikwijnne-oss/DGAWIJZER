@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TB4V1KSN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2TB4V1KSN7');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Vergelijkbaar Loon Zoeker DGA 2026 — Onderbouw uw gebruikelijk loon | DGAwijzer</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2d52'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter,system-ui,sans-serif' font-weight='800' font-size='14' fill='%232d8a4e'%3EDG%3C/text%3E%3C/svg%3E"/>
+<style>
+/* ═══════════════════════════════════════════════════════════════
+   DGAwijzer.nl — Design System 3.0
+   Eigen identiteit: donkerblauw (#0f2d52) + groen (#2d8a4e)
+   Structuur: overzichtelijk, professioneel, niet teal/mintgroen
+   ═══════════════════════════════════════════════════════════════ */
+
+:root {
+  /* Primair — donkerblauw (eigen, niet Meesterknecht) */
+  --navy:       #0f2d52;
+  --navy-dark:  #091e38;
+  --navy-mid:   #1a4070;
+  --navy-light: #e8eef5;
+  --navy-xlight:#f0f4f8;
+
+  /* Accent — groen (eigen, niet teal/mint) */
+  --green:      #2d8a4e;
+  --green-dark: #236b3d;
+  --green-light:#e6f4ec;
+  --green-xlight:#f0f9f3;
+
+  /* Neutraal */
+  --white:      #ffffff;
+  --gray-50:    #f9fafb;
+  --gray-100:   #f3f4f6;
+  --gray-200:   #e5e7eb;
+  --gray-300:   #d1d5db;
+  --gray-500:   #6b7280;
+  --gray-700:   #374151;
+  --gray-900:   #111827;
+
+  /* Tekst */
+  --text-h:     #0f2d52;
+  --text-body:  #374151;
+  --text-muted: #6b7280;
+  --text-light: #9ca3af;
+
+  /* Schaduwen */
+  --shadow-xs:  0 1px 2px rgba(0,0,0,0.05);
+  --shadow-sm:  0 2px 6px rgba(0,0,0,0.06);
+  --shadow-md:  0 4px 16px rgba(0,0,0,0.08);
+  --shadow-lg:  0 8px 32px rgba(0,0,0,0.1);
+
+  --radius-sm:  6px;
+  --radius-md:  10px;
+  --radius-lg:  14px;
+  --radius-xl:  20px;
+  --radius-pill:50px;
+
+  --f: 'Inter', system-ui, -apple-system, sans-serif;
+  --max-w: 1160px;
+  --nav-h: 68px;
+}
+
+/* ── RESET ─────────────────────────────────────────────────── */
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--f);color:var(--text-body);background:var(--white);line-height:1.65;-webkit-font-smoothing:antialiased}
+img{max-width:100%;height:auto;display:block}
+a{text-decoration:none;color:inherit}
+
+/* ── TYPOGRAFIE ─────────────────────────────────────────────── */
+h1,h2,h3,h4{color:var(--text-h);font-weight:700;line-height:1.2;letter-spacing:-0.01em}
+h1{font-size:clamp(2rem,4vw,2.75rem);font-weight:800;letter-spacing:-0.025em}
+h2{font-size:clamp(1.5rem,3vw,2rem)}
+h3{font-size:clamp(1rem,2vw,1.2rem);font-weight:600}
+p{line-height:1.7;color:var(--text-body)}
+
+.overline{
+  display:inline-block;
+  font-size:11px;font-weight:700;
+  letter-spacing:0.1em;text-transform:uppercase;
+  color:var(--green);
+  margin-bottom:10px;
+}
+
+/* ── KNOPPEN ───────────────────────────────────────────────── */
+.btn{
+  display:inline-flex;align-items:center;gap:6px;
+  font-family:var(--f);font-size:14px;font-weight:600;
+  padding:11px 22px;border-radius:var(--radius-pill);
+  border:none;cursor:pointer;transition:all 0.18s;
+  white-space:nowrap;line-height:1;
+}
+.btn:hover{transform:translateY(-1px)}
+.btn-navy{background:var(--navy);color:#fff}
+.btn-navy:hover{background:var(--navy-dark)}
+.btn-green{background:var(--green);color:#fff}
+.btn-green:hover{background:var(--green-dark)}
+.btn-outline{background:transparent;color:var(--navy);border:1.5px solid var(--gray-300)}
+.btn-outline:hover{border-color:var(--navy);color:var(--navy)}
+.btn-lg{padding:14px 28px;font-size:15px}
+.btn-sm{padding:8px 16px;font-size:13px}
+.btn-full{width:100%;justify-content:center}
+
+/* ── NAVIGATIE ─────────────────────────────────────────────── */
+.nav{
+  position:sticky;top:0;z-index:200;
+  background:var(--white);
+  border-bottom:1px solid var(--gray-200);
+  height:var(--nav-h);
+}
+.nav-inner{
+  max-width:var(--max-w);margin:0 auto;padding:0 5%;
+  height:100%;display:flex;align-items:center;
+  justify-content:space-between;gap:16px;
+}
+.nav-logo img{height:34px;width:auto}
+.nav-logo-fb{font-size:1.2rem;font-weight:800;color:var(--navy)}
+.nav-logo-fb span{color:var(--green)}
+
+/* Desktop nav links — strak, geen pills, simpele underline */
+.nav-links{list-style:none;display:flex;align-items:center;gap:2px}
+.nav-links a{
+  display:block;padding:8px 14px;
+  font-size:14px;font-weight:500;color:var(--text-muted);
+  border-radius:var(--radius-sm);transition:color 0.15s,background 0.15s;
+}
+.nav-links a:hover{color:var(--navy);background:var(--gray-50)}
+.nav-links a.active{color:var(--navy);font-weight:600;background:var(--navy-xlight)}
+
+.nav-ctas{display:flex;gap:8px;align-items:center;flex-shrink:0}
+
+/* Hamburger */
+.nav-hamburger{display:none;flex-direction:column;gap:4px;padding:8px;background:none;border:none;cursor:pointer}
+.nav-hamburger span{display:block;width:20px;height:2px;background:var(--navy);border-radius:2px;transition:all .2s}
+
+/* Mobile nav */
+.nav-mobile{
+  display:none;position:fixed;
+  top:0;right:0;bottom:0;width:min(300px,85vw);
+  background:var(--white);
+  box-shadow:-4px 0 32px rgba(0,0,0,0.12);
+  z-index:300;flex-direction:column;padding:24px;overflow-y:auto;
+}
+.nav-mobile.open{display:flex}
+.nav-mobile-close{align-self:flex-end;background:none;border:none;font-size:20px;cursor:pointer;color:var(--gray-500);margin-bottom:20px;padding:4px}
+.nav-mobile-links{list-style:none;flex:1;display:flex;flex-direction:column;gap:2px}
+.nav-mobile-links a{display:block;padding:12px 14px;font-size:15px;font-weight:500;color:var(--text-body);border-radius:var(--radius-md);transition:background .15s,color .15s}
+.nav-mobile-links a:hover,.nav-mobile-links a.active{background:var(--navy-xlight);color:var(--navy)}
+.nav-mobile-ctas{margin-top:20px;padding-top:20px;border-top:1px solid var(--gray-200);display:flex;flex-direction:column;gap:8px}
+.nav-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.25);z-index:250}
+.nav-overlay.open{display:block}
+
+/* ── BREADCRUMB ─────────────────────────────────────────────── */
+.breadcrumb{display:flex;align-items:center;gap:6px;font-size:13px;color:var(--text-light);flex-wrap:wrap;margin-bottom:20px}
+.breadcrumb a{color:var(--green);transition:color .15s}
+.breadcrumb a:hover{color:var(--green-dark)}
+.breadcrumb-sep{color:var(--gray-300)}
+
+/* ── LAYOUT HELPERS ─────────────────────────────────────────── */
+.container{max-width:var(--max-w);margin:0 auto;padding:0 5%}
+.section{padding:72px 0}
+.section-sm{padding:40px 0}
+.section-white{background:var(--white)}
+.section-gray{background:var(--gray-50)}
+.section-navy{background:var(--navy)}
+.section-green-light{background:var(--green-xlight)}
+
+/* ── HERO ───────────────────────────────────────────────────── */
+.hero{background:var(--white);padding:72px 0 88px;border-bottom:1px solid var(--gray-200)}
+.hero-grid{
+  max-width:var(--max-w);margin:0 auto;padding:0 5%;
+  display:grid;grid-template-columns:58fr 42fr;gap:56px;align-items:center;
+}
+.hero-eyebrow{margin-bottom:16px}
+.hero-title{margin-bottom:18px}
+.hero-desc{font-size:16px;color:var(--text-muted);max-width:500px;margin-bottom:28px;line-height:1.7}
+.hero-btns{display:flex;gap:10px;flex-wrap:wrap}
+
+/* Kerncijfers visual rechts */
+.hero-card{
+  background:var(--navy);border-radius:var(--radius-xl);
+  padding:32px 28px;
+}
+.hero-card-top{
+  display:flex;align-items:baseline;gap:8px;
+  margin-bottom:6px;
+}
+.hero-card-amount{font-size:2.75rem;font-weight:800;color:#fff;letter-spacing:-0.03em;line-height:1}
+.hero-card-suffix{font-size:1rem;font-weight:600;color:rgba(255,255,255,0.5)}
+.hero-card-label{font-size:11px;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--green);margin-bottom:24px}
+.hero-rates{display:flex;flex-direction:column;gap:10px}
+.rate-row{display:flex;align-items:center;gap:10px}
+.rate-label{width:48px;font-size:12px;color:rgba(255,255,255,0.5);text-align:right;flex-shrink:0}
+.rate-track{flex:1;height:6px;background:rgba(255,255,255,0.1);border-radius:3px;overflow:hidden}
+.rate-fill{height:100%;background:var(--green);border-radius:3px}
+.rate-val{width:44px;font-size:12px;font-weight:600;color:#fff}
+
+/* ── STATS BALK ─────────────────────────────────────────────── */
+.stats-bar{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:32px 0}
+.stats-grid{max-width:var(--max-w);margin:0 auto;padding:0 5%;display:grid;grid-template-columns:repeat(4,1fr);gap:20px;text-align:center}
+.stat-num{font-size:24px;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px}
+.stat-lbl{font-size:13px;color:var(--text-light)}
+
+/* ── SECTIE HEADER ──────────────────────────────────────────── */
+.section-hdr{margin-bottom:40px}
+.section-hdr h2{margin-bottom:10px}
+.section-hdr p{color:var(--text-muted);font-size:15px;max-width:480px}
+
+/* ── TOOL SECTIE (Vergelijkbaar Loon) ──────────────────────── */
+.tool-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+.tool-content .overline{color:var(--green)}
+.tool-content h2{margin-bottom:14px}
+.tool-content p{color:var(--text-muted);margin-bottom:20px;max-width:440px;font-size:15px}
+.tool-bullets{list-style:none;margin-bottom:28px;display:flex;flex-direction:column;gap:10px}
+.tool-bullets li{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--text-body)}
+.bullet-check{
+  width:20px;height:20px;border-radius:50%;
+  background:var(--green-light);color:var(--green);
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;flex-shrink:0;
+}
+
+/* Preview kaart */
+.tool-preview{
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);
+  box-shadow:var(--shadow-lg);
+  padding:20px;
+}
+.preview-header{
+  display:flex;align-items:center;gap:8px;
+  padding-bottom:14px;border-bottom:1px solid var(--gray-100);
+  margin-bottom:14px;
+}
+.preview-icon{
+  width:28px;height:28px;background:var(--navy);border-radius:6px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:12px;color:#fff;font-weight:800;flex-shrink:0;
+}
+.preview-title{font-size:13px;font-weight:700;color:var(--navy)}
+.preview-subtitle{font-size:11px;color:var(--text-light)}
+.preview-search{
+  display:flex;align-items:center;gap:8px;
+  background:var(--gray-50);border:1px solid var(--gray-200);
+  border-radius:var(--radius-pill);padding:9px 14px;margin-bottom:12px;
+}
+.preview-search-txt{font-size:12px;color:var(--text-light)}
+.preview-result{
+  display:flex;justify-content:space-between;align-items:center;
+  padding:9px 0;border-bottom:1px solid var(--gray-100);
+}
+.preview-result:last-of-type{border-bottom:none;margin-bottom:0}
+.preview-name{font-size:13px;font-weight:500;color:var(--navy)}
+.preview-val{font-size:13px;font-weight:700;color:var(--green)}
+.preview-footer{
+  margin-top:12px;padding-top:12px;
+  border-top:1px solid var(--gray-100);
+  font-size:11px;color:var(--text-light);
+  display:flex;align-items:center;gap:6px;
+}
+
+/* ── CALCULATOR GRID ────────────────────────────────────────── */
+.calc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.calc-card{
+  background:var(--white);
+  border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);
+  padding:24px;
+  display:block;color:inherit;
+  transition:box-shadow .2s,border-color .2s,transform .2s;
+  position:relative;overflow:hidden;
+}
+.calc-card::before{
+  content:'';position:absolute;top:0;left:0;right:0;height:3px;
+  background:var(--navy);transition:background .2s;
+}
+.calc-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy-light);transform:translateY(-2px)}
+.calc-card:hover::before{background:var(--green)}
+.calc-card-icon{
+  width:44px;height:44px;border-radius:10px;
+  background:var(--navy-xlight);
+  display:flex;align-items:center;justify-content:center;
+  font-size:20px;margin-bottom:14px;
+}
+.calc-card h3{font-size:1rem;margin-bottom:6px}
+.calc-card p{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:16px}
+.calc-card-link{font-size:13px;font-weight:600;color:var(--green);display:flex;align-items:center;gap:4px}
+
+/* ── KENNISBANK GRID ────────────────────────────────────────── */
+.kb-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.kb-card{
+  background:var(--white);border:1px solid var(--gray-200);
+  border-radius:var(--radius-lg);padding:24px;display:block;
+  color:inherit;transition:box-shadow .2s,border-color .2s,transform .2s;
+}
+.kb-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy-light);transform:translateY(-2px)}
+.kb-cat{font-size:11px;font-weight:700;letter-spacing:0.07em;text-transform:uppercase;color:var(--text-light);margin-bottom:8px}
+.kb-card h3{font-size:15px;margin-bottom:8px;line-height:1.4}
+.kb-card p{font-size:13px;color:var(--text-muted);line-height:1.6;margin-bottom:14px}
+.kb-more{font-size:13px;font-weight:600;color:var(--green)}
+
+/* ── TARIEVEN BANNER ────────────────────────────────────────── */
+.tarieven-banner{background:var(--navy-xlight);border-top:1px solid var(--navy-light);border-bottom:1px solid var(--navy-light);padding:48px 0;text-align:center}
+.tarieven-banner h3{font-size:1.35rem;margin-bottom:8px}
+.tarieven-banner p{color:var(--text-muted);font-size:15px;margin-bottom:20px;max-width:440px;margin-left:auto;margin-right:auto}
+
+/* ── ADVERTENTIE ────────────────────────────────────────────── */
+.ad-bar{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:10px 0;text-align:center}
+.ad-placeholder{
+  display:inline-flex;align-items:center;justify-content:center;
+  background:var(--gray-100);border:1px dashed var(--gray-300);
+  border-radius:var(--radius-sm);
+  color:var(--text-light);font-size:11px;font-weight:500;
+  letter-spacing:.05em;text-transform:uppercase;
+}
+.ad-728x90{width:min(728px,100%);height:90px}
+.ad-300x250{width:300px;height:250px}
+.ad-300x600{width:300px;height:600px}
+
+/* ── FOOTER ─────────────────────────────────────────────────── */
+.footer{background:var(--navy-dark);padding:56px 0 28px}
+.footer-grid{max-width:var(--max-w);margin:0 auto;padding:0 5%;display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:40px;margin-bottom:40px}
+.footer-logo img{height:26px;width:auto;margin-bottom:12px;filter:brightness(0) invert(1);opacity:0.9}
+.footer-logo-fb{font-size:1.1rem;font-weight:800;color:#fff;margin-bottom:10px}
+.footer-logo-fb span{color:var(--green)}
+.footer-desc{font-size:13px;color:rgba(255,255,255,0.4);line-height:1.7}
+.footer-col h4{font-size:11px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,0.3);margin-bottom:14px}
+.footer-col ul{list-style:none;display:flex;flex-direction:column;gap:7px}
+.footer-col a{font-size:13px;color:rgba(255,255,255,0.55);transition:color .15s}
+.footer-col a:hover{color:var(--green)}
+.footer-bottom{max-width:var(--max-w);margin:0 auto;padding:20px 5% 0;border-top:1px solid rgba(255,255,255,0.08);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px}
+.footer-bottom p{font-size:12px;color:rgba(255,255,255,0.25)}
+
+/* ── DISCLAIMER ─────────────────────────────────────────────── */
+.disclaimer-bar{background:#fefce8;border-top:1px solid #fef08a;padding:10px 5%}
+.disclaimer-bar p{max-width:var(--max-w);margin:0 auto;font-size:12px;color:#854d0e}
+
+/* ── PAGE HEADER ────────────────────────────────────────────── */
+.page-header{background:var(--white);padding:36px 0;border-bottom:1px solid var(--gray-200)}
+.page-header-inner{max-width:var(--max-w);margin:0 auto;padding:0 5%}
+.page-header h1{font-size:clamp(1.5rem,3vw,2rem);margin-bottom:8px}
+.page-header .lead{font-size:15px;color:var(--text-muted);max-width:580px}
+
+/* ── CALCULATOR PAGINA ──────────────────────────────────────── */
+.calc-layout{max-width:var(--max-w);margin:0 auto;padding:36px 5%;display:grid;grid-template-columns:55fr 45fr;gap:28px;align-items:start}
+.calc-sticky{position:sticky;top:calc(var(--nav-h) + 20px)}
+
+.form-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.form-card-head{background:var(--gray-50);border-bottom:1px solid var(--gray-200);padding:18px 24px}
+.form-card-head h2{font-size:15px;font-weight:700;color:var(--navy);margin-bottom:2px}
+.form-card-head p{font-size:12px;color:var(--text-light)}
+.form-card-body{padding:24px}
+
+.fg{margin-bottom:18px}
+.fg label{display:block;font-size:13px;font-weight:600;color:var(--text-h);margin-bottom:6px}
+.fg input[type=number],.fg input[type=text],.fg select{
+  width:100%;height:44px;padding:0 12px;
+  background:var(--gray-50);border:1.5px solid var(--gray-200);
+  border-radius:var(--radius-md);font-family:var(--f);font-size:14px;
+  color:var(--text-h);outline:none;transition:border-color .2s,box-shadow .2s,background .2s;
+}
+.fg input:focus,.fg select:focus{border-color:var(--navy);background:var(--white);box-shadow:0 0 0 3px var(--navy-xlight)}
+.fg .hint{margin-top:4px;font-size:12px;color:var(--text-light)}
+.slider-wrap{display:flex;align-items:center;gap:10px}
+.slider-wrap input[type=range]{flex:1;height:4px;appearance:none;-webkit-appearance:none;background:var(--gray-200);border-radius:2px;outline:none;cursor:pointer;border:none;padding:0}
+.slider-wrap input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:18px;height:18px;border-radius:50%;background:var(--navy);cursor:pointer;border:2px solid #fff;box-shadow:0 1px 4px rgba(0,0,0,.15)}
+.slider-val{min-width:100px;height:38px;padding:0 10px;background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);font-size:13px;font-weight:600;color:var(--navy);text-align:right;outline:none;font-family:var(--f)}
+.checkbox-row{display:flex;align-items:center;gap:10px;padding:11px 12px;background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);cursor:pointer;transition:border-color .15s}
+.checkbox-row:hover{border-color:var(--navy)}
+.checkbox-row input[type=checkbox]{width:16px;height:16px;accent-color:var(--navy);cursor:pointer;flex-shrink:0}
+.checkbox-row span{font-size:13px;color:var(--text-body)}
+
+/* Results */
+.results-panel{display:none;animation:fadeUp .3s ease}
+.results-panel.show{display:block}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.result-banner{background:var(--navy);border-radius:var(--radius-lg);padding:20px 24px;margin-bottom:14px;text-align:center}
+.result-banner-lbl{font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:4px}
+.result-banner-amount{font-size:2rem;font-weight:800;color:var(--green);letter-spacing:-.02em;line-height:1;margin-bottom:4px}
+.result-banner-sub{font-size:12px;color:rgba(255,255,255,.4)}
+.kpi-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-bottom:14px}
+.kpi{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:12px 10px;text-align:center}
+.kpi-val{font-size:1.05rem;font-weight:700;color:var(--navy);line-height:1;margin-bottom:3px}
+.kpi-lbl{font-size:10px;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--text-light)}
+
+/* Tables */
+.tbl-wrap{overflow-x:auto;margin-bottom:14px}
+.tbl-hdr{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin-bottom:8px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+thead th{background:var(--navy);color:rgba(255,255,255,.8);padding:9px 11px;text-align:left;font-size:11px;font-weight:600;letter-spacing:.05em;text-transform:uppercase}
+thead th:last-child{text-align:right}
+tbody td{padding:9px 11px;border-bottom:1px solid var(--gray-100);color:var(--text-body)}
+tbody td:last-child{text-align:right}
+tbody tr:nth-child(even) td{background:var(--gray-50)}
+tbody tr.row-opt td{background:var(--green-xlight);font-weight:600}
+tbody tr.row-opt td:first-child::before{content:"★ ";color:var(--green)}
+td.neg{color:#dc2626}
+td.pos{color:var(--green);font-weight:600}
+td.bold{font-weight:700;color:var(--navy)}
+
+/* Chart */
+.chart-card{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:18px;margin-bottom:14px}
+.chart-card-title{font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;color:var(--navy);margin-bottom:12px}
+
+/* Insight / info boxes */
+.insight{background:var(--green-xlight);border:1px solid var(--green-light);border-left:3px solid var(--green);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px}
+.insight strong{color:var(--navy)}
+.warnbox{background:#fffbeb;border:1px solid #fef08a;border-left:3px solid #f59e0b;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px;color:#92400e}
+.infobox{background:var(--navy-xlight);border:1px solid var(--navy-light);border-left:3px solid var(--navy);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:12px 14px;font-size:13px;line-height:1.65;margin-bottom:14px}
+
+/* ── KENNISBANK ARTIKEL ──────────────────────────────────────── */
+.article-layout{max-width:var(--max-w);margin:0 auto;padding:36px 5%;display:grid;grid-template-columns:1fr 270px;gap:48px;align-items:start}
+.article-body{min-width:0}
+.article-body h2{font-size:1.3rem;margin:2rem 0 .65rem;padding-bottom:8px;border-bottom:2px solid var(--green-light)}
+.article-body h3{font-size:1rem;margin:1.5rem 0 .45rem}
+.article-body p{font-size:15px;margin-bottom:14px;line-height:1.8;color:var(--text-body)}
+.article-body ul,.article-body ol{padding-left:20px;margin-bottom:14px}
+.article-body li{font-size:15px;margin-bottom:5px;line-height:1.7}
+.article-body a{color:var(--green);text-decoration:underline;text-underline-offset:2px}
+.article-body strong{font-weight:600;color:var(--text-h)}
+.toc{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:18px 20px;margin-bottom:28px}
+.toc h4{font-size:11px;font-weight:700;letter-spacing:.09em;text-transform:uppercase;color:var(--text-light);margin-bottom:10px}
+.toc ol{padding-left:16px}
+.toc li{margin-bottom:5px}
+.toc a{font-size:13px;color:var(--text-body);transition:color .15s}
+.toc a:hover{color:var(--green)}
+.art-meta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:24px;align-items:center}
+.art-badge{display:inline-block;font-size:11px;font-weight:700;letter-spacing:.07em;text-transform:uppercase;background:var(--green-light);color:var(--green);padding:3px 9px;border-radius:4px}
+.art-date{font-size:12px;color:var(--text-light)}
+.article-sidebar{position:sticky;top:calc(var(--nav-h) + 20px);display:flex;flex-direction:column;gap:14px}
+.sidebar-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden}
+.sidebar-card-hd{padding:11px 15px;background:var(--gray-50);border-bottom:1px solid var(--gray-200)}
+.sidebar-card-hd h3{font-size:12px;font-weight:700;color:var(--navy)}
+.sidebar-card-bd{padding:12px 15px}
+.srow{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--gray-100);font-size:12px}
+.srow:last-child{border-bottom:none}
+.srow .sl{color:var(--text-muted)}
+.srow .sv{font-weight:600;color:var(--navy)}
+.sidebar-link{display:block;padding:9px 15px;font-size:13px;color:var(--text-body);border-bottom:1px solid var(--gray-100);transition:background .15s,color .15s}
+.sidebar-link:last-child{border-bottom:none}
+.sidebar-link:hover{background:var(--gray-50);color:var(--navy)}
+.sidebar-cta{background:var(--navy);border-radius:var(--radius-md);padding:16px;text-align:center}
+.sidebar-cta p{font-size:13px;color:rgba(255,255,255,.7);margin-bottom:12px}
+.sidebar-cta h4{font-size:14px;font-weight:700;color:#fff;margin-bottom:6px}
+
+/* FAQ */
+.faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden;margin-bottom:8px}
+.faq-q{padding:14px 16px;font-weight:600;font-size:14px;cursor:pointer;display:flex;justify-content:space-between;align-items:center;background:var(--gray-50);color:var(--text-h);user-select:none;transition:background .15s}
+.faq-q:hover{background:var(--gray-100)}
+.faq-icon{width:20px;height:20px;border-radius:50%;background:var(--gray-200);display:flex;align-items:center;justify-content:center;font-size:13px;color:var(--text-muted);flex-shrink:0;transition:background .15s}
+.faq-item.open .faq-icon{background:var(--green-light);color:var(--green)}
+.faq-a{display:none;padding:14px 16px;font-size:13px;color:var(--text-body);line-height:1.75;border-top:1px solid var(--gray-200);background:var(--white)}
+.faq-a a{color:var(--green)}
+.faq-item.open .faq-a{display:block}
+
+/* CTA box */
+.cta-box{background:var(--navy);border-radius:var(--radius-lg);padding:24px 28px;margin:24px 0;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.cta-box h3{font-size:.95rem;color:#fff;margin-bottom:4px}
+.cta-box p{font-size:13px;color:rgba(255,255,255,.55)}
+
+/* Jurisprudentie */
+.juribox{background:var(--gray-50);border:1px solid var(--gray-200);border-left:3px solid var(--navy);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:14px 16px;margin:16px 0;font-size:13px}
+.juri-titel{font-size:10px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;color:var(--text-light);margin-bottom:6px}
+.juribox p{font-size:13px;line-height:1.7;margin-bottom:6px;color:var(--text-body)}
+.juribox p:last-child{margin-bottom:0}
+.juribox strong{color:var(--text-h)}
+
+/* Stappen */
+.stappen{counter-reset:s;list-style:none;padding:0}
+.stappen li{counter-increment:s;display:flex;gap:14px;margin-bottom:10px;padding:14px 16px;background:var(--gray-50);border-radius:var(--radius-md);border:1px solid var(--gray-200)}
+.stappen li::before{content:counter(s);display:flex;align-items:center;justify-content:center;min-width:26px;height:26px;border-radius:50%;background:var(--navy);color:#fff;font-size:12px;font-weight:700;flex-shrink:0}
+.stappen li div{font-size:13px;color:var(--text-body);line-height:1.65}
+.stappen li div strong{display:block;color:var(--text-h);margin-bottom:2px;font-size:14px}
+
+/* Vergelijkbaar loon tool */
+.vl-search-wrap{position:relative}
+.vl-search-input{width:100%;height:50px;padding:0 16px 0 44px;border:1.5px solid var(--gray-200);border-radius:var(--radius-pill);font-family:var(--f);font-size:14px;color:var(--text-h);background:var(--white);outline:none;transition:border-color .2s,box-shadow .2s}
+.vl-search-input:focus{border-color:var(--navy);box-shadow:0 0 0 3px var(--navy-xlight)}
+.vl-search-icon{position:absolute;left:16px;top:50%;transform:translateY(-50%);color:var(--text-light);font-size:16px;pointer-events:none}
+.vl-dropdown{position:absolute;top:calc(100% + 5px);left:0;right:0;background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);box-shadow:var(--shadow-lg);z-index:100;max-height:280px;overflow-y:auto;display:none}
+.vl-dropdown.open{display:block}
+.vl-item{padding:11px 14px;cursor:pointer;border-bottom:1px solid var(--gray-100);transition:background .12s}
+.vl-item:last-child{border-bottom:none}
+.vl-item:hover{background:var(--gray-50)}
+.vl-item-name{font-size:13px;font-weight:600;color:var(--navy)}
+.vl-item-sector{font-size:11px;color:var(--text-light);margin-top:2px}
+.vl-highlight{color:var(--green)}
+.filter-pills{display:flex;gap:6px;flex-wrap:wrap}
+.filter-pill{padding:6px 14px;font-size:12px;font-weight:500;color:var(--text-muted);background:var(--gray-50);border:1.5px solid var(--gray-200);border-radius:var(--radius-pill);cursor:pointer;transition:all .15s}
+.filter-pill:hover{border-color:var(--navy);color:var(--navy)}
+.filter-pill.active{background:var(--navy-xlight);border-color:var(--navy);color:var(--navy);font-weight:600}
+.vl-verdict{border-radius:var(--radius-md);padding:14px 18px;margin-bottom:18px;font-size:13px;line-height:1.65}
+.vl-verdict.boven{background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #dc2626}
+.vl-verdict.onder{background:var(--green-xlight);border:1px solid var(--green-light);border-left:3px solid var(--green)}
+.vl-verdict strong{display:block;font-size:14px;color:var(--text-h);margin-bottom:5px}
+.beroepen-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px}
+.beroep-card{background:var(--white);border:1.5px solid var(--gray-200);border-radius:var(--radius-md);padding:14px 16px;cursor:pointer;transition:box-shadow .2s,border-color .2s,transform .15s}
+.beroep-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy);transform:translateY(-2px)}
+.beroep-sector{font-size:10px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--text-light);margin-bottom:3px}
+.beroep-naam{font-size:13px;font-weight:600;color:var(--navy);margin-bottom:6px}
+.beroep-mediaan{font-size:17px;font-weight:800;color:var(--green)}
+.beroep-med-lbl{font-size:11px;color:var(--text-light)}
+.corr-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:6px;margin-bottom:16px}
+.corr-item{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-sm);padding:8px 6px;text-align:center}
+.corr-val{font-size:.95rem;font-weight:700;color:var(--navy)}
+.corr-lbl{font-size:10px;color:var(--text-light);margin-top:2px}
+
+/* Tarieven pagina */
+.tarieven-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(310px,1fr));gap:16px}
+.tarieven-card{background:var(--white);border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden}
+.tarieven-card-hd{background:var(--navy);padding:14px 18px}
+.tarieven-card-hd h3{font-size:14px;font-weight:700;color:#fff;margin-bottom:2px}
+.tarieven-card-hd p{font-size:11px;color:rgba(255,255,255,.45)}
+.tarieven-card tbody td:last-child{font-weight:700;color:var(--navy)}
+.tarieven-card tr.hl td{background:var(--green-xlight)}
+.tarieven-card tr.hl td:last-child{color:var(--green)}
+.tarieven-note{padding:7px 12px;font-size:11px;color:var(--text-light);background:var(--gray-50);border-top:1px solid var(--gray-100)}
+
+/* Print */
+@media print{
+  .nav,.footer,.ad-bar,.disclaimer-bar,.nav-mobile,.nav-overlay,.btn,.btn-calc,.btn-print,.beroepen-grid,.filter-pills,.calc-sticky{display:none!important}
+  body{font-size:11pt;color:#000;background:#fff;font-family:Arial,sans-serif}
+  .calc-layout,.article-layout{display:block}
+  .article-sidebar,.calc-sticky{display:none}
+  @page{size:A4;margin:2cm}
+}
+
+/* Responsive */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:36px}
+  .hero-card{display:none}
+  .tool-grid{grid-template-columns:1fr;gap:28px}
+  .calc-layout{grid-template-columns:1fr}
+  .calc-sticky{position:static}
+  .article-layout{grid-template-columns:1fr}
+  .article-sidebar{display:none}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr 1fr;gap:24px}
+  .corr-grid{grid-template-columns:repeat(3,1fr)}
+}
+@media(max-width:768px){
+  :root{--nav-h:60px}
+  .nav-links,.nav-ctas{display:none}
+  .nav-hamburger{display:flex}
+  .hero{padding:48px 0 60px}
+  .section{padding:48px 0}
+  .calc-grid{grid-template-columns:1fr}
+  .kb-grid{grid-template-columns:1fr}
+  .hero-btns{flex-direction:column}
+  .hero-btns .btn{width:100%;justify-content:center}
+  .kpi-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-grid{grid-template-columns:1fr}
+  .stats-grid{grid-template-columns:repeat(2,1fr)}
+  .corr-grid{grid-template-columns:repeat(2,1fr)}
+  .footer-bottom{flex-direction:column;text-align:center}
+  .cta-box{flex-direction:column}
+}
+@media(max-width:480px){
+  .kpi-grid{grid-template-columns:1fr 1fr}
+  .stats-grid{grid-template-columns:1fr 1fr}
+}
+
+</style>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script> -->
+<meta name="description" content="Zoek het loon uit de meest vergelijkbare dienstbetrekking voor uw DGA-functie. Met correctiefactoren voor regio, bedrijfsomvang en ervaring. Exporteerbaar als dossierdocument."/>
+<link rel="canonical" href="https://dgawijzer.nl/tools/vergelijkbaar-loon/"/>
+<meta property="og:title" content="Vergelijkbaar Loon Zoeker DGA 2026 | DGAwijzer"/>
+<meta property="og:description" content="Bepaal het marktconforme loon voor uw DGA-functie en onderbouw uw gebruikelijk loon richting de Belastingdienst."/>
+<meta property="og:image" content="https://dgawijzer.nl/images/logo.png"/>
+<meta property="og:type" content="website"/>
+<meta name="robots" content="index,follow"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Vergelijkbaar Loon Zoeker DGA 2026","url":"https://dgawijzer.nl/tools/vergelijkbaar-loon/","description":"Tool om het loon uit de meest vergelijkbare dienstbetrekking te bepalen voor de gebruikelijkloonregeling (art. 12a Wet LB 1964)","applicationCategory":"FinanceApplication","offers":{"@type":"Offer","price":"0","priceCurrency":"EUR"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Wat is het loon uit de meest vergelijkbare dienstbetrekking?","acceptedAnswer":{"@type":"Answer","text":"Dit is het loon dat iemand in een vergelijkbare functie zou verdienen bij een andere werkgever, zonder de DGA-aandeelhoudersrelatie. Het is één van de drie toetsen voor de gebruikelijkloonregeling (art. 12a Wet LB 1964). Als dit loon hoger is dan het normbedrag van €58.000, geldt dit hogere bedrag als gebruikelijk loon."}},{"@type":"Question","name":"Mag een DGA een lager loon hanteren dan €58.000?","acceptedAnswer":{"@type":"Answer","text":"Ja, als de DGA aannemelijk kan maken dat het loon uit de meest vergelijkbare dienstbetrekking lager is dan €58.000. De bewijslast ligt bij de DGA. Dit vereist gedegen onderbouwing met salarisdata, CAO's of andere objectieve bronnen. Gebruik dit rapport als startpunt voor uw dossiervorming."}},{"@type":"Question","name":"Welke bronnen zijn geschikt voor het bepalen van het vergelijkbaar loon?","acceptedAnswer":{"@type":"Answer","text":"Geschikte bronnen zijn: CBS StatLine (dataset 85517NED), branche-CAO's, salarisonderzoeken (Loonwijzer.nl, SalarisPerBeroep.nl), vacaturesites (LinkedIn, Intermediair) en NMBRS/salarissurveys. De Belastingdienst accepteert bronnen die representatief en reproduceerbaar zijn."}}]}
+</script>
+
+
+</head>
+<body>
+
+<nav class="nav" aria-label="Hoofdnavigatie">
+  <div class="nav-inner">
+    <a href="../../" class="nav-logo"><img src="../../images/logo.png" alt="DGAwijzer.nl" height="36" onerror="this.parentElement.innerHTML='&lt;span class=nav-logo-fallback&gt;DGA&lt;span&gt;wijzer&lt;/span&gt;.nl&lt;/span&gt;'"/></a>
+    <ul class="nav-links">
+      <li><a href="../../" class="">Home</a></li>
+      <li><a href="../../calculators/optimaal-salaris/" class="">Calculators</a></li>
+      <li><a href="../../tools/vergelijkbaar-loon/" class="active">Vergelijkbaar loon</a></li>
+      <li><a href="../../kennisbank/gebruikelijk-loon-2026/" class="">Kennisbank</a></li>
+      <li><a href="../../tarieven-2026/" class="">Tarieven 2026</a></li>
+    </ul>
+    <div class="nav-ctas">
+      <a href="../../calculators/optimaal-salaris/" class="btn btn-dark btn-sm">Bereken salaris &#x2192;</a>
+      <a href="../../tools/vergelijkbaar-loon/" class="btn btn-accent btn-sm">Zoek loon &#x2192;</a>
+    </div>
+    <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Menu openen"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+<header class="ph">
+  <div class="phi">
+    <nav class="bc"><a href="../../">Home</a> › <a href="#">Tools</a> › Vergelijkbaar Loon Zoeker</nav>
+    <div class="ph-badge">⚖️ Gebruikelijkloonregeling · Art. 12a Wet LB 1964</div>
+    <h1>Vergelijkbaar Loon Zoeker 2026</h1>
+    <p class="lead">Bepaal het loon uit de meest vergelijkbare dienstbetrekking voor uw DGA-functie. Inclusief correctiefactoren voor regio, omvang en ervaring. Exporteerbaar als dossierdocument voor de Belastingdienst.</p>
+  </div>
+</header>
+
+<!-- PRINT HEADER (alleen zichtbaar bij afdrukken) -->
+<div class="print-header" style="background:#1e3a5f;color:#fff;padding:1.5cm;border-bottom:3pt solid #2ecc71">
+  <div style="font-size:9pt;color:rgba(255,255,255,.6);margin-bottom:.3cm">DGAwijzer.nl · Gegenereerd op <span id="printDatum"></span></div>
+  <div style="font-size:18pt;font-weight:700;letter-spacing:-.02em">Onderbouwing Gebruikelijk Loon 2026</div>
+  <div style="font-size:11pt;color:rgba(255,255,255,.75);margin-top:.2cm">Op basis van loon meest vergelijkbare dienstbetrekking · Art. 12a Wet LB 1964</div>
+</div>
+
+<div class="ad"><div class="adp">Advertentie · 728×90</div></div>
+
+<div class="layout">
+  <!-- HOOFDFORMULIER -->
+  <div>
+    <div class="fcard">
+      <div class="fch">
+        <h2>Gegevens invoeren</h2>
+        <p>Alle berekeningen client-side · CBS-data 2024, geïndexeerd naar 2026</p>
+      </div>
+      <div class="fcb">
+        <!-- STAP 1: BEROEP ZOEKEN -->
+        <div class="fg">
+          <label>Functie / beroep <span style="color:var(--a)">*</span></label>
+          <div class="ac-wrap">
+            <span class="ac-icon">🔍</span>
+            <input type="text" id="zoekInput" class="ac-input" placeholder="Typ een functie, bijv. 'directeur' of 'huisarts'..." autocomplete="off" oninput="filterBeroepen()" onfocus="openDropdown()" onblur="sluitDropdown()"/>
+            <div class="ac-dropdown" id="acDropdown"></div>
+          </div>
+          <input type="hidden" id="geselecteerdId"/>
+          <p class="hint">25+ functies beschikbaar · Klik om te selecteren</p>
+        </div>
+
+        <!-- STAP 2-5: CORRECTIEFACTOREN -->
+        <div class="fgrid">
+          <div class="fg">
+            <label for="omvang">Bedrijfsomvang</label>
+            <select id="omvang">
+              <option value="0.85">1–10 medewerkers (–15%)</option>
+              <option value="0.95">11–50 medewerkers (–5%)</option>
+              <option value="1.00" selected>51–200 medewerkers (basis)</option>
+              <option value="1.15">201+ medewerkers (+15%)</option>
+            </select>
+            <p class="hint">Grotere bedrijven betalen doorgaans meer</p>
+          </div>
+          <div class="fg">
+            <label for="regio">Regio</label>
+            <select id="regio">
+              <option value="1.08">Randstad (NH, ZH, Utrecht) (+8%)</option>
+              <option value="1.00" selected>Midden (Gld, Ov, Fl) (basis)</option>
+              <option value="0.95">Noord (Gr, Fr, Dr) (–5%)</option>
+              <option value="1.03">Zuid (NB, Lb) (+3%)</option>
+              <option value="0.93">Zeeland (–7%)</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label for="ervaring">Ervaringsniveau</label>
+            <select id="ervaring">
+              <option value="0.80">Startend (0–3 jaar) (–20%)</option>
+              <option value="1.00" selected>Ervaren (3–10 jaar) (basis)</option>
+              <option value="1.10">Senior (10+ jaar) (+10%)</option>
+            </select>
+          </div>
+          <div class="fg">
+            <label>Werkuren per week: <strong id="urenLabel">40 uur</strong></label>
+            <div class="slider-row">
+              <input type="range" id="uren" min="8" max="40" step="4" value="40" oninput="document.getElementById('urenLabel').textContent=this.value+' uur'"/>
+            </div>
+            <p class="hint">Parttime-factor: uren/40. Bij 40u = 100%</p>
+          </div>
+        </div>
+
+        <!-- OPTIONEEL: NAAM/BV voor print -->
+        <details style="margin-bottom:1.25rem">
+          <summary style="font-size:.8rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;color:var(--mu);cursor:pointer;padding:.5rem 0">📄 Optioneel: Naam DGA / BV voor dossierexport</summary>
+          <div class="fgrid" style="margin-top:.75rem">
+            <div class="fg"><label for="nameDGA">Naam DGA</label><input type="text" id="nameDGA" placeholder="Bijv. J. Jansen" style="width:100%;padding:.65rem .9rem;border:1px solid var(--bo);border-radius:var(--r);font-family:var(--f);font-size:.9rem;background:var(--bga);outline:none;color:var(--tx)"/></div>
+            <div class="fg"><label for="nameBV">Naam BV</label><input type="text" id="nameBV" placeholder="Bijv. Jansen Holding B.V." style="width:100%;padding:.65rem .9rem;border:1px solid var(--bo);border-radius:var(--r);font-family:var(--f);font-size:.9rem;background:var(--bga);outline:none;color:var(--tx)"/></div>
+          </div>
+        </details>
+
+        <button class="btn-calc" onclick="bereken()">⚖️ Zoek vergelijkbaar loon</button>
+
+        <!-- ═══════════════ RESULTATEN ═══════════════ -->
+        <div class="results" id="results">
+
+          <!-- VERDICT -->
+          <div class="verdict" id="verdictBox">
+            <strong id="verdictTitel"></strong>
+            <span id="verdictTekst"></span>
+          </div>
+
+          <!-- EXPORT BUTTON -->
+          <div style="text-align:right;margin-bottom:1.25rem">
+            <button class="btn-print" onclick="exportPrint()">📄 Exporteer als dossieronderbouwing</button>
+          </div>
+
+          <!-- CORRECTIEFACTOREN -->
+          <div class="corr-wrap">
+            <h3>Toegepaste correctiefactoren</h3>
+            <div class="corr-grid" id="corrGrid"></div>
+          </div>
+
+          <!-- SALARISSEN TABEL -->
+          <div class="sal-table-wrap">
+            <h3>Salarisoverzicht — <span id="tabelFunctie"></span></h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Percentiel</th>
+                  <th>Omschrijving</th>
+                  <th>Basis jaarsalaris</th>
+                  <th>Na correctie (jaar)</th>
+                  <th>Per maand</th>
+                </tr>
+              </thead>
+              <tbody id="salTbody"></tbody>
+              <tfoot>
+                <tr><td colspan="5" id="tabelFootnote"></td></tr>
+              </tfoot>
+            </table>
+          </div>
+
+          <!-- CHART -->
+          <div class="chart-wrap">
+            <h3>Salarisbandreedte t.o.v. normbedrag €58.000</h3>
+            <canvas id="salChart" height="200"></canvas>
+          </div>
+
+          <!-- JURIDISCHE CONTEXT -->
+          <div class="legal">
+            <h3>⚖️ Juridische context — Gebruikelijkloonregeling</h3>
+            <div class="legal-grid">
+              <div>
+                <p><strong>De drie toetsen (art. 12a Wet LB 1964)</strong></p>
+                <p>Het gebruikelijk loon is het <em>hoogste</em> van:</p>
+                <ul>
+                  <li>Loon meest vergelijkbare dienstbetrekking</li>
+                  <li>Loon meestverdienende werknemer in de BV</li>
+                  <li>Normbedrag 2026: <strong>€58.000</strong></li>
+                </ul>
+              </div>
+              <div>
+                <p><strong>Dossiervorming — tips</strong></p>
+                <ul>
+                  <li>Documenteer uw functieomschrijving</li>
+                  <li>Gebruik objectieve salarisbronnen (CBS, CAO)</li>
+                  <li>Bewaar dit rapport in uw administratie</li>
+                  <li>Laat uw accountant beoordelen</li>
+                  <li>Sla notulen AvA over salarisvastst. op</li>
+                </ul>
+              </div>
+            </div>
+            <div class="warnbox">⚠️ <strong>Bewijslast ligt bij de DGA.</strong> Bij een gebruikelijk loon onder €58.000 moet u aannemelijk maken dat het vergelijkbare marktloon lager is. Uit recente jurisprudentie (o.a. Gerechtshof Amsterdam, Rb. Den Haag ECLI:NL:RBDHA:2025:27512) blijkt dat DGA's hier regelmatig niet in slagen bij onvoldoende onderbouwing.</div>
+          </div>
+
+          <!-- BRONNEN -->
+          <div class="bronnen">
+            <strong>Bronnen:</strong> CBS StatLine dataset 85517NED (Werknemers; uurloon en beroep, peiljaar 2024) · CBS StatLine 81431ned (Werkgelegenheid; banen, lonen, arbeidsduur) · Correctie cao-loonstijging 2024–2026: +4,5% · Loonwijzer.nl / WageIndicator · SalarisPerBeroep.nl<br/>
+            <strong>Let op:</strong> Alle bedragen zijn indicatief. Definitieve vaststelling is maatwerk. Raadpleeg uw fiscaal adviseur.
+          </div>
+
+        </div><!-- /results -->
+      </div>
+    </div>
+  </div>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <div class="adps">Advertentie · 300×250</div>
+
+    <div class="scard">
+      <div class="sch"><h3>Drie toetsen gebruikelijk loon</h3></div>
+      <div class="scb">
+        <div class="tr2"><span class="tl">1. Vergelijkbaar marktloon</span><span class="tv">→ deze tool</span></div>
+        <div class="tr2"><span class="tl">2. Meestverdienende werknemer</span><span class="tv">intern</span></div>
+        <div class="tr2"><span class="tl">3. Normbedrag 2026</span><span class="tv">€58.000</span></div>
+      </div>
+    </div>
+
+    <div class="scard">
+      <div class="sch"><h3>Gerelateerde tools</h3></div>
+      <div class="scb" style="padding:0">
+        <a href="../../calculators/optimaal-salaris/" style="display:block;padding:.75rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.84rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">🎯 Optimaal DGA Salaris Calculator →</a>
+        <a href="../../calculators/bruto-netto-dga/" style="display:block;padding:.75rem 1.1rem;border-bottom:1px solid var(--bo);text-decoration:none;font-size:.84rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">💰 Bruto-Netto DGA →</a>
+        <a href="../../kennisbank/gebruikelijk-loon-2026/" style="display:block;padding:.75rem 1.1rem;text-decoration:none;font-size:.84rem;color:var(--tx);transition:background .15s" onmouseover="this.style.background='var(--bga)'" onmouseout="this.style.background='transparent'">📄 Gebruikelijk loon 2026 →</a>
+      </div>
+    </div>
+
+    <div class="tip">
+      💡 <strong>Tip:</strong> Dit rapport kunt u exporteren als PDF-onderbouwing voor uw fiscaal dossier. Bewaar het samen met uw salarisvaststelling in de AvA-notulen.
+    </div>
+
+    <div class="adps" style="min-height:400px">Advertentie · 300×600</div>
+  </aside>
+</div>
+
+<!-- BEROEPEN OVERZICHT -->
+<div class="beroepen-section">
+  <p class="slabel" style="font-size:.72rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--ad);margin-bottom:.4rem">Snel navigeren</p>
+  <h2>Alle 25+ beschikbare functies</h2>
+  <p>Klik op een functie om direct de salarisdata te laden.</p>
+  <div class="b-filter" id="sectorFilter"></div>
+  <div class="b-grid" id="beroepGrid"></div>
+</div>
+
+<div class="ad"><div class="adp">Advertentie · 728×90</div></div>
+
+<footer class="footer"><div class="footer-grid"><div><div class="footer-logo"><img src="../../images/logo.png" alt="DGAwijzer.nl" height="26" onerror="this.parentElement.innerHTML='DGAwijzer.nl'"/></div><p class="footer-desc">Onafhankelijk fiscaal portaal voor directeur-grootaandeelhouders. Actuele tools voor belastingjaar 2026.</p></div><div class="footer-col"><h4>Calculators</h4><ul><li><a href="../../calculators/optimaal-salaris/">Optimaal DGA Salaris</a></li><li><a href="../../calculators/bruto-netto-dga/">Bruto-Netto DGA</a></li><li><a href="../../calculators/salaris-vs-dividend/">Salaris vs. Dividend</a></li><li><a href="../../calculators/bv-vs-eenmanszaak/">BV vs. Eenmanszaak</a></li><li><a href="../../tools/vergelijkbaar-loon/">Vergelijkbaar Loon Zoeker</a></li></ul></div><div class="footer-col"><h4>Kennisbank</h4><ul><li><a href="../../kennisbank/gebruikelijk-loon-2026/">Gebruikelijk loon 2026</a></li><li><a href="../../kennisbank/meest-vergelijkbare-dienstbetrekking/">Vergelijkbaar loon</a></li><li><a href="../../kennisbank/dividend-uitkeren/">Dividend uitkeren</a></li><li><a href="../../kennisbank/holding-structuur/">Holdingstructuur</a></li><li><a href="../../tarieven-2026/">Tarieven 2026</a></li></ul></div><div class="footer-col"><h4>Over</h4><ul><li><a href="../../over-dgawijzer/">Over DGAwijzer</a></li><li><a href="../../tarieven-2026/">Tarieven 2026</a></li><li><a href="../../over-dgawijzer/">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 DGAwijzer.nl</p><p>Raadpleeg altijd een fiscaal adviseur.</p></div></footer><div class="disclaimer-bar"><p>&#x26A0;&#xFE0F; <strong>Disclaimer:</strong> DGAwijzer.nl biedt algemene informatie. Raadpleeg altijd een fiscaal adviseur voor persoonlijk advies.</p></div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<script>
+// ════════════════════════════════════════════════════════
+// DATASET — 25+ BEROEPEN
+// CBS StatLine 85517NED, peiljaar 2024, geïndexeerd +4,5%
+// ════════════════════════════════════════════════════════
+const DATA = {
+  metadata: {
+    bronnen: ["CBS StatLine 85517NED (2024)","CBS StatLine 81431ned","Loonwijzer.nl/WageIndicator","SalarisPerBeroep.nl"],
+    peiljaar: "2024 (CBS), geïndexeerd naar 2026 (+4,5%)",
+    disclaimer: "Indicatief. Definitieve vaststelling is maatwerk."
+  },
+  beroepen: [
+    { id:"directeur-accountantskantoor", naam:"Directeur accountantskantoor", sector:"Financieel & Juridisch", sbi:"6920 – Accountancy en belastingadvies", salaris:{ p25:65000, mediaan:82000, p75:105000, p90:130000 }, toelichting:"Gebaseerd op directeuren/managers in accountancy (SBI 6920). Excl. winstdeling." },
+    { id:"directeur-it-bedrijf", naam:"Directeur IT-bedrijf", sector:"ICT & Technologie", sbi:"6201 – Ontwikkelen van software", salaris:{ p25:75000, mediaan:95000, p75:120000, p90:155000 }, toelichting:"CBS mediaan uurloon ICT €33,50 (2024) + directietoeslag. Hoog marktloon." },
+    { id:"directeur-bouwbedrijf", naam:"Directeur bouwbedrijf", sector:"Bouw & Techniek", sbi:"4120 – Burgerlijke en utiliteitsbouw", salaris:{ p25:68000, mediaan:85000, p75:110000, p90:140000 }, toelichting:"Bovengemiddeld door complexiteit van bouwprojecten." },
+    { id:"directeur-horecabedrijf", naam:"Directeur horecabedrijf", sector:"Horeca & Toerisme", sbi:"5610 – Restaurants en eetgelegenheden", salaris:{ p25:38000, mediaan:48000, p75:62000, p90:80000 }, toelichting:"Mediaan onder normbedrag — onderbouwing mogelijk voor lager gebruikelijk loon." },
+    { id:"directeur-transportbedrijf", naam:"Directeur transportbedrijf", sector:"Transport & Logistiek", sbi:"4941 – Goederenvervoer over de weg", salaris:{ p25:55000, mediaan:70000, p75:90000, p90:115000 }, toelichting:"Managers in transport en logistiek. Afhankelijk van wagenpark en omvang." },
+    { id:"directeur-detailhandel", naam:"Directeur detailhandel / winkelketen", sector:"Detailhandel & Service", sbi:"4711 – Supermarkten en dergelijke winkels", salaris:{ p25:48000, mediaan:62000, p75:82000, p90:105000 }, toelichting:"Grote variatie: kleine retailers lager, ketenmanagers hoger." },
+    { id:"directeur-schoonmaakbedrijf", naam:"Directeur schoonmaakbedrijf", sector:"Dienstverlening", sbi:"8121 – Algemene reiniging van gebouwen", salaris:{ p25:42000, mediaan:55000, p75:72000, p90:90000 }, toelichting:"Relatief lagere lonen. Kan onderbouwing bieden voor lager gebruikelijk loon." },
+    { id:"directeur-makelaardij", naam:"Directeur makelaarskantoor", sector:"Vastgoed", sbi:"6831 – Bemiddeling onroerend goed", salaris:{ p25:55000, mediaan:72000, p75:95000, p90:125000 }, toelichting:"Sterk afhankelijk van regio en marktomstandigheden." },
+    { id:"directeur-architectenbureau", naam:"Directeur architectenbureau", sector:"Bouw & Techniek", sbi:"7111 – Architecten", salaris:{ p25:60000, mediaan:78000, p75:100000, p90:125000 }, toelichting:"Voorbeeld uit wettekst gebruikelijkloonregeling. Bovengemiddeld." },
+    { id:"directeur-uitzendbureau", naam:"Directeur uitzendbureau", sector:"Zakelijke Dienstverlening", sbi:"7820 – Uitzendbureaus", salaris:{ p25:58000, mediaan:75000, p75:98000, p90:130000 }, toelichting:"Afhankelijk van omzet en aantal uitzendkrachten." },
+    { id:"huisarts-eigen-praktijk", naam:"Huisarts (eigen praktijk / BV)", sector:"Zorg & Welzijn", sbi:"8621 – Praktijken van huisartsen", salaris:{ p25:105000, mediaan:130000, p75:160000, p90:190000 }, toelichting:"Hoog normloon door medische specialisatie en praktijkomvang." },
+    { id:"tandarts-eigen-praktijk", naam:"Tandarts (eigen praktijk / BV)", sector:"Zorg & Welzijn", sbi:"8623 – Praktijken van tandartsen", salaris:{ p25:90000, mediaan:115000, p75:145000, p90:180000 }, toelichting:"Eigen praktijk in BV-vorm. Sterk afhankelijk van specialisatie." },
+    { id:"fysiotherapeut-eigen-praktijk", naam:"Fysiotherapeut (eigen praktijk / BV)", sector:"Zorg & Welzijn", sbi:"8691 – Praktijken van fysiotherapeuten", salaris:{ p25:45000, mediaan:58000, p75:72000, p90:88000 }, toelichting:"Mediaan rond het normbedrag. Groepspraktijk is hoger." },
+    { id:"directeur-webshop-ecommerce", naam:"Directeur webshop / e-commerce", sector:"Detailhandel & Service", sbi:"4791 – Detailhandel via internet", salaris:{ p25:55000, mediaan:72000, p75:95000, p90:125000 }, toelichting:"Snel groeiende sector. Lonen volgen e-commerce groei." },
+    { id:"directeur-adviesbureau", naam:"Directeur advies-/consultancybureau", sector:"Zakelijke Dienstverlening", sbi:"7022 – Adviesbureaus bedrijfsbeheer", salaris:{ p25:70000, mediaan:90000, p75:115000, p90:145000 }, toelichting:"Management-consultants en organisatieadviseurs. Relatief hoog." },
+    { id:"directeur-installatiebedrijf", naam:"Directeur installatiebedrijf", sector:"Bouw & Techniek", sbi:"4322 – Loodgieters- en fitterswerk", salaris:{ p25:60000, mediaan:78000, p75:98000, p90:120000 }, toelichting:"Installatietechniek. Groeiend door energietransitie." },
+    { id:"directeur-autobedrijf", naam:"Directeur autobedrijf / garage", sector:"Automotive", sbi:"4511 – Handel in auto's", salaris:{ p25:50000, mediaan:65000, p75:85000, p90:110000 }, toelichting:"Afhankelijk van type (dealer vs. universeel) en omvang." },
+    { id:"directeur-marketingbureau", naam:"Directeur marketingbureau / reclamebureau", sector:"Commercieel & Marketing", sbi:"7311 – Reclamebureaus", salaris:{ p25:60000, mediaan:78000, p75:100000, p90:130000 }, toelichting:"Creatieve sector met grote variatie in omvang." },
+    { id:"directeur-productiebedrijf", naam:"Directeur productiebedrijf / fabriek", sector:"Industrie & Productie", sbi:"2599 – Vervaardiging metaalproducten", salaris:{ p25:70000, mediaan:88000, p75:110000, p90:140000 }, toelichting:"Industriële directeuren. Loon stijgt sterk met bedrijfsomvang." },
+    { id:"advocaat-eigen-praktijk", naam:"Advocaat (eigen praktijk / BV)", sector:"Financieel & Juridisch", sbi:"6910 – Rechtskundige dienstverlening", salaris:{ p25:80000, mediaan:105000, p75:140000, p90:185000 }, toelichting:"Sterk afhankelijk van specialisatie (vastgoed, arbeidsrecht, M&A) en regio." },
+    { id:"notaris", naam:"Notaris (eigen kantoor / BV)", sector:"Financieel & Juridisch", sbi:"6910 – Rechtskundige dienstverlening", salaris:{ p25:95000, mediaan:125000, p75:160000, p90:200000 }, toelichting:"Hoog normloon door wettelijk monopolie en kapitaalintensieve praktijk." },
+    { id:"directeur-hoveniersbedrijf", naam:"Directeur hoveniersbedrijf", sector:"Agrarisch & Groen", sbi:"8130 – Landschapsverzorging", salaris:{ p25:42000, mediaan:55000, p75:70000, p90:85000 }, toelichting:"Relatief lagere lonen. Sterke onderbouwing mogelijk voor lager gebruikelijk loon." },
+    { id:"directeur-zorginstelling", naam:"Directeur/bestuurder zorginstelling", sector:"Zorg & Welzijn", sbi:"8710 – Verpleeghuizen en verzorgingshuizen", salaris:{ p25:85000, mediaan:110000, p75:140000, p90:175000 }, toelichting:"Let op: WNT-normen kunnen van toepassing zijn bij gesubsidieerde zorginstellingen." },
+    { id:"it-manager", naam:"IT-manager", sector:"ICT & Technologie", sbi:"6202 – Advies informatietechnologie", salaris:{ p25:68000, mediaan:85000, p75:105000, p90:130000 }, toelichting:"IT-managers in diverse branches. CBS mediaan uurloon ICT: €33,50 (2024)." },
+    { id:"directeur-agrarisch-bedrijf", naam:"Directeur agrarisch bedrijf / akkerbouw", sector:"Agrarisch & Groen", sbi:"0111 – Teelt van granen en peulvruchten", salaris:{ p25:35000, mediaan:45000, p75:60000, p90:80000 }, toelichting:"Agrarisch heeft lagere lonen. Sterke onderbouwing voor lager gebruikelijk loon." },
+    { id:"dierenarts-eigen-praktijk", naam:"Dierenarts (eigen praktijk / BV)", sector:"Zorg & Welzijn", sbi:"7500 – Veterinaire dienstverlening", salaris:{ p25:55000, mediaan:72000, p75:92000, p90:115000 }, toelichting:"Dierenartsen met eigen praktijk. Afhankelijk van specialisatie (gezelschapsdieren/vee)." }
+  ]
+};
+
+const NORMBEDRAG = 58000;
+const fmt = v => '€\u202f' + Math.round(v).toLocaleString('nl-NL');
+let geselecteerdBeroep = null;
+let chart = null;
+
+// ── AUTOCOMPLETE ──────────────────────────────────────
+function filterBeroepen() {
+  const q = document.getElementById('zoekInput').value.toLowerCase().trim();
+  const dd = document.getElementById('acDropdown');
+  const matches = q.length < 1
+    ? DATA.beroepen
+    : DATA.beroepen.filter(b =>
+        b.naam.toLowerCase().includes(q) ||
+        b.sector.toLowerCase().includes(q) ||
+        b.id.includes(q)
+      );
+  renderDropdown(matches, q);
+  dd.classList.add('open');
+}
+
+function renderDropdown(lijst, q='') {
+  const dd = document.getElementById('acDropdown');
+  if (!lijst.length) {
+    dd.innerHTML = '<div class="ac-item"><span class="ai-name" style="color:var(--mu)">Geen resultaten gevonden</span></div>';
+    return;
+  }
+  dd.innerHTML = lijst.map(b => {
+    const naam = q ? b.naam.replace(new RegExp(q,'gi'), m => `<span class="ai-highlight">${m}</span>`) : b.naam;
+    return `<div class="ac-item" onmousedown="selecteerBeroep('${b.id}')">
+      <div class="ai-name">${naam}</div>
+      <div class="ai-sector">${b.sector} · ${b.sbi}</div>
+    </div>`;
+  }).join('');
+}
+
+function openDropdown() {
+  filterBeroepen();
+  document.getElementById('acDropdown').classList.add('open');
+}
+function sluitDropdown() {
+  setTimeout(() => document.getElementById('acDropdown').classList.remove('open'), 200);
+}
+
+function selecteerBeroep(id) {
+  const b = DATA.beroepen.find(x => x.id === id);
+  if (!b) return;
+  geselecteerdBeroep = b;
+  document.getElementById('zoekInput').value = b.naam;
+  document.getElementById('geselecteerdId').value = id;
+  document.getElementById('acDropdown').classList.remove('open');
+}
+
+// ── BEROEPEN GRID ─────────────────────────────────────
+function buildBeroepGrid() {
+  // Sector filters
+  const sectoren = [...new Set(DATA.beroepen.map(b => b.sector))].sort();
+  const filterDiv = document.getElementById('sectorFilter');
+  filterDiv.innerHTML = '<span class="b-tag active" onclick="filterSector(this,\'\')">Alle sectoren</span>' +
+    sectoren.map(s => `<span class="b-tag" onclick="filterSector(this,'${s}')">${s}</span>`).join('');
+
+  renderGrid('');
+}
+
+function filterSector(el, sector) {
+  document.querySelectorAll('.b-tag').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  renderGrid(sector);
+}
+
+function renderGrid(sector) {
+  const lijst = sector ? DATA.beroepen.filter(b => b.sector === sector) : DATA.beroepen;
+  const grid = document.getElementById('beroepGrid');
+  grid.innerHTML = lijst.map(b => `
+    <div class="bcard" onclick="selecteerEnBereken('${b.id}')">
+      <div class="bs">${b.sector}</div>
+      <div class="bn">${b.naam}</div>
+      <div class="bmed">
+        <span class="bv">${fmt(b.salaris.mediaan)}</span>
+        <span class="bl">mediaan/jaar</span>
+      </div>
+    </div>
+  `).join('');
+}
+
+function selecteerEnBereken(id) {
+  selecteerBeroep(id);
+  window.scrollTo({top: document.querySelector('.fcard').offsetTop - 80, behavior:'smooth'});
+  setTimeout(bereken, 300);
+}
+
+// ── BEREKEN ──────────────────────────────────────────
+function bereken() {
+  if (!geselecteerdBeroep && document.getElementById('geselecteerdId').value) {
+    geselecteerdBeroep = DATA.beroepen.find(x => x.id === document.getElementById('geselecteerdId').value);
+  }
+  if (!geselecteerdBeroep) {
+    // probeer op naam te matchen
+    const q = document.getElementById('zoekInput').value.toLowerCase().trim();
+    geselecteerdBeroep = DATA.beroepen.find(b => b.naam.toLowerCase().includes(q));
+    if (!geselecteerdBeroep) {
+      alert('Selecteer eerst een functie/beroep uit de lijst.');
+      return;
+    }
+  }
+
+  const b = geselecteerdBeroep;
+  const omvangF = parseFloat(document.getElementById('omvang').value);
+  const regioF = parseFloat(document.getElementById('regio').value);
+  const ervaringF = parseFloat(document.getElementById('ervaring').value);
+  const uren = parseInt(document.getElementById('uren').value);
+  const tijdF = uren / 40;
+  const totaalF = omvangF * regioF * ervaringF * tijdF;
+
+  const sel = {
+    p25: Math.round(b.salaris.p25 * totaalF),
+    mediaan: Math.round(b.salaris.mediaan * totaalF),
+    p75: Math.round(b.salaris.p75 * totaalF),
+    p90: Math.round(b.salaris.p90 * totaalF)
+  };
+
+  // VERDICT
+  const normbedragCorr = Math.round(NORMBEDRAG * tijdF);
+  const verdict = document.getElementById('verdictBox');
+  const mediaan = sel.mediaan;
+
+  if (mediaan > normbedragCorr) {
+    verdict.className = 'verdict boven';
+    document.getElementById('verdictTitel').textContent =
+      `Marktloon (${fmt(mediaan)}) ligt boven het normbedrag (${fmt(normbedragCorr)})`;
+    document.getElementById('verdictTekst').innerHTML =
+      `Het loon uit de meest vergelijkbare dienstbetrekking voor een <strong>${b.naam}</strong> bedraagt circa <strong>${fmt(mediaan)}</strong> (mediaan, na correctiefactoren). Dit ligt boven het normbedrag van ${fmt(normbedragCorr)}. Het gebruikelijk loon dient minimaal op <strong>${fmt(mediaan)}</strong> te worden vastgesteld (of hoger, als een werknemer meer verdient).`;
+  } else {
+    verdict.className = 'verdict onder';
+    document.getElementById('verdictTitel').textContent =
+      `Marktloon (${fmt(mediaan)}) ligt onder het normbedrag (${fmt(normbedragCorr)})`;
+    document.getElementById('verdictTekst').innerHTML =
+      `Het loon uit de meest vergelijkbare dienstbetrekking voor een <strong>${b.naam}</strong> bedraagt circa <strong>${fmt(mediaan)}</strong> (mediaan, na correctiefactoren). Dit ligt onder het normbedrag van ${fmt(normbedragCorr)}. U kunt <em>mogelijk</em> onderbouwen dat een gebruikelijk loon van <strong>${fmt(mediaan)}</strong> passend is. <strong>De bewijslast ligt bij u als DGA.</strong> Leg dit goed vast in uw dossier en raadpleeg uw accountant.`;
+  }
+
+  // CORRECTIEFACTOREN
+  const corrLabels = [
+    {label:'Bedrijfsomvang', val: omvangF},
+    {label:'Regio', val: regioF},
+    {label:'Ervaring', val: ervaringF},
+    {label:`Werkuren (${uren}u)`, val: tijdF}
+  ];
+  document.getElementById('corrGrid').innerHTML = corrLabels.map(c =>
+    `<div class="corr-item"><div class="cv">${c.val.toFixed(2)}×</div><div class="cl">${c.label}</div></div>`
+  ).join('') + `<div class="corr-item" style="border-color:var(--p)"><div class="cv" style="color:var(--ad)">${totaalF.toFixed(3)}×</div><div class="cl">Gecombineerd</div></div>`;
+
+  // TABEL
+  document.getElementById('tabelFunctie').textContent = b.naam;
+  const rows = [
+    {pct:'P25', label:'25e percentiel (laag)', basis:b.salaris.p25, gecorr:sel.p25},
+    {pct:'P50', label:'50e percentiel (mediaan)', basis:b.salaris.mediaan, gecorr:sel.mediaan, isMediaan:true},
+    {pct:'P75', label:'75e percentiel (hoog)', basis:b.salaris.p75, gecorr:sel.p75},
+    {pct:'P90', label:'90e percentiel (zeer hoog)', basis:b.salaris.p90, gecorr:sel.p90},
+  ];
+  document.getElementById('salTbody').innerHTML = rows.map(r =>
+    `<tr class="${r.isMediaan?'mediaan':''}">
+      <td><strong>${r.pct}</strong></td>
+      <td>${r.label}</td>
+      <td>${fmt(r.basis)}</td>
+      <td>${fmt(r.gecorr)}</td>
+      <td>${fmt(r.gecorr/12)}</td>
+    </tr>`
+  ).join('');
+  document.getElementById('tabelFootnote').textContent =
+    `Basisdata: ${b.sbi} · Correctiefactor: ${totaalF.toFixed(3)}× · ${b.toelichting}`;
+
+  // CHART
+  renderChart(sel, normbedragCorr);
+
+  document.getElementById('results').classList.add('show');
+  document.getElementById('results').scrollIntoView({behavior:'smooth', block:'nearest'});
+}
+
+function renderChart(sel, normbedrag) {
+  const ctx = document.getElementById('salChart').getContext('2d');
+  if (chart) chart.destroy();
+
+  chart = new Chart(ctx, {
+    type:'bar',
+    data:{
+      labels:['P25', 'Mediaan (P50)', 'P75', 'P90'],
+      datasets:[
+        {
+          label:'Salaris (gecorrigeerd)',
+          data:[sel.p25, sel.mediaan, sel.p75, sel.p90],
+          backgroundColor:['rgba(30,58,95,.55)','rgba(46,204,113,.75)','rgba(30,58,95,.35)','rgba(30,58,95,.2)'],
+          borderColor:['#1e3a5f','#27ae60','#1e3a5f','#1e3a5f'],
+          borderWidth:1.5,
+          borderRadius:4,
+        }
+      ]
+    },
+    options:{
+      indexAxis:'y',
+      responsive:true,
+      plugins:{
+        legend:{display:false},
+        tooltip:{callbacks:{label:ctx=>' '+fmt(ctx.parsed.x)+' / jaar'}},
+        annotation:{
+          annotations:{
+            normlijn:{
+              type:'line',
+              xMin:normbedrag,
+              xMax:normbedrag,
+              borderColor:'#dc2626',
+              borderWidth:2,
+              borderDash:[6,3],
+              label:{content:'Normbedrag €58.000',enabled:true,position:'start',backgroundColor:'#dc2626',color:'#fff',font:{size:10,family:'Inter'}}
+            }
+          }
+        }
+      },
+      scales:{
+        x:{ticks:{callback:v=>'€'+(v/1000).toFixed(0)+'K',font:{family:'Inter',size:11}},grid:{color:'#f0f2f5'}},
+        y:{ticks:{font:{family:'Inter',size:11}},grid:{display:false}}
+      }
+    },
+    plugins: [{
+      id:'normlijn',
+      afterDraw(chart){
+        const {ctx,chartArea,scales:{x}} = chart;
+        const xPos = x.getPixelForValue(normbedrag);
+        if (xPos < chartArea.left || xPos > chartArea.right) return;
+        ctx.save();
+        ctx.strokeStyle='#dc2626';
+        ctx.lineWidth=2;
+        ctx.setLineDash([6,3]);
+        ctx.beginPath();
+        ctx.moveTo(xPos, chartArea.top);
+        ctx.lineTo(xPos, chartArea.bottom);
+        ctx.stroke();
+        ctx.fillStyle='#dc2626';
+        ctx.font='bold 10px Inter, sans-serif';
+        ctx.fillText('Norm €58K', xPos+4, chartArea.top+14);
+        ctx.restore();
+      }
+    }]
+  });
+}
+
+// ── PRINT / EXPORT ───────────────────────────────────
+function exportPrint() {
+  const b = geselecteerdBeroep;
+  if (!b) { alert('Voer eerst een berekening uit.'); return; }
+
+  // Vul print-header datum in
+  const nu = new Date().toLocaleDateString('nl-NL',{year:'numeric',month:'long',day:'numeric'});
+  const tijd = new Date().toLocaleTimeString('nl-NL',{hour:'2-digit',minute:'2-digit'});
+  document.getElementById('printDatum').textContent = nu + ' ' + tijd;
+
+  const nameDGA = document.getElementById('nameDGA').value || '_______________';
+  const nameBV = document.getElementById('nameBV').value || '_______________';
+
+  // Tijdelijk hidden printable div invullen
+  let printDiv = document.getElementById('printSection');
+  if (!printDiv) {
+    printDiv = document.createElement('div');
+    printDiv.id = 'printSection';
+    document.body.appendChild(printDiv);
+  }
+
+  const omvangTxt = document.getElementById('omvang').options[document.getElementById('omvang').selectedIndex].text;
+  const regioTxt = document.getElementById('regio').options[document.getElementById('regio').selectedIndex].text;
+  const ervaringTxt = document.getElementById('ervaring').options[document.getElementById('ervaring').selectedIndex].text;
+  const uren = document.getElementById('uren').value;
+  const omvangF = parseFloat(document.getElementById('omvang').value);
+  const regioF = parseFloat(document.getElementById('regio').value);
+  const ervaringF = parseFloat(document.getElementById('ervaring').value);
+  const tijdF = parseInt(uren)/40;
+  const totaalF = omvangF * regioF * ervaringF * tijdF;
+
+  const sel = {
+    p25: Math.round(b.salaris.p25 * totaalF),
+    mediaan: Math.round(b.salaris.mediaan * totaalF),
+    p75: Math.round(b.salaris.p75 * totaalF),
+    p90: Math.round(b.salaris.p90 * totaalF)
+  };
+  const normbedragCorr = Math.round(NORMBEDRAG * tijdF);
+  const isOnder = sel.mediaan < normbedragCorr;
+
+  const conclusieTekst = isOnder
+    ? `Het loon uit de meest vergelijkbare dienstbetrekking voor een ${b.naam} bedraagt circa ${fmt(sel.mediaan)} bruto per jaar (mediaan, na correctiefactoren). De bandbreedte loopt van ${fmt(sel.p25)} (25e percentiel) tot ${fmt(sel.p75)} (75e percentiel).\n\nDit ligt onder het normbedrag van ${fmt(normbedragCorr)} (${uren}u/week, 2026). Op grond van artikel 12a Wet op de Loonbelasting 1964 kan het gebruikelijk loon worden vastgesteld op het loon uit de meest vergelijkbare dienstbetrekking, mits dit aannemelijk wordt gemaakt. De bewijslast rust op de DGA.`
+    : `Het loon uit de meest vergelijkbare dienstbetrekking voor een ${b.naam} bedraagt circa ${fmt(sel.mediaan)} bruto per jaar (mediaan, na correctiefactoren). De bandbreedte loopt van ${fmt(sel.p25)} (25e percentiel) tot ${fmt(sel.p75)} (75e percentiel).\n\nDit ligt boven het normbedrag van ${fmt(normbedragCorr)} (2026). Het gebruikelijk loon dient minimaal op dit niveau te worden vastgesteld, tenzij het loon van de meestverdienende werknemer hoger is (dan geldt dat hogere bedrag).`;
+
+  window.print();
+}
+
+// ── INIT ─────────────────────────────────────────────
+buildBeroepGrid();
+</script>
+</body>
+</html>
