@@ -1,0 +1,818 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2TB4V1KSN7"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-2TB4V1KSN7');
+</script>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>DGA dividend berekenen 2026: bruto netto en belasting uit BV</title>
+<meta name="description" content="Bereken het netto dividend vanuit uw BV in 2026. Inclusief dividendbelasting (15%), box 2 heffing, bruteren en een professionele checklist voor vastlegging."/>
+<link rel="canonical" href="https://dgawijzer.nl/dga-dividend.html"/>
+<meta property="og:title" content="DGA dividend berekenen 2026: bruto netto en belasting uit BV"/>
+<meta property="og:description" content="Bereken het netto dividend vanuit uw BV in 2026. Inclusief dividendbelasting (15%), box 2 en een checklist voor vastlegging."/>
+<meta property="og:type" content="website"/>
+<meta property="og:image" content="https://dgawijzer.nl/images/logo.png"/>
+<meta property="og:url" content="https://dgawijzer.nl/dga-dividend.html"/>
+<meta name="robots" content="index,follow"/>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230f2d52'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='Inter,system-ui,sans-serif' font-weight='800' font-size='14' fill='%232d8a4e'%3EDG%3C/text%3E%3C/svg%3E"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"WebPage",
+  "name":"DGA dividend berekenen (2026)",
+  "url":"https://dgawijzer.nl/dga-dividend.html",
+  "description":"Bereken het netto dividend vanuit uw BV in 2026. Inclusief dividendbelasting, box 2 heffing en een checklist voor vastlegging.",
+  "publisher":{"@type":"Organization","name":"DGAwijzer.nl","url":"https://dgawijzer.nl"}
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"FAQPage",
+  "mainEntity":[
+    {"@type":"Question","name":"Hoeveel belasting betaal ik over dividend uit mijn BV?","acceptedAnswer":{"@type":"Answer","text":"Over dividend betaalt u 15% dividendbelasting (ingehouden door de BV) en box 2-belasting. In 2026 geldt 24,5% over de eerste €67.804 per persoon en 31% over het meerdere. De dividendbelasting is een voorheffing die wordt verrekend."}},
+    {"@type":"Question","name":"Wat is het verschil tussen bruto en netto dividend?","acceptedAnswer":{"@type":"Answer","text":"Het brutodividend is het bedrag dat de AVA vaststelt. De BV houdt 15% dividendbelasting in. Het netto ontvangen bedrag is lager. Via de aangifte IB wordt de totale box 2-heffing definitief vastgesteld en de dividendbelasting verrekend."}},
+    {"@type":"Question","name":"Moet dividend altijd worden vastgelegd?","acceptedAnswer":{"@type":"Answer","text":"Ja. Een dividenduitkering vereist een aandeelhoudersbesluit (AVA), een uitkeringstoets door het bestuur en afdracht van dividendbelasting binnen een maand via aangifte bij de Belastingdienst."}},
+    {"@type":"Question","name":"Wat is de uitkeringstoets bij dividend?","acceptedAnswer":{"@type":"Answer","text":"Het bestuur moet voorafgaand aan de uitkering beoordelen of de BV na uitkering haar opeisbare schulden kan blijven voldoen (liquiditeitstoets). Bij instemming en later onvermogen kan het bestuur aansprakelijk worden gesteld."}},
+    {"@type":"Question","name":"Kan ik dividend uitkeren als mijn BV verlies maakt?","acceptedAnswer":{"@type":"Answer","text":"Formeel gezien alleen als er voldoende vrije reserves zijn. Maatgevend is of de BV na uitkering haar schulden kan blijven voldoen. Bij twijfel is afstemming met uw accountant verstandig."}}
+  ]
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"BreadcrumbList",
+  "itemListElement":[
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://dgawijzer.nl/"},
+    {"@type":"ListItem","position":2,"name":"DGA Dividend","item":"https://dgawijzer.nl/dga-dividend.html"}
+  ]
+}
+</script>
+<link rel="stylesheet" href="css/style.css"/>
+<style>
+/* ── Dividend-specifieke stijlen ──────────────────────── */
+
+/* Scenario tabs */
+.div-tabs{display:flex;gap:0;border:1.5px solid var(--gray-200);border-radius:var(--radius-md);overflow:hidden;margin-bottom:20px}
+.div-tab-btn{flex:1;padding:12px 16px;font-size:13px;font-weight:600;border:none;cursor:pointer;font-family:var(--f);transition:all .2s;background:var(--gray-50);color:var(--text-muted);border-right:1px solid var(--gray-200)}
+.div-tab-btn:last-child{border-right:none}
+.div-tab-btn.active{background:var(--navy);color:#fff}
+.div-tab-btn:hover:not(.active){background:var(--navy-xlight);color:var(--navy)}
+
+/* Resultaat blok */
+.div-result{background:var(--navy);border-radius:var(--radius-lg);overflow:hidden;margin-top:24px}
+.div-result-header{padding:18px 24px;border-bottom:1px solid rgba(255,255,255,.1)}
+.div-result-header h3{font-size:.95rem;font-weight:700;color:rgba(255,255,255,.6);text-transform:uppercase;letter-spacing:.07em;margin:0}
+.div-result-rows{padding:8px 0}
+.div-result-row{display:flex;justify-content:space-between;align-items:center;padding:12px 24px;border-bottom:1px solid rgba(255,255,255,.06)}
+.div-result-row:last-child{border-bottom:none}
+.div-result-label{font-size:13px;color:rgba(255,255,255,.6)}
+.div-result-value{font-size:14px;font-weight:700;color:#fff}
+.div-result-row.highlight{background:rgba(255,255,255,.06)}
+.div-result-row.highlight .div-result-label{color:rgba(255,255,255,.9);font-weight:600}
+.div-result-row.highlight .div-result-value{font-size:1.2rem;color:var(--green)}
+.div-result-row.negatief .div-result-value{color:#fca5a5}
+
+/* Checklist */
+.checklist{display:flex;flex-direction:column;gap:10px}
+.check-item{display:flex;gap:14px;padding:16px 18px;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);transition:border-color .15s}
+.check-item:hover{border-color:var(--navy)}
+.check-icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--green-xlight);border:2px solid var(--green-light);display:flex;align-items:center;justify-content:center;font-size:14px;margin-top:2px}
+.check-title{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:3px}
+.check-desc{font-size:13px;color:var(--text-muted);line-height:1.65}
+
+/* Uitleg stappen */
+.uitleg-stap{display:flex;gap:16px;padding:18px 0;border-bottom:1px solid var(--gray-100)}
+.uitleg-stap:last-child{border-bottom:none}
+.uitleg-nr{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--navy);color:#fff;font-size:13px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.uitleg-titel{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:4px}
+.uitleg-tekst{font-size:13px;color:var(--text-body);line-height:1.75}
+
+/* Vergelijkingstabel bruto/netto */
+.vergelijk-tabel{width:100%;border-collapse:collapse;font-size:13px;margin-top:4px}
+.vergelijk-tabel th{background:var(--navy);color:rgba(255,255,255,.8);padding:10px 14px;text-align:left;font-size:11px;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.vergelijk-tabel td{padding:10px 14px;border-bottom:1px solid var(--gray-100)}
+.vergelijk-tabel tr:nth-child(even) td{background:var(--gray-50)}
+.vergelijk-tabel tr.vet td{font-weight:700;color:var(--navy)}
+.vergelijk-tabel .groen{color:var(--green);font-weight:700}
+.vergelijk-tabel .rood{color:#dc2626}
+
+/* FAQ */
+.faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden}
+.faq-item summary{padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
+.faq-item summary::after{content:"\FF0B";font-size:16px;color:var(--green);flex-shrink:0;font-weight:400}
+.faq-item[open] summary::after{content:"\FF0D"}
+.faq-item[open] summary{background:var(--navy-xlight)}
+.faq-body{padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75;background:#fff}
+.faq-body a{color:var(--green);font-weight:500}
+
+/* Waarschuwingsblok */
+.waarschuwing{background:#fffbeb;border:1px solid #fef08a;border-left:3px solid #f59e0b;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:14px 16px;font-size:13px;line-height:1.7;color:#92400e}
+
+/* Aansprakelijkheid */
+.aansp-blok{background:#fef2f2;border:1px solid #fecaca;border-left:3px solid #dc2626;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:14px 16px;font-size:13px;line-height:1.7;color:#7f1d1d}
+
+/* Animatie */
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
+.fadeUp{animation:fadeUp .25s ease}
+
+@media(max-width:600px){
+  .div-tabs{flex-direction:column}
+  .div-tab-btn{border-right:none;border-bottom:1px solid var(--gray-200)}
+  .div-tab-btn:last-child{border-bottom:none}
+  .kpi-grid{grid-template-columns:1fr 1fr}
+}
+</style>
+</head>
+<body>
+
+<!-- NAVIGATIE -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <img src="images/logo.png" alt="DGAwijzer.nl" height="34"
+        onerror="this.parentElement.innerHTML='<span style=&quot;font-size:1.1rem;font-weight:800;color:#0f2d52&quot;>DGAwijzer.nl</span>'"/>
+    </a>
+    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html" class="active">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators-optimaal-salaris.html">Calculators</a></li><li><a href="kennisbank-gebruikelijk-loon-2026.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+    <div class="nav-ctas">
+      <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-sm">Bereken salaris</a>
+      <a href="vergelijkbaar-loon.html" class="btn btn-green btn-sm">Zoek loon &#8599;</a>
+    </div>
+    <button class="nav-hamburger" onclick="openMobileNav()">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
+<nav class="nav-mobile" id="mobileNav">
+  <button class="nav-mobile-close" onclick="closeMobileNav()">&#x2715;</button>
+  <ul class="nav-mobile-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html" class="active">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators-optimaal-salaris.html">Calculators</a></li><li><a href="kennisbank-gebruikelijk-loon-2026.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+  <div class="nav-mobile-ctas">
+    <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-full">Bereken optimaal salaris</a>
+    <a href="vergelijkbaar-loon.html" class="btn btn-green btn-full">Zoek vergelijkbaar loon &#8599;</a>
+  </div>
+</nav>
+
+<div class="ad-bar">
+  <div class="ad-placeholder ad-728x90" style="margin:0 auto">Advertentie &middot; 728&times;90</div>
+</div>
+
+<!-- PAGE HEADER -->
+<div class="page-header">
+  <div class="page-header-inner">
+    <nav class="breadcrumb">
+      <a href="index.html">Home</a>
+      <span class="breadcrumb-sep">&#8250;</span>
+      DGA Dividend
+    </nav>
+    <span class="overline">Dividend uitkeren vanuit uw BV &mdash; 2026</span>
+    <h1>DGA dividend berekenen in 2026</h1>
+    <p class="lead">Dividend uitkeren vanuit uw BV klinkt eenvoudig, maar vereist de juiste volgorde: eerst de wettelijke toetsen, dan de belasting berekenen en tot slot de correcte vastlegging. Op deze pagina vindt u uitleg, een calculator en een praktische checklist.</p>
+    <p class="lead" style="margin-top:10px">Wilt u weten hoeveel belasting u betaalt over een dividenduitkering uit uw BV? Met deze DGA dividend calculator berekent u direct uw netto dividend in 2026.</p>
+  </div>
+</div>
+
+<div style="max-width:var(--max-w);margin:0 auto;padding:40px 5%">
+
+  <!-- ══════════════════════════════════════════════════════════
+       1. WAT IS DIVIDEND?
+  ══════════════════════════════════════════════════════════ -->
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:12px">Wat is dividend en wanneer keer je het uit?</h2>
+    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:14px">Dividend is een winstuitkering aan aandeelhouders vanuit de BV. Als DGA bent u doorgaans zowel directeur als (indirect) aandeelhouder, waardoor u dividend kunt uitkeren aan uzelf of uw holding.</p>
+    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:20px">Dividend is fiscaal gunstig ten opzichte van salaris, omdat het niet onderworpen is aan inkomstenbelasting in box 1 maar aan box 2. Toch is de keuze tussen salaris en dividend afhankelijk van meerdere factoren: uw totale belastingdruk, de winstpositie van de BV en de gebruikelijkloonregeling.</p>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px">
+      <div style="background:var(--navy-xlight);border:1px solid var(--navy-light);border-radius:var(--radius-md);padding:16px 18px">
+        <div style="font-size:18px;margin-bottom:8px">&#128176;</div>
+        <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Winstuitkering</div>
+        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Dividend wordt uitgekeerd uit de vrije reserves van de BV. De BV moet voldoende eigen vermogen hebben na uitkering.</div>
+      </div>
+      <div style="background:var(--green-xlight);border:1px solid var(--green-light);border-radius:var(--radius-md);padding:16px 18px">
+        <div style="font-size:18px;margin-bottom:8px">&#128200;</div>
+        <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Box 2 belasting</div>
+        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Dividend valt in box 2 van de inkomstenbelasting. In 2026: 24,5% tot &euro;67.804 per persoon, 31% daarboven.</div>
+      </div>
+      <div style="background:#fef9c3;border:1px solid #fef08a;border-radius:var(--radius-md);padding:16px 18px">
+        <div style="font-size:18px;margin-bottom:8px">&#9888;&#65039;</div>
+        <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Voorheffing 15%</div>
+        <div style="font-size:13px;color:var(--text-body);line-height:1.65">De BV houdt 15% dividendbelasting in als voorheffing. Dit wordt via de aangifte IB verrekend met de box 2-heffing.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3-STAPPEN BLOK -->
+  <div style="max-width:var(--max-w);margin:0 auto 0;padding:0 5%">
+    <div style="background:var(--navy-xlight);border:1px solid var(--navy-light);border-radius:var(--radius-md);padding:18px 20px;margin-bottom:32px">
+      <p style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:10px">In 3 stappen geregeld:</p>
+      <ol style="font-size:14px;color:var(--text-body);line-height:2.1;padding-left:20px;margin:0">
+        <li>Controleer of dividend uitkeren mogelijk is (uitkeringstoets)</li>
+        <li>Bereken uw netto dividend met de calculator hieronder</li>
+        <li>Leg de uitkering correct vast (checklist onderaan deze pagina)</li>
+      </ol>
+    </div>
+  </div>
+
+  <!-- ══════════════════════════════════════════════════════════
+       2. WET- EN REGELGEVING
+  ══════════════════════════════════════════════════════════ -->
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:12px">Wet- en regelgeving rond dividenduitkering</h2>
+    <p style="font-size:15px;color:var(--text-muted);margin-bottom:20px;max-width:700px">Een dividenduitkering vanuit een BV is gebonden aan wettelijke voorwaarden (Boek 2 BW). Hieronder de vier belangrijkste stappen die wettelijk vereist zijn.</p>
+
+    <div style="display:flex;flex-direction:column;gap:0;background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden">
+
+      <div class="uitleg-stap" style="padding:20px 24px;margin:0;border-bottom:1px solid var(--gray-100)">
+        <div class="uitleg-nr">1</div>
+        <div>
+          <div class="uitleg-titel">Aandeelhoudersbesluit (AVA)</div>
+          <p class="uitleg-tekst">De algemene vergadering van aandeelhouders (AVA) stelt de winstbestemming vast en besluit tot dividenduitkering. Dit besluit moet schriftelijk worden vastgelegd in een aandeelhoudersbesluit of notulen. Zonder dit besluit is de uitkering niet rechtsgeldig.</p>
+        </div>
+      </div>
+
+      <div class="uitleg-stap" style="padding:20px 24px;margin:0;border-bottom:1px solid var(--gray-100)">
+        <div class="uitleg-nr">2</div>
+        <div>
+          <div class="uitleg-titel">Uitkeringstoets door bestuur (Art. 2:216 BW)</div>
+          <p class="uitleg-tekst">Het bestuur van de BV moet <strong>goedkeuring verlenen</strong> aan de uitkering na het uitvoeren van een uitkeringstoets. De toets bestaat uit twee onderdelen:</p>
+          <ul style="margin-top:8px;font-size:13px;color:var(--text-body);line-height:1.9;padding-left:18px">
+            <li><strong>Balanstoets:</strong> het eigen vermogen moet positief blijven na uitkering (geen uitkering ten laste van het wettelijk geplaatst en gestort kapitaal).</li>
+            <li><strong>Liquiditeitstoets:</strong> de BV moet na uitkering haar opeisbare schulden gedurende minimaal &eacute;&eacute;n jaar kunnen blijven voldoen.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="uitleg-stap" style="padding:20px 24px;margin:0;border-bottom:1px solid var(--gray-100)">
+        <div class="uitleg-nr" style="background:var(--green)">3</div>
+        <div>
+          <div class="uitleg-titel">Uitbetaling en inhouding dividendbelasting</div>
+          <p class="uitleg-tekst">Na het besluit wordt het dividend uitbetaald. De BV houdt 15% dividendbelasting in en draagt dit af aan de Belastingdienst via aangifte dividendbelasting (formulier OB). De termijn voor aangifte en afdracht is <strong>binnen &eacute;&eacute;n maand</strong> na de uitkeringsdag.</p>
+        </div>
+      </div>
+
+      <div class="uitleg-stap" style="padding:20px 24px;margin:0">
+        <div class="uitleg-nr" style="background:var(--green)">4</div>
+        <div>
+          <div class="uitleg-titel">Verwerking in aangifte IB (box 2)</div>
+          <p class="uitleg-tekst">De DGA verwerkt het dividend in de aangifte inkomstenbelasting als inkomen uit aanmerkelijk belang (box 2). De ingehouden dividendbelasting van 15% wordt verrekend als voorheffing. De aanvullende box 2-heffing volgt uit de aangifte.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="aansp-blok" style="margin-top:16px">
+      &#9888; <strong>Aansprakelijkheid bestuurder:</strong> als het bestuur goedkeuring geeft en de BV binnen &eacute;&eacute;n jaar na uitkering niet meer aan haar verplichtingen kan voldoen, kan het bestuur persoonlijk aansprakelijk worden gesteld voor het tekort (Art. 2:216 lid 3 BW). Raadpleeg bij twijfel altijd een accountant of jurist.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       3. DIVIDEND CALCULATOR
+  ══════════════════════════════════════════════════════════ -->
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:6px">Dividend belasting BV berekenen</h2>
+    <h3 style="font-size:1.1rem;font-weight:600;color:var(--text-muted);margin-bottom:6px;font-weight:400">Dividend calculator 2026</h3>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">Kies of u het bruto uitkeringsbedrag invult, of het netto bedrag dat u wilt ontvangen (dan wordt automatisch gebrut&euml;erd).</p>
+
+    <div style="background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:28px;box-shadow:var(--shadow-sm)">
+
+      <!-- Scenario tabs -->
+      <div class="div-tabs">
+        <button class="div-tab-btn active" id="tab-bruto" onclick="switchDivTab('bruto')">
+          &#128200; Bruto dividend invoeren
+        </button>
+        <button class="div-tab-btn" id="tab-netto" onclick="switchDivTab('netto')">
+          &#127919; Gewenst netto invoeren
+        </button>
+      </div>
+
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px">
+
+        <!-- Bruto input -->
+        <div class="fg" id="input-bruto-wrap" style="margin-bottom:0">
+          <label for="div-bruto">Bruto dividend</label>
+          <div style="position:relative">
+            <span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-weight:600">&euro;</span>
+            <input type="number" id="div-bruto" value="50000" min="0" max="10000000" step="1000"
+              style="padding-left:28px" oninput="divBereken()"/>
+          </div>
+          <p class="hint">Het bedrag dat de AVA vaststelt als dividend.</p>
+        </div>
+
+        <!-- Netto input (verborgen) -->
+        <div class="fg" id="input-netto-wrap" style="display:none;margin-bottom:0">
+          <label for="div-netto-in">Gewenst netto bedrag</label>
+          <div style="position:relative">
+            <span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-weight:600">&euro;</span>
+            <input type="number" id="div-netto-in" value="35000" min="0" max="10000000" step="1000"
+              style="padding-left:28px" oninput="divBereken()"/>
+          </div>
+          <p class="hint">Het netto bedrag dat u privé wilt ontvangen na alle belastingen.</p>
+        </div>
+
+        <!-- Box 2 instelling -->
+        <div class="fg" style="margin-bottom:0">
+          <label for="div-partner">Fiscaal partnerschap</label>
+          <select id="div-partner" onchange="divBereken()">
+            <option value="1">Geen partner / alleenstaand</option>
+            <option value="2">Met fiscaal partner (dubbele grens)</option>
+          </select>
+          <p class="hint">Bij fiscaal partnerschap geldt de lage schijf voor twee personen.</p>
+        </div>
+      </div>
+
+      <!-- Toelichting voorheffing -->
+      <p style="font-size:0.9em;color:#666;margin-bottom:4px">
+        De BV houdt 15% dividendbelasting in en draagt deze af aan de Belastingdienst.
+        De aanvullende box&nbsp;2-belasting betaalt u via de aangifte inkomstenbelasting.
+      </p>
+      <!-- Box 2 tarieven toelichting -->
+      <div style="background:var(--gray-50);border-radius:var(--radius-md);padding:12px 14px;font-size:12px;color:var(--text-muted);line-height:1.7;margin-bottom:20px">
+        <strong>Box 2 tarieven 2026:</strong> 24,5% over de eerste &euro;67.804 per persoon &mdash; 31% over het meerdere. Bij fiscaal partnerschap wordt de grens verdubbeld naar &euro;135.608.
+        Dividendbelasting (15%) is een <em>voorheffing</em> die wordt verrekend.
+      </div>
+
+      <!-- RESULTAAT -->
+      <div class="div-result" id="div-resultaat">
+        <div class="div-result-header">
+          <h3>Berekening dividend 2026</h3>
+        </div>
+        <div class="div-result-rows" id="div-result-rows">
+          <!-- Gevuld door JS -->
+        </div>
+      </div>
+
+      <div style="margin-top:14px;font-size:12px;color:var(--text-light);line-height:1.6">
+        &#9888;&#65039; <strong>Indicatie:</strong> deze berekening gaat uit van het dividend als enige box 2-inkomen in 2026.
+        Andere box 2-inkomsten (bijv. voordeel aanmerkelijk belang door eerdere transacties) kunnen de heffing be&iuml;nvloeden.
+        Raadpleeg uw accountant voor een definitieve berekening.
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       4. BRUTO VS NETTO UITLEG
+  ══════════════════════════════════════════════════════════ -->
+  <!-- CONVERSIEBLOK: fiscaal slimmer? -->
+  <section style="margin-bottom:48px;padding:28px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg)">
+    <h2 style="font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:10px">Wat is fiscaal slimmer in uw situatie?</h2>
+    <p style="font-size:14px;color:var(--text-body);line-height:1.75;margin-bottom:16px">
+      Twijfelt u of u beter dividend kunt uitkeren of een hoger salaris moet nemen?
+      In veel situaties is de optimale keuze afhankelijk van uw totale belastingdruk &mdash;
+      inclusief vennootschapsbelasting, box&nbsp;2 en inkomstenbelasting.
+    </p>
+    <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px">
+      <li>
+        <a href="calculators-salaris-vs-dividend.html"
+          style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);text-decoration:none;padding:12px 18px;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-md);transition:border-color .15s,box-shadow .15s"
+          onmouseover="this.style.borderColor='var(--navy)';this.style.boxShadow='var(--shadow-sm)'"
+          onmouseout="this.style.borderColor='var(--gray-200)';this.style.boxShadow=''">
+          &#9878;&#65039; Vergelijk salaris vs. dividend &rarr;
+        </a>
+      </li>
+      <li>
+        <a href="dga-salaris.html"
+          style="display:inline-flex;align-items:center;gap:8px;font-size:14px;font-weight:600;color:var(--navy);text-decoration:none;padding:12px 18px;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-md);transition:border-color .15s,box-shadow .15s"
+          onmouseover="this.style.borderColor='var(--navy)';this.style.boxShadow='var(--shadow-sm)'"
+          onmouseout="this.style.borderColor='var(--gray-200)';this.style.boxShadow=''">
+          &#128200; Bekijk optimaal DGA salaris &rarr;
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:12px">Bruto en netto dividend: wat is het verschil?</h2>
+    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:20px">Bij een dividenduitkering zijn er twee belastingmomenten. Goed begrijpen hoe dit werkt voorkomt verrassingen bij de aangifte inkomstenbelasting.</p>
+
+    <div style="overflow-x:auto">
+      <table class="vergelijk-tabel">
+        <thead>
+          <tr>
+            <th>Stap</th>
+            <th>Omschrijving</th>
+            <th>Voorbeeld (&euro;50.000 bruto)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Bruto dividend (vastgesteld door AVA)</td>
+            <td>&euro;50.000</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>Dividendbelasting 15% (ingehouden door BV)</td>
+            <td class="rood">&minus;&euro;7.500</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>Ontvangen na inhouding</td>
+            <td>&euro;42.500</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>Box 2-heffing via aangifte IB</td>
+            <td class="rood">&minus;&euro;12.250 <span style="font-size:11px;color:var(--text-light)">(24,5% &times; &euro;50.000)</span></td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>Verrekening dividendbelasting (voorheffing)</td>
+            <td class="groen">+&euro;7.500</td>
+          </tr>
+          <tr class="vet">
+            <td>6</td>
+            <td>Aanvullende betaling box 2 via aangifte</td>
+            <td class="rood">&minus;&euro;4.750</td>
+          </tr>
+          <tr class="vet">
+            <td>&#10003;</td>
+            <td>Netto ontvangen dividend</td>
+            <td class="groen">&euro;37.750</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div style="margin-top:16px">
+      <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px">Waarom bruteren?</h3>
+      <p style="font-size:14px;color:var(--text-body);line-height:1.75;margin-bottom:10px">Als u weet wat u netto wilt ontvangen, kunt u het benodigde bruto dividend berekenen door te &ldquo;bruteren&rdquo;. De calculator op deze pagina doet dat automatisch in het tweede tabblad: u vult het gewenste netto bedrag in en ziet direct welk bruto dividend de AVA moet vaststellen.</p>
+      <div class="infobox">
+        &#8505;&#65039; <strong>Let op bij de grens:</strong> als het brutodividend de &euro;67.804-grens (per persoon) overschrijdt, betaalt u over het meerdere 31% box 2 in plaats van 24,5%. Dit kan betekenen dat bruteren boven de grens relatief meer kost.
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       5. VERPLICHTE VASTLEGGING CHECKLIST
+  ══════════════════════════════════════════════════════════ -->
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:6px">Verplichte vastlegging dividenduitkering</h2>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:12px;max-width:700px">Een dividenduitkering waarbij de vastlegging ontbreekt kan fiscaal en juridisch problemen opleveren. Gebruik deze checklist als leidraad.</p>
+    <div class="waarschuwing" style="margin-bottom:20px;max-width:700px">
+      &#128270; <strong>Let op:</strong> veel DGA&apos;s vergeten de formele vastlegging van dividend. Bij controles van de Belastingdienst wordt hier specifiek op gelet.
+    </div>
+
+    <div class="checklist">
+
+      <div class="check-item">
+        <div class="check-icon">&#128196;</div>
+        <div>
+          <div class="check-title">1. Aandeelhoudersbesluit (AVA-besluit)</div>
+          <div class="check-desc">De algemene vergadering van aandeelhouders neemt een schriftelijk besluit tot dividenduitkering. Dit mag via een gewone vergadering of via een besluit buiten vergadering (art. 2:238 BW), mits alle aandeelhouders instemmen. Vermeld in het besluit: datum, het dividendbedrag per aandeel of totaal, en de uitkeringsdatum.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">&#128203;</div>
+        <div>
+          <div class="check-title">2. Notulen of schriftelijke vastlegging</div>
+          <div class="check-desc">Leg het aandeelhoudersbesluit vast in de notulen van de AVA of in een ondertekende schriftelijke verklaring. Bewaar deze in de administratie van de BV. Voor een eenpersoons-BV volstaat een schriftelijk besluit ondertekend door de enig aandeelhouder.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">&#9878;&#65039;</div>
+        <div>
+          <div class="check-title">3. Uitkeringstoets door het bestuur</div>
+          <div class="check-desc">Het bestuur voert v&oacute;&oacute;r de uitkering de uitkeringstoets uit (balanstoets + liquiditeitstoets). Leg de uitkomst van deze toets schriftelijk vast. Dit is niet alleen een formaliteit: het bestuur kan persoonlijk aansprakelijk worden gesteld als de toets later onjuist blijkt.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">&#128200;</div>
+        <div>
+          <div class="check-title">4. Administratieplicht en boekhouding</div>
+          <div class="check-desc">Verwerk de dividenduitkering correct in de boekhouding van de BV. Debiteer de post &ldquo;Eigen vermogen / winstreserves&rdquo; en crediteer de rekening-courant of bankrekening. Zorg ook dat de dividendbelasting correct is verwerkt als te betalen post.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">&#128179;</div>
+        <div>
+          <div class="check-title">5. Aangifte en afdracht dividendbelasting</div>
+          <div class="check-desc">De BV doet aangifte dividendbelasting via de Belastingdienst (formulier OB) en draagt de ingehouden 15% af. <strong>Termijn: binnen &eacute;&eacute;n maand na de dag van de uitkering.</strong> Te late afdracht kan leiden tot verzuimboetes.</div>
+        </div>
+      </div>
+
+      <div class="check-item">
+        <div class="check-icon">&#128222;</div>
+        <div>
+          <div class="check-title">6. Vermelding in aangifte IB (box 2)</div>
+          <div class="check-desc">De DGA vermeldt het ontvangen dividend als inkomen uit aanmerkelijk belang in box 2 van de aangifte inkomstenbelasting. De ingehouden dividendbelasting wordt als voorheffing verrekend. Bewaar het bewijs van inhouding (dividendnota).</div>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="waarschuwing" style="margin-top:16px">
+      &#128204; <strong>Tip:</strong> veel accountants hanteren een standaard dividendbesluit-sjabloon. Vraag uw accountant om dit document en sla een ondertekend exemplaar op in uw administratie. Voor grotere dividenden of complexe structuren (holding + werk-BV) is afstemming met uw adviseur sterk aan te raden.
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       6. FAQ
+  ══════════════════════════════════════════════════════════ -->
+  <section style="margin-bottom:48px">
+    <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:20px">Veelgestelde vragen over DGA dividend</h2>
+
+    <details class="faq-item">
+      <summary>Hoeveel belasting betaal ik over dividend uit mijn BV?</summary>
+      <div class="faq-body">
+        Over dividend betaalt u twee keer belasting. Eerst houdt de BV <strong>15% dividendbelasting</strong> in als voorheffing. Daarna betaalt u via de aangifte IB de <strong>box 2-heffing</strong>: 24,5% over de eerste &euro;67.804 per persoon (2026) en 31% over het meerdere. De 15% voorheffing wordt verrekend, zodat u per saldo alleen bijbetaalt via de aangifte. De effectieve totale heffing (inclusief 15% VPB die de BV al betaalde) ligt voor kleinere dividenden rond de 38&ndash;40%.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Wat is het verschil tussen bruto en netto dividend?</summary>
+      <div class="faq-body">
+        Het <strong>brutodividend</strong> is het bedrag dat de AVA vaststelt. De BV houdt hier 15% dividendbelasting op in. Het restant ontvangt u als aandeelhouder. Via de aangifte IB betaalt u aanvullend box 2-heffing (minus de al ingehouden 15%). Het <strong>netto dividend</strong> is wat u uiteindelijk privé overhoudt na alle belastingen.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Moet dividend altijd worden vastgelegd?</summary>
+      <div class="faq-body">
+        Ja. Een dividenduitkering zonder aandeelhoudersbesluit en uitkeringstoets is juridisch niet rechtsgeldig en kan als onverschuldigde betaling worden teruggevorderd. Bovendien is afdracht van dividendbelasting verplicht binnen &eacute;&eacute;n maand. Zie de checklist op deze pagina voor alle stappen.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Wat is de uitkeringstoets bij dividend?</summary>
+      <div class="faq-body">
+        De uitkeringstoets (art. 2:216 BW) bestaat uit twee onderdelen:
+        <ul style="margin-top:8px;padding-left:18px;line-height:2">
+          <li><strong>Balanstoets:</strong> na uitkering mag het eigen vermogen niet negatief worden (geen uitkering ten laste van gestort kapitaal).</li>
+          <li><strong>Liquiditeitstoets:</strong> het bestuur beoordeelt of de BV na uitkering haar opeisbare schulden minimaal &eacute;&eacute;n jaar kan blijven voldoen.</li>
+        </ul>
+        Als het bestuur ten onrechte goedkeuring verleent en de BV later niet meer aan haar schulden kan voldoen, kan het bestuur aansprakelijk worden gesteld.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Kan ik dividend uitkeren als mijn BV verlies maakt?</summary>
+      <div class="faq-body">
+        Een dividenduitkering is alleen mogelijk als er voldoende vrije reserves zijn (het eigen vermogen moet positief blijven na uitkering). Een verlieslatende BV heeft doorgaans onvoldoende vrije reserves. Bovendien moet de liquiditeitstoets positief uitvallen. Raadpleeg uw accountant voordat u tot uitkering overgaat bij een verlieslatende BV.
+      </div>
+    </details>
+
+    <details class="faq-item">
+      <summary>Is dividend voordeliger dan salaris?</summary>
+      <div class="faq-body">
+        Dat hangt af van uw situatie. Salaris valt in box 1 (max. 49,5%) maar geeft recht op arbeidskorting en pensioenopbouw. Dividend valt in box 2 (max. 31%) maar u betaalt ook VPB op het niveau van de BV. De totale gecombineerde druk (VPB + box 2) bij een dividend van meer dan &euro;67.804 is ca. 43%. Gebruik de <a href="calculators-salaris-vs-dividend.html">salaris vs. dividend calculator</a> voor een vergelijking op maat.
+      </div>
+    </details>
+
+  </section>
+
+  <!-- ══════════════════════════════════════════════════════════
+       7. CTA SECTIE
+  ══════════════════════════════════════════════════════════ -->
+  <section style="padding-top:40px;border-top:1px solid var(--gray-200)">
+    <h2 style="font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:6px">Verder rekenen en optimaliseren</h2>
+    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">Gebruik de andere tools van DGAwijzer om uw totale fiscale positie in kaart te brengen.</p>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px">
+
+      <a href="calculators-salaris-vs-dividend.html"
+        style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;text-decoration:none;transition:box-shadow .2s,border-color .2s"
+        onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'"
+        onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+        <div style="font-size:22px;margin-bottom:10px">&#9878;&#65039;</div>
+        <div style="font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px">Salaris vs. dividend</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.65;flex:1">Wat is netto voordeliger: een hoger salaris of meer dividend uitkeren?</div>
+        <span class="btn btn-navy btn-sm" style="align-self:flex-start;margin-top:14px">Vergelijk nu</span>
+      </a>
+
+      <a href="calculators-optimaal-salaris.html"
+        style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;text-decoration:none;transition:box-shadow .2s,border-color .2s"
+        onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'"
+        onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+        <div style="font-size:22px;margin-bottom:10px">&#128200;</div>
+        <div style="font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px">Optimaal DGA salaris</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.65;flex:1">Bereken bij welk salarisniveau uw totale belastingdruk het laagst is.</div>
+        <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:14px">Bereken nu</span>
+      </a>
+
+      <a href="dga-salaris.html"
+        style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;text-decoration:none;transition:box-shadow .2s,border-color .2s"
+        onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'"
+        onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+        <div style="font-size:22px;margin-bottom:10px">&#128218;</div>
+        <div style="font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px">DGA salaris stappenplan</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.65;flex:1">Gebruikelijkloonregeling en drie wettelijke toetsen voor het DGA-salaris.</div>
+        <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:14px">Bekijk stappenplan</span>
+      </a>
+
+      <a href="kennisbank-gebruikelijk-loon-2026.html"
+        style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;text-decoration:none;transition:box-shadow .2s,border-color .2s"
+        onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'"
+        onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
+        <div style="font-size:22px;margin-bottom:10px">&#128196;</div>
+        <div style="font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px">Kennisbank gebruikelijk loon</div>
+        <div style="font-size:13px;color:var(--text-muted);line-height:1.65;flex:1">Regels, uitzonderingen en onderbouwing voor de Belastingdienst.</div>
+        <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:14px">Lees meer</span>
+      </a>
+
+    </div>
+  </section>
+
+</div><!-- /container -->
+
+<div class="ad-bar">
+  <div class="ad-placeholder ad-728x90" style="margin:0 auto">Advertentie &middot; 728&times;90</div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div>
+      <div class="footer-logo">
+        <img src="images/logo.png" alt="DGAwijzer.nl" height="24"
+          onerror="this.parentElement.innerHTML='<span style=&quot;color:#fff;font-weight:800;font-size:1rem&quot;>DGAwijzer.nl</span>'"/>
+      </div>
+      <p class="footer-desc">Onafhankelijk fiscaal portaal voor directeur-grootaandeelhouders. Actuele tools voor belastingjaar 2026.</p>
+    </div>
+    <div class="footer-col"><h4>Calculators</h4><ul>
+      <li><a href="calculators-optimaal-salaris.html">Optimaal DGA Salaris</a></li>
+      <li><a href="calculators-bruto-netto.html">Bruto-Netto DGA</a></li>
+      <li><a href="calculators-salaris-vs-dividend.html">Salaris vs. Dividend</a></li>
+      <li><a href="loonheffing-dga-berekenen.html">Loonheffing DGA</a></li>
+      <li><a href="dga-auto.html">Bijtelling auto</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Kennisbank</h4><ul>
+      <li><a href="kennisbank-gebruikelijk-loon-2026.html">Gebruikelijk loon 2026</a></li>
+      <li><a href="kennisbank-meest-vergelijkbare-dienstbetrekking.html">Vergelijkbaar loon</a></li>
+      <li><a href="kennisbank-dividend-uitkeren.html">Dividend uitkeren</a></li>
+      <li><a href="kennisbank-holding-structuur.html">Holdingstructuur</a></li>
+      <li><a href="tarieven-2026.html">Tarieven 2026</a></li>
+    </ul></div>
+    <div class="footer-col"><h4>Over</h4><ul>
+      <li><a href="dga-salaris.html">DGA Salaris</a></li>
+      <li><a href="dga-dividend.html">DGA Dividend</a></li>
+      <li><a href="over-dgawijzer.html">Over DGAwijzer</a></li>
+      <li><a href="over-dgawijzer.html">Disclaimer</a></li>
+    </ul></div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 DGAwijzer.nl &mdash; Alle informatie is indicatief.</p>
+    <p>Raadpleeg altijd een fiscaal adviseur voor persoonlijk advies.</p>
+  </div>
+</footer>
+<div class="disclaimer-bar">
+  <p>&#x26A0;&#xFE0F; <strong>Disclaimer:</strong> DGAwijzer.nl biedt algemene informatie. Raadpleeg altijd een fiscaal adviseur. Aan berekeningen kunnen geen rechten worden ontleend.</p>
+</div>
+
+<!-- JAVASCRIPT ──────────────────────────────────────────────── -->
+<script>
+/* ─── HELPERS ───────────────────────────────────────── */
+var divFmt = function(v) {
+  return '\u20ac\u202f' + Math.round(Math.abs(v)).toLocaleString('nl-NL');
+};
+
+/* ─── TAB SWITCHER ──────────────────────────────────── */
+function switchDivTab(tab) {
+  var isBruto = tab === 'bruto';
+  document.getElementById('input-bruto-wrap').style.display = isBruto ? 'block' : 'none';
+  document.getElementById('input-netto-wrap').style.display = isBruto ? 'none'  : 'block';
+  document.getElementById('tab-bruto').classList.toggle('active',  isBruto);
+  document.getElementById('tab-netto').classList.toggle('active', !isBruto);
+  divBereken();
+}
+
+/* ─── BOX 2 BEREKENING ──────────────────────────────── */
+/* Tarieven 2026 */
+var BOX2_GRENS  = 67804;   /* per persoon */
+var BOX2_LAAG   = 0.245;
+var BOX2_HOOG   = 0.31;
+var DIV_BEL     = 0.15;    /* voorheffing dividendbelasting */
+
+function box2Heffing(bruto, partners) {
+  var grens = BOX2_GRENS * partners;
+  var laag, hoog;
+  if (bruto <= grens) {
+    laag = bruto * BOX2_LAAG;
+    hoog = 0;
+  } else {
+    laag = grens  * BOX2_LAAG;
+    hoog = (bruto - grens) * BOX2_HOOG;
+  }
+  return { laag: laag, hoog: hoog, totaal: laag + hoog };
+}
+
+/* ─── HOOFDBEREKENING ───────────────────────────────── */
+function divBereken() {
+  var isBruto  = document.getElementById('tab-bruto').classList.contains('active');
+  var partners = parseInt(document.getElementById('div-partner').value) || 1;
+  var bruto;
+
+  if (isBruto) {
+    bruto = parseFloat(document.getElementById('div-bruto').value) || 0;
+  } else {
+    /* Bruteren: netto → bruto */
+    var nettoGewenst = parseFloat(document.getElementById('div-netto-in').value) || 0;
+    bruto = bruteerDividend(nettoGewenst, partners);
+  }
+
+  var divBelasting    = bruto * DIV_BEL;                         /* 15% voorheffing */
+  var ontvangenNaInh  = bruto - divBelasting;                    /* ontvangen bedrag */
+  var b2              = box2Heffing(bruto, partners);
+  var b2Aanvullend    = Math.max(0, b2.totaal - divBelasting);   /* bij te betalen via IB */
+  var nettoOntvangen  = bruto - b2.totaal;                       /* definitief netto */
+  var effectiefPct    = bruto > 0 ? (b2.totaal / bruto * 100).toFixed(1) : '0';
+
+  var grens = BOX2_GRENS * partners;
+  var grensStr = partners === 2 ? '\u20ac135.608 (2\u00d7 \u20ac67.804)' : '\u20ac67.804';
+
+  var rows = [
+    { l: 'Bruto dividend (AVA-besluit)',          v: bruto,           cls: '' },
+    { l: 'Dividendbelasting 15% (ingehouden BV)', v: -divBelasting,   cls: 'negatief' },
+    { l: 'Ontvangen na inhouding',                v: ontvangenNaInh,  cls: '' },
+    { l: '&#8213;&#8213;&#8213;',                 v: null,            cls: 'divider' },
+    { l: 'Box 2 heffing (laag: 24,5% over eerste ' + grensStr + ')',
+                                                  v: -b2.laag,        cls: 'negatief' },
+  ];
+  if (b2.hoog > 0) {
+    rows.push({ l: 'Box 2 heffing (hoog: 31% over meerdere)', v: -b2.hoog, cls: 'negatief' });
+  }
+  rows.push({ l: 'Verrekening dividendbelasting (voorheffing)', v: divBelasting, cls: 'positief' });
+  rows.push({ l: 'Aanvullende betaling via aangifte IB',         v: -b2Aanvullend, cls: 'negatief' });
+  rows.push({ l: '&#8213;&#8213;&#8213;',                        v: null,          cls: 'divider' });
+  rows.push({ l: 'Netto dividend (definitief ontvangen)',         v: nettoOntvangen, cls: 'highlight' });
+  rows.push({ l: 'Effectieve box 2-druk',                        v: effectiefPct + '%', cls: 'info' });
+
+  var html = '';
+  rows.forEach(function(r) {
+    if (r.cls === 'divider') {
+      html += '<div style="height:1px;background:rgba(255,255,255,.08);margin:4px 0"></div>';
+      return;
+    }
+    var isHighlight = r.cls === 'highlight';
+    var isInfo      = r.cls === 'info';
+    var rowStyle = isHighlight
+      ? 'display:flex;justify-content:space-between;align-items:center;padding:14px 24px;background:rgba(255,255,255,.07)'
+      : 'display:flex;justify-content:space-between;align-items:center;padding:10px 24px;border-bottom:1px solid rgba(255,255,255,.05)';
+    var labelStyle = isHighlight
+      ? 'font-size:14px;font-weight:700;color:rgba(255,255,255,.9)'
+      : 'font-size:13px;color:rgba(255,255,255,' + (isInfo ? '.5' : '.6') + ')';
+    var valStyle = isHighlight
+      ? 'font-size:1.25rem;font-weight:800;color:var(--green)'
+      : (r.cls === 'negatief'
+          ? 'font-size:14px;font-weight:700;color:#fca5a5'
+          : (r.cls === 'positief'
+              ? 'font-size:14px;font-weight:700;color:#86efac'
+              : 'font-size:13px;font-weight:600;color:#fff'));
+    var valStr = isInfo ? r.v : (typeof r.v === 'number' ? (r.v < 0 ? '&minus;' : '') + divFmt(r.v) : r.v);
+    html += '<div style="' + rowStyle + '">'
+          + '<span style="' + labelStyle + '">' + r.l + '</span>'
+          + '<span style="' + valStyle  + '">' + valStr + '</span>'
+          + '</div>';
+  });
+
+  document.getElementById('div-result-rows').innerHTML = html;
+}
+
+/* ─── BRUTEREN ──────────────────────────────────────── */
+function bruteerDividend(nettoGewenst, partners) {
+  /* Iteratief oplossen: zoek bruto zodat netto = nettoGewenst */
+  /* netto = bruto - box2(bruto) */
+  /* Startschatting */
+  var grens = BOX2_GRENS * partners;
+  var bruto;
+  /* Als netto onder de grens x laag-tarief */
+  var maxNettoLaag = grens * (1 - BOX2_LAAG);
+  if (nettoGewenst <= maxNettoLaag) {
+    bruto = nettoGewenst / (1 - BOX2_LAAG);
+  } else {
+    /* Boven de grens */
+    var nettoOpGrens = grens * (1 - BOX2_LAAG);
+    var extraNetto   = nettoGewenst - nettoOpGrens;
+    bruto = grens + extraNetto / (1 - BOX2_HOOG);
+  }
+  return Math.round(bruto);
+}
+
+/* ─── INIT ──────────────────────────────────────────── */
+document.addEventListener('DOMContentLoaded', function() {
+  divBereken();
+});
+</script>
+<script>
+function openMobileNav() {
+  document.getElementById('mobileNav').classList.add('open');
+  document.getElementById('navOverlay').classList.add('open');
+  document.body.style.overflow = 'hidden';
+}
+function closeMobileNav() {
+  document.getElementById('mobileNav').classList.remove('open');
+  document.getElementById('navOverlay').classList.remove('open');
+  document.body.style.overflow = '';
+}
+</script>
+</body>
+</html>

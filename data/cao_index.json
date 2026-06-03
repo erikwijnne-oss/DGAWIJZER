@@ -1,0 +1,239 @@
+{
+  "version": "1.0",
+  "last_checked": "2026-05-18",
+  "disclaimer": "DGAwijzer.nl reproduceert geen CAO-teksten. Onderstaande links verwijzen naar officiële bronnen (SZW/Arboportaal). Gebruik CAO-loonschalen als indicatieve onderbouwing voor het vergelijkbaar loon.",
+  "cao_register_url": "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/cao-register",
+  "items": [
+    {
+      "id": "cao-bouw",
+      "naam": "CAO Bouw & Infra",
+      "sector_tags": [
+        "Bouw",
+        "Techniek"
+      ],
+      "officieel_url": "https://www.bouwend.nl/cao",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Bevat loonschalen A t/m G voor bouwvakkers en uitvoerders."
+    },
+    {
+      "id": "cao-metaal",
+      "naam": "CAO Metaal en Techniek",
+      "sector_tags": [
+        "Industrie",
+        "Techniek"
+      ],
+      "officieel_url": "https://www.feite.nl/cao",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Omvat metaalbewerking, installatie en elektrotechniek."
+    },
+    {
+      "id": "cao-ict",
+      "naam": "CAO ICT",
+      "sector_tags": [
+        "ICT"
+      ],
+      "officieel_url": "https://www.awvn.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2027-01-01",
+      "opmerking": "Technisch en commercieel ICT-personeel."
+    },
+    {
+      "id": "cao-horeca",
+      "naam": "CAO Horeca",
+      "sector_tags": [
+        "Horeca"
+      ],
+      "officieel_url": "https://www.koninklijkehoreca.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Mediaan vaak onder normbedrag; bruikbaar als onderbouwing laag gebruikelijk loon."
+    },
+    {
+      "id": "cao-transport",
+      "naam": "CAO Transport en Logistiek",
+      "sector_tags": [
+        "Transport",
+        "Logistiek"
+      ],
+      "officieel_url": "https://www.tln.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Lonen voor chauffeurs en management."
+    },
+    {
+      "id": "cao-detailhandel",
+      "naam": "CAO Detailhandel",
+      "sector_tags": [
+        "Detailhandel"
+      ],
+      "officieel_url": "https://www.inretail.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Geldt voor winkelpersoneel en management in retail."
+    },
+    {
+      "id": "cao-zorg",
+      "naam": "CAO Zorg & Welzijn (VVT/GHZ/GGZ)",
+      "sector_tags": [
+        "Zorg",
+        "GGZ",
+        "Non-profit"
+      ],
+      "officieel_url": "https://www.werkenindezorg.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Let op WNT-normen voor bestuurders bij gesubsidieerde instellingen."
+    },
+    {
+      "id": "cao-huisartsen",
+      "naam": "CAO Huisartsenzorg",
+      "sector_tags": [
+        "Zorg",
+        "Medisch"
+      ],
+      "officieel_url": "https://www.lhv.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2027-01-01",
+      "opmerking": "Voor medewerkers in huisartsenpraktijk, niet de huisarts zelf."
+    },
+    {
+      "id": "cao-accountancy",
+      "naam": "CAO Accountancy",
+      "sector_tags": [
+        "Financieel",
+        "Accountancy"
+      ],
+      "officieel_url": "https://www.nba.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Voor medewerkers bij AA/RA kantoren."
+    },
+    {
+      "id": "cao-uitzendkrachten",
+      "naam": "CAO voor Uitzendkrachten (ABU/NBBU)",
+      "sector_tags": [
+        "HR",
+        "Zakelijke Dienstverlening"
+      ],
+      "officieel_url": "https://www.abu.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Fasensysteem A-B-C voor uitzendkrachten."
+    },
+    {
+      "id": "cao-landbouw",
+      "naam": "CAO Open Teelten (akkerbouw/tuinbouw)",
+      "sector_tags": [
+        "Agrarisch"
+      ],
+      "officieel_url": "https://www.lto.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Agrarische lonen zijn relatief laag; bruikbaar als onderbouwing."
+    },
+    {
+      "id": "cao-kinderopvang",
+      "naam": "CAO Kinderopvang",
+      "sector_tags": [
+        "Onderwijs",
+        "Zorg"
+      ],
+      "officieel_url": "https://www.bk.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Pedagogisch medewerkers en management in kinderopvang."
+    },
+    {
+      "id": "cao-onderwijs-po",
+      "naam": "CAO PO (primair onderwijs)",
+      "sector_tags": [
+        "Onderwijs"
+      ],
+      "officieel_url": "https://www.poraad.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Leraren en schoolleiders basisonderwijs."
+    },
+    {
+      "id": "cao-onderwijs-vo",
+      "naam": "CAO VO (voortgezet onderwijs)",
+      "sector_tags": [
+        "Onderwijs"
+      ],
+      "officieel_url": "https://www.vo-raad.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Leraren en schoolleiders VO."
+    },
+    {
+      "id": "cao-architecten",
+      "naam": "CAO Architectenbureaus",
+      "sector_tags": [
+        "Bouw",
+        "Architectuur"
+      ],
+      "officieel_url": "https://www.bna.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2027-01-01",
+      "opmerking": "Richtloon voor architecten en medewerkers."
+    },
+    {
+      "id": "cao-reisbranche",
+      "naam": "CAO Reisbranche",
+      "sector_tags": [
+        "Toerisme"
+      ],
+      "officieel_url": "https://www.anvr.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Reisbureau- en touroperatorpersoneel."
+    },
+    {
+      "id": "cao-schoonmaak",
+      "naam": "CAO Schoonmaak- en glazenwassersbedrijf",
+      "sector_tags": [
+        "Dienstverlening"
+      ],
+      "officieel_url": "https://www.osb.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Schoonmaakmedewerkers; lonen zijn relatief laag."
+    },
+    {
+      "id": "cao-beveiliging",
+      "naam": "CAO Particuliere Beveiliging",
+      "sector_tags": [
+        "Zakelijke Dienstverlening"
+      ],
+      "officieel_url": "https://www.vnb.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Beveiligingspersoneel en management."
+    },
+    {
+      "id": "cao-grafimedia",
+      "naam": "CAO Grafimedia",
+      "sector_tags": [
+        "Media",
+        "Industrie"
+      ],
+      "officieel_url": "https://www.grafimediafederatie.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Drukkers, vormgevers en mediaprofessionals."
+    },
+    {
+      "id": "cao-sport",
+      "naam": "CAO Sport",
+      "sector_tags": [
+        "Sport"
+      ],
+      "officieel_url": "https://www.nocsf.nl",
+      "arboportaal_url": "https://cao.szw.nl",
+      "geldig_tot": "2026-12-31",
+      "opmerking": "Sportprofessionals bij clubs en bonden."
+    }
+  ]
+}

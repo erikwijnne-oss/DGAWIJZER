@@ -1,0 +1,78 @@
+{
+  "version": "1.0",
+  "last_checked": "2026-05-18",
+  "items": [
+    {
+      "id": "cbs-85517ned",
+      "naam": "CBS StatLine — Werknemers; uurloon en beroep",
+      "type": "overheid",
+      "url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/85517NED",
+      "licentie": "CC BY 4.0",
+      "peiljaar": 2024,
+      "toelichting": "Officieel CBS-onderzoek. Bruto uurlonen per beroepscode (BRC) en SBI. Geïndexeerd naar 2026 met +4,5% cao-loonstijging."
+    },
+    {
+      "id": "cbs-81431ned",
+      "naam": "CBS StatLine — Werkgelegenheid; banen, lonen, arbeidsduur",
+      "type": "overheid",
+      "url": "https://opendata.cbs.nl/statline/#/CBS/nl/dataset/81431ned",
+      "licentie": "CC BY 4.0",
+      "peiljaar": 2024,
+      "toelichting": "Aanvullende CBS-data voor werkgelegenheidsstatistieken per sector."
+    },
+    {
+      "id": "loonwijzer",
+      "naam": "Loonwijzer.nl / WageIndicator",
+      "type": "commercieel",
+      "url": "https://www.loonwijzer.nl",
+      "licentie": "Openbaar (gratis raadpleegbaar)",
+      "peiljaar": 2025,
+      "toelichting": "Grootschalig salarisonderzoek op basis van zelf-gerapporteerde data."
+    },
+    {
+      "id": "salarisperberoep",
+      "naam": "SalarisPerBeroep.nl",
+      "type": "commercieel",
+      "url": "https://www.salarisperberoep.nl",
+      "licentie": "Openbaar (gratis raadpleegbaar)",
+      "peiljaar": 2025,
+      "toelichting": "Nederlandse salarisdatabase gebaseerd op CBS en arbeidsmarktenquêtes."
+    },
+    {
+      "id": "intermediair",
+      "naam": "Intermediair Salariswijzer",
+      "type": "commercieel",
+      "url": "https://www.intermediair.nl/salariswijzer",
+      "licentie": "Openbaar (gratis raadpleegbaar)",
+      "peiljaar": 2025,
+      "toelichting": "Jaarlijkse salariswijzer voor hoger opgeleiden."
+    },
+    {
+      "id": "szw-cao-register",
+      "naam": "SZW CAO-register (officieel)",
+      "type": "overheid",
+      "url": "https://www.rijksoverheid.nl/onderwerpen/arbeidsovereenkomst-en-cao/cao-register",
+      "licentie": "CC BY 4.0",
+      "peiljaar": 2026,
+      "toelichting": "Officieel register van algemeen verbindend verklaarde CAO's."
+    },
+    {
+      "id": "adzuna-api",
+      "naam": "Adzuna Vacature-API",
+      "type": "commercieel",
+      "url": "https://developer.adzuna.com",
+      "licentie": "Commercieel (API-licentie)",
+      "peiljaar": 2026,
+      "toelichting": "Live vacaturedata als momentopname arbeidsmarkt. Salarissen in vacatures zijn indicatief."
+    },
+    {
+      "id": "linkedin-salary",
+      "naam": "LinkedIn Salary Insights",
+      "type": "commercieel",
+      "url": "https://www.linkedin.com/salary",
+      "licentie": "Platform (aanmelden vereist)",
+      "peiljaar": 2026,
+      "toelichting": "Salarisdata op basis van LinkedIn-profiel-input door gebruikers."
+    }
+  ]
+}
