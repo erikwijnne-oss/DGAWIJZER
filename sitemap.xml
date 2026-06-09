@@ -1,15 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://dgawijzer.nl/</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://dgawijzer.nl/calculators-optimaal-salaris.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dgawijzer.nl/calculators-bruto-netto.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dgawijzer.nl/calculators-salaris-vs-dividend.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dgawijzer.nl/calculators-bv-vs-eenmanszaak.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dgawijzer.nl/vergelijkbaar-loon.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dgawijzer.nl/kennisbank-gebruikelijk-loon-2026.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.9</priority></url>
-  <url><loc>https://dgawijzer.nl/kennisbank-meest-vergelijkbare-dienstbetrekking.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://dgawijzer.nl/kennisbank-dividend-uitkeren.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dgawijzer.nl/kennisbank-holding-structuur.html</loc><lastmod>2026-05-18</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://dgawijzer.nl/tarieven-2026.html</loc><lastmod>2026-05-18</lastmod><changefreq>yearly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://dgawijzer.nl/over-dgawijzer.html</loc><lastmod>2026-05-18</lastmod><changefreq>yearly</changefreq><priority>0.4</priority></url>
+
+  <!-- Homepage -->
+  <url><loc>https://dgawijzer.nl/</loc><lastmod>2026-06-09</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>
+
+  <!-- DGA Thema-pagina's -->
+  <url><loc>https://dgawijzer.nl/dga-salaris.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.95</priority></url>
+  <url><loc>https://dgawijzer.nl/dga-dividend.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dgawijzer.nl/dga-auto.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/dga-beleggen.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+
+  <!-- Calculator-hub en kennisbank-hub -->
+  <url><loc>https://dgawijzer.nl/calculators.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dgawijzer.nl/kennisbank.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+
+  <!-- Calculators -->
+  <url><loc>https://dgawijzer.nl/calculators-optimaal-salaris.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dgawijzer.nl/calculators-bruto-netto.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/calculators-salaris-vs-dividend.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/calculators-bv-vs-eenmanszaak.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dgawijzer.nl/loonheffing-dga-berekenen.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/vergelijkbaar-loon.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+
+  <!-- Kennisbank artikelen -->
+  <url><loc>https://dgawijzer.nl/kennisbank-gebruikelijk-loon-2026.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dgawijzer.nl/kennisbank-meest-vergelijkbare-dienstbetrekking.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/kennisbank-dividend-uitkeren.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+  <url><loc>https://dgawijzer.nl/kennisbank-holding-structuur.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.75</priority></url>
+
+  <!-- Overig -->
+  <url><loc>https://dgawijzer.nl/tarieven-2026.html</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.80</priority></url>
+  <url><loc>https://dgawijzer.nl/over-dgawijzer.html</loc><lastmod>2026-06-09</lastmod><changefreq>yearly</changefreq><priority>0.40</priority></url>
+
 </urlset>
