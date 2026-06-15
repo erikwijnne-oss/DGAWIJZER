@@ -104,7 +104,8 @@ p{line-height:1.7;color:var(--text-body)}
   height:100%;display:flex;align-items:center;
   justify-content:space-between;gap:16px;
 }
-.nav-logo img{height:34px;width:auto}
+.nav-logo img{height:34px;width:auto;object-fit:contain;display:block}
+.nav-logo{display:flex;align-items:center;text-decoration:none;flex-shrink:0}
 .nav-logo-fb{font-size:1.2rem;font-weight:800;color:var(--navy)}
 .nav-logo-fb span{color:var(--green)}
 
