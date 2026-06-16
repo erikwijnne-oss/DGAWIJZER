@@ -35,153 +35,7 @@
 }
 </script>
 <link rel="stylesheet" href="css/style.css"/>
-<style>
-/* ── Stappenplan ─────────────────────────────────────── */
-.stap-lijst{counter-reset:stap;display:flex;flex-direction:column;gap:0}
-.stap{display:flex;gap:20px;padding:24px 0;border-bottom:1px solid var(--gray-200);position:relative}
-.stap:last-child{border-bottom:none}
-.stap-nr{flex-shrink:0;width:44px;height:44px;border-radius:50%;background:var(--navy);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;margin-top:2px}
-.stap-body h3{font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:6px}
-.stap-body p{font-size:14px;color:var(--text-body);line-height:1.75;margin-bottom:0}
-.stap-body .stap-cta{margin-top:12px}
-.stap-accent .stap-nr{background:var(--green)}
-/* ── Keuzehulp ───────────────────────────────────────── */
-.kh-wrap{background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
-.kh-header{background:var(--navy);padding:20px 24px}
-.kh-header h3{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:4px}
-.kh-header p{font-size:13px;color:rgba(255,255,255,.6)}
-.kh-body{padding:24px}
-.kh-stap{display:none}
-.kh-stap.active{display:block;animation:fadeUp .2s ease}
-.kh-vraag{font-size:15px;font-weight:600;color:var(--navy);margin-bottom:6px}
-.kh-uitleg{font-size:13px;color:var(--text-muted);line-height:1.7;margin-bottom:16px}
-.kh-knoppen{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:0}
-.kh-knoppen button{padding:10px 22px;border-radius:var(--radius-pill);font-family:var(--f);font-size:14px;font-weight:600;cursor:pointer;transition:all .15s;border:1.5px solid var(--gray-300);background:#fff;color:var(--navy)}
-.kh-knoppen button:hover{border-color:var(--navy);background:var(--navy-xlight)}
-.kh-knoppen button.kh-ja{background:var(--navy);color:#fff;border-color:var(--navy)}
-.kh-knoppen button.kh-ja:hover{background:var(--navy-dark)}
-.kh-uitkomst{background:var(--green-xlight);border:1px solid var(--green-light);border-left:3px solid var(--green);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:16px 18px;margin-bottom:16px;font-size:14px;line-height:1.75}
-.kh-uitkomst strong{color:var(--navy)}
-.kh-resultaat-items{display:flex;flex-direction:column;gap:8px;margin:14px 0}
-.kh-item{display:flex;gap:10px;align-items:flex-start;padding:12px 14px;border-radius:var(--radius-md);font-size:13px;line-height:1.65}
-.kh-item-ja{background:var(--navy-xlight);border:1px solid var(--navy-light)}
-.kh-item-info{background:var(--gray-50);border:1px solid var(--gray-200)}
-.kh-item-icon{font-size:16px;flex-shrink:0;margin-top:1px}
-.kh-progress{display:flex;gap:6px;margin-bottom:20px}
-.kh-dot{width:8px;height:8px;border-radius:50%;background:var(--gray-200);transition:background .2s}
-.kh-dot.done{background:var(--navy)}
-.kh-dot.current{background:var(--green)}
-.kh-disclaimer{font-size:12px;color:var(--text-light);line-height:1.6;margin-top:16px;padding-top:14px;border-top:1px solid var(--gray-200)}
-/* ── Factoren kaartjes ───────────────────────────────── */
-.factor-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
-.factor-card{background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:18px}
-.factor-card-icon{font-size:22px;margin-bottom:10px}
-.factor-card h3{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px}
-.factor-card p{font-size:13px;color:var(--text-muted);line-height:1.7}
-/* ── FAQ ─────────────────────────────────────────────── */
-.faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden}
-.faq-item summary{padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.faq-item summary::after{content:"＋";font-size:16px;color:var(--green);flex-shrink:0;font-weight:400;transition:transform .2s}
-.faq-item[open] summary::after{content:"－"}
-.faq-item[open] summary{background:var(--navy-xlight)}
-.faq-body{padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75}
-.faq-body a{color:var(--green);font-weight:500}
-/* ── CTA sectie ──────────────────────────────────────── */
-.cta-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
-.cta-card{display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:20px;transition:box-shadow .2s,border-color .2s}
-.cta-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy)}
-.cta-card-icon{font-size:24px;margin-bottom:10px}
-.cta-card h3{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:6px}
-.cta-card p{font-size:13px;color:var(--text-muted);line-height:1.65;flex:1;margin-bottom:12px}
-/* ── Toets-badge ─────────────────────────────────────── */
-.toets-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin:16px 0}
-.toets-card{border-radius:var(--radius-md);padding:16px 18px;display:flex;gap:12px;align-items:flex-start}
-.toets-a{background:var(--navy-xlight);border:1px solid var(--navy-light)}
-.toets-b{background:#fef9c3;border:1px solid #fef08a}
-.toets-c{background:var(--green-xlight);border:1px solid var(--green-light)}
-.toets-nr{font-size:11px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;margin-bottom:4px}
-.toets-a .toets-nr{color:var(--navy)}
-.toets-b .toets-nr{color:#854d0e}
-.toets-c .toets-nr{color:var(--green-dark)}
-.toets-bedrag{font-size:1.2rem;font-weight:800;color:var(--navy)}
-.toets-label{font-size:12px;color:var(--text-muted);margin-top:2px;line-height:1.4}
 
-/* ── Grafische verbeteringen dga-salaris ────────────── */
-
-/* Stappenplan: verbindingslijn tussen stappen */
-.stap-lijst{position:relative}
-.stap-lijst::before{
-  content:'';position:absolute;left:22px;top:44px;bottom:44px;
-  width:2px;background:var(--gray-200);z-index:0
-}
-.stap-nr{position:relative;z-index:1;box-shadow:0 0 0 4px #fff}
-.stap-accent .stap-nr{box-shadow:0 0 0 4px var(--green-xlight)}
-
-/* Toets-kaartjes: betere visuele presentatie */
-.toets-card{transition:transform .15s,box-shadow .15s}
-.toets-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md)}
-.toets-bedrag{font-size:1.1rem;font-weight:800;color:var(--navy);margin-bottom:3px}
-.toets-a .toets-bedrag{color:var(--navy)}
-.toets-b .toets-bedrag{color:#854d0e}
-.toets-c .toets-bedrag{color:var(--green-dark)}
-
-/* Keuzehulp progress: grotere, duidelijkere dots */
-.kh-progress{display:flex;gap:8px;align-items:center;margin-bottom:24px}
-.kh-dot{width:32px;height:6px;border-radius:3px;background:var(--gray-200);transition:all .3s}
-.kh-dot.done{background:var(--navy)}
-.kh-dot.current{background:var(--green);box-shadow:0 0 0 3px var(--green-light)}
-
-/* Keuzehulp stap: betere look */
-.kh-stap.active{display:block;animation:fadeUp .25s ease}
-.kh-vraag{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:8px}
-.kh-uitleg{font-size:14px;color:var(--text-muted);line-height:1.75;margin-bottom:20px;
-  padding:14px 16px;background:var(--gray-50);border-radius:var(--radius-md);
-  border-left:3px solid var(--gray-300)}
-.kh-knoppen button{font-size:14px;padding:12px 24px}
-
-/* Factor cards: hover met kleur accent */
-.factor-card{transition:box-shadow .2s,border-color .2s,transform .15s}
-.factor-card:hover{box-shadow:var(--shadow-md);border-color:var(--navy);transform:translateY(-2px)}
-
-/* FAQ: mooiere open state */
-.faq-item[open]{box-shadow:var(--shadow-sm)}
-.faq-item[open] summary{border-bottom:1px solid var(--gray-200)}
-.faq-body{background:#fff}
-
-/* CTA cards: accent kleur op hover */
-.cta-card:hover{border-color:var(--green) !important}
-
-/* Hero toets-grid: de kaartjes in het navy blok */
-.toets-grid{gap:14px}
-@media(max-width:640px){
-  .stap-lijst::before{display:none}
-  .toets-grid{grid-template-columns:1fr}
-}
-
-/* Stap CTA knoppen: consistente uitlijning */
-.stap-cta{display:flex;gap:8px;flex-wrap:wrap;margin-top:14px}
-
-/* Uitgelichte "Stap 4" (het kerninzicht) */
-.stap-highlight{
-  background:linear-gradient(135deg,var(--navy-xlight) 0%,var(--green-xlight) 100%);
-  border-radius:var(--radius-lg);padding:20px 20px 20px 0;margin:-4px 0;
-  border:1px solid var(--gray-200)
-}
-
-/* Schema intro box (drie toetsen header): subkoppen */
-.toets-card .toets-nr::before{
-  content:'';display:inline-block;width:6px;height:6px;border-radius:50%;
-  margin-right:5px;vertical-align:middle;background:currentColor
-}
-
-/* Animaties */
-@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-@media(max-width:600px){
-  .kh-knoppen{flex-direction:column}
-  .kh-knoppen button{width:100%;text-align:center}
-  .stap{flex-direction:column;gap:12px}
-}
-</style>
 
   <!-- FAQ Schema markup voor Google -->
   <script type="application/ld+json">
@@ -271,26 +125,38 @@
 <body>
 
 <!-- NAVIGATIE -->
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="DGAwijzer.nl" height="34"
-        onerror="this.parentElement.innerHTML='<span style=&quot;font-size:1.1rem;font-weight:800;color:#0f2d52&quot;>DGAwijzer.nl</span>'"/>
+    <a href="index.html" class="nav-logo" aria-label="DGAwijzer.nl - ga naar homepage">
+      <img src="images/logo.png" alt="DGAwijzer" height="36"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <span class="nav-logo-text" style="display:none">
+        <span class="nav-logo-name">DGAwijzer</span>
+        <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+      </span>
     </a>
-    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html" class="active">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="bijtelling-auto-berekenen.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+    <ul class="nav-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html" class="active" aria-current="page">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html">Auto</a></li><li><a href="dga-beleggen.html">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
     <div class="nav-ctas">
       <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-sm">Bereken salaris</a>
       <a href="vergelijkbaar-loon.html" class="btn btn-green btn-sm">Zoek loon &#8599;</a>
     </div>
-    <button class="nav-hamburger" onclick="openMobileNav()">
+    <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu" aria-expanded="false" id="hamburger-btn">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
-<nav class="nav-mobile" id="mobileNav">
-  <button class="nav-mobile-close" onclick="closeMobileNav()">&#x2715;</button>
-  <ul class="nav-mobile-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html" class="active">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()" aria-hidden="true"></div>
+<nav class="nav-mobile" id="mobileNav" aria-label="Mobiele navigatie">
+  <button class="nav-mobile-close" onclick="closeMobileNav()" aria-label="Sluit menu">&#x2715;</button>
+  <div class="nav-logo" style="margin-bottom:20px">
+    <img src="images/logo.png" alt="DGAwijzer" height="32"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <span class="nav-logo-text" style="display:none">
+      <span class="nav-logo-name">DGAwijzer</span>
+      <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+    </span>
+  </div>
+  <ul class="nav-mobile-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html" class="active" aria-current="page">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html">Auto</a></li><li><a href="dga-beleggen.html">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
   <div class="nav-mobile-ctas">
     <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-full">Bereken optimaal salaris</a>
     <a href="vergelijkbaar-loon.html" class="btn btn-green btn-full">Zoek vergelijkbaar loon &#8599;</a>
@@ -791,13 +657,21 @@ function khReset() {
 </script>
 <script>
 function openMobileNav(){
-  document.getElementById('mobileNav').classList.add('open');
-  document.getElementById('navOverlay').classList.add('open');
+  var nav=document.getElementById('mobileNav');
+  var overlay=document.getElementById('navOverlay');
+  var btn=document.getElementById('hamburger-btn');
+  if(nav)nav.classList.add('open');
+  if(overlay)overlay.classList.add('open');
+  if(btn)btn.setAttribute('aria-expanded','true');
   document.body.style.overflow='hidden';
 }
 function closeMobileNav(){
-  document.getElementById('mobileNav').classList.remove('open');
-  document.getElementById('navOverlay').classList.remove('open');
+  var nav=document.getElementById('mobileNav');
+  var overlay=document.getElementById('navOverlay');
+  var btn=document.getElementById('hamburger-btn');
+  if(nav)nav.classList.remove('open');
+  if(overlay)overlay.classList.remove('open');
+  if(btn)btn.setAttribute('aria-expanded','false');
   document.body.style.overflow='';
 }
 </script>

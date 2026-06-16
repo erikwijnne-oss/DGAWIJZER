@@ -30,7 +30,43 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dgawijzer.nl/"},{"@type":"ListItem","position":2,"name":"Bijtelling per automodel","item":"https://dgawijzer.nl/bijtelling-per-automodel.html"},{"@type":"ListItem","position":3,"name":"Bijtelling Skoda Enyaq","item":"https://dgawijzer.nl/bijtelling-skoda-enyaq.html"}]}
 </script>
-<nav class="nav"><div class="nav-inner"><a href="index.html" class="nav-logo"><img src="images/logo.png" alt="DGAwijzer.nl" height="34" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:1.1rem;font-weight:800;color:#0f2d52&quot;>DGAwijzer.nl</span>'"/></a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators.html" class="active">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul><div class="nav-ctas"><a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-sm">Bereken salaris</a><a href="vergelijkbaar-loon.html" class="btn btn-green btn-sm">Zoek loon &#8599;</a></div><button class="nav-hamburger" onclick="openMobileNav()"><span></span><span></span><span></span></button></div></nav><div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div><nav class="nav-mobile" id="mobileNav"><button class="nav-mobile-close" onclick="closeMobileNav()">&#x2715;</button><ul class="nav-mobile-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html">DGA Beleggen</a></li><li><a href="calculators.html" class="active">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul><div class="nav-mobile-ctas"><a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-full">Bereken optimaal salaris</a><a href="vergelijkbaar-loon.html" class="btn btn-green btn-full">Zoek vergelijkbaar loon &#8599;</a></div></nav>
+<nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo" aria-label="DGAwijzer.nl - ga naar homepage">
+      <img src="images/logo.png" alt="DGAwijzer" height="36"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <span class="nav-logo-text" style="display:none">
+        <span class="nav-logo-name">DGAwijzer</span>
+        <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+      </span>
+    </a>
+    <ul class="nav-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html" class="active" aria-current="page">Auto</a></li><li><a href="dga-beleggen.html">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+    <div class="nav-ctas">
+      <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-sm">Bereken salaris</a>
+      <a href="vergelijkbaar-loon.html" class="btn btn-green btn-sm">Zoek loon &#8599;</a>
+    </div>
+    <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu" aria-expanded="false" id="hamburger-btn">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()" aria-hidden="true"></div>
+<nav class="nav-mobile" id="mobileNav" aria-label="Mobiele navigatie">
+  <button class="nav-mobile-close" onclick="closeMobileNav()" aria-label="Sluit menu">&#x2715;</button>
+  <div class="nav-logo" style="margin-bottom:20px">
+    <img src="images/logo.png" alt="DGAwijzer" height="32"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <span class="nav-logo-text" style="display:none">
+      <span class="nav-logo-name">DGAwijzer</span>
+      <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+    </span>
+  </div>
+  <ul class="nav-mobile-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html" class="active" aria-current="page">Auto</a></li><li><a href="dga-beleggen.html">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+  <div class="nav-mobile-ctas">
+    <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-full">Bereken optimaal salaris</a>
+    <a href="vergelijkbaar-loon.html" class="btn btn-green btn-full">Zoek vergelijkbaar loon &#8599;</a>
+  </div>
+</nav>
 <div class="ad-bar"><div class="ad-placeholder ad-728x90" style="margin:0 auto">Advertentie &middot; 728&times;90</div></div>
 <div class="page-header">
   <div class="page-header-inner">
@@ -179,7 +215,23 @@
   <p>&#x26A0;&#xFE0F; <strong>Disclaimer:</strong> DGAwijzer.nl biedt algemene informatie. Raadpleeg altijd een fiscaal adviseur. Aan berekeningen kunnen geen rechten worden ontleend.</p>
 </div>
 <script>
-function openMobileNav(){document.getElementById("mobileNav").classList.add("open");document.getElementById("navOverlay").classList.add("open");document.body.style.overflow="hidden";}
-function closeMobileNav(){document.getElementById("mobileNav").classList.remove("open");document.getElementById("navOverlay").classList.remove("open");document.body.style.overflow="";}
+function openMobileNav(){
+  var nav=document.getElementById('mobileNav');
+  var overlay=document.getElementById('navOverlay');
+  var btn=document.getElementById('hamburger-btn');
+  if(nav)nav.classList.add('open');
+  if(overlay)overlay.classList.add('open');
+  if(btn)btn.setAttribute('aria-expanded','true');
+  document.body.style.overflow='hidden';
+}
+function closeMobileNav(){
+  var nav=document.getElementById('mobileNav');
+  var overlay=document.getElementById('navOverlay');
+  var btn=document.getElementById('hamburger-btn');
+  if(nav)nav.classList.remove('open');
+  if(overlay)overlay.classList.remove('open');
+  if(btn)btn.setAttribute('aria-expanded','false');
+  document.body.style.overflow='';
+}
 </script>
 </body></html>

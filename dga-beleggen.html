@@ -43,108 +43,43 @@
 ]}
 </script>
 <link rel="stylesheet" href="css/style.css"/>
-<style>
-/* ── Pagina-specifieke stijlen ──────────────────────── */
-.vergelijk-kaart{background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:22px;transition:box-shadow .2s,border-color .2s}
-.vergelijk-kaart:hover{box-shadow:var(--shadow-md)}
-.vergelijk-kaart.prive{border-top:4px solid #6366f1}
-.vergelijk-kaart.bv{border-top:4px solid var(--green)}
-.vergelijk-kaart h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:10px}
-.vergelijk-kaart ul{padding-left:18px;font-size:13px;color:var(--text-body);line-height:2}
-.vergelijk-kaart .label{font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.07em;margin-bottom:8px;display:block}
-.vergelijk-kaart.prive .label{color:#6366f1}
-.vergelijk-kaart.bv .label{color:var(--green-dark)}
 
-/* Rekenmodule */
-.reken-wrap{background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden;box-shadow:var(--shadow-sm)}
-.reken-header{background:var(--navy);padding:20px 28px}
-.reken-header h2{font-size:1.1rem;font-weight:700;color:#fff;margin-bottom:3px}
-.reken-header p{font-size:13px;color:rgba(255,255,255,.6)}
-.reken-body{padding:28px}
-.scenario-results{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:24px}
-.scenario-card{border-radius:var(--radius-md);padding:18px;border:2px solid transparent;transition:border-color .2s}
-.scenario-card.s1{background:#f0f4ff;border-color:#c7d2fe}
-.scenario-card.s2{background:var(--green-xlight);border-color:var(--green-light)}
-.scenario-card.s3{background:var(--navy-xlight);border-color:var(--navy-light)}
-.scenario-card.best{box-shadow:0 0 0 3px var(--green)}
-.scenario-card h4{font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;margin-bottom:10px}
-.scenario-card.s1 h4{color:#4f46e5}
-.scenario-card.s2 h4{color:var(--green-dark)}
-.scenario-card.s3 h4{color:var(--navy)}
-.scenario-eindverm{font-size:1.5rem;font-weight:800;color:var(--navy);line-height:1;margin-bottom:4px}
-.scenario-label{font-size:11px;color:var(--text-muted);margin-bottom:12px}
-.scenario-detail{font-size:12px;color:var(--text-body);line-height:1.8}
-.scenario-badge{display:inline-block;padding:3px 8px;border-radius:20px;font-size:11px;font-weight:700;margin-top:8px;background:var(--green);color:#fff}
-
-/* Vergeetpunten */
-.vergeet-item{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--gray-100)}
-.vergeet-item:last-child{border-bottom:none}
-.vergeet-icon{flex-shrink:0;width:34px;height:34px;border-radius:50%;background:#fff3cd;display:flex;align-items:center;justify-content:center;font-size:16px;border:2px solid #fef08a}
-.vergeet-titel{font-size:.95rem;font-weight:700;color:var(--navy);margin-bottom:3px}
-.vergeet-tekst{font-size:13px;color:var(--text-body);line-height:1.7}
-
-/* Belastingladder visualisatie */
-.ladder{display:flex;flex-direction:column;gap:6px;margin:16px 0}
-.ladder-stap{display:flex;align-items:center;gap:10px;font-size:13px}
-.ladder-pijl{color:var(--green);font-weight:700;flex-shrink:0;font-size:16px}
-.ladder-box{flex:1;padding:8px 14px;border-radius:var(--radius-sm);font-weight:500}
-.ladder-box.vpb{background:#dbeafe;color:#1e40af}
-.ladder-box.b2{background:var(--green-xlight);color:var(--green-dark)}
-.ladder-box.b3{background:#fef9c3;color:#854d0e}
-
-/* Voorbeeld-blokken */
-.voorbeeld{background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg);padding:22px;margin-bottom:16px}
-.voorbeeld-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:14px;flex-wrap:wrap;gap:8px}
-.voorbeeld-titel{font-size:1rem;font-weight:700;color:var(--navy)}
-.voorbeeld-badge{background:var(--navy);color:#fff;font-size:11px;font-weight:700;padding:4px 10px;border-radius:var(--radius-pill)}
-.voorbeeld-row{display:flex;justify-content:space-between;padding:6px 0;border-bottom:1px solid var(--gray-200);font-size:13px}
-.voorbeeld-row:last-child{border-bottom:none;font-weight:700;color:var(--navy)}
-.voorbeeld-val-pos{color:var(--green);font-weight:600}
-.voorbeeld-val-neg{color:#dc2626;font-weight:600}
-
-/* FAQ */
-.faq-item{border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden}
-.faq-item summary{padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50);list-style:none;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.faq-item summary::after{content:"\FF0B";font-size:16px;color:var(--green);flex-shrink:0;font-weight:400}
-.faq-item[open] summary::after{content:"\FF0D"}
-.faq-item[open] summary{background:var(--navy-xlight)}
-.faq-body{padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75}
-.faq-body a{color:var(--green)}
-
-.infobox{background:var(--navy-xlight);border:1px solid var(--navy-light);border-left:3px solid var(--navy);border-radius:0 var(--radius-md) var(--radius-md) 0;padding:13px 16px;font-size:13px;line-height:1.7;color:var(--text-body)}
-.waarschuwing{background:#fffbeb;border:1px solid #fef08a;border-left:3px solid #f59e0b;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:13px 16px;font-size:13px;line-height:1.7;color:#92400e}
-
-@keyframes fadeUp{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}
-
-@media(max-width:720px){
-  .scenario-results{grid-template-columns:1fr}
-  .vergelijk-grid{grid-template-columns:1fr !important}
-}
-</style>
 </head>
 <body>
 
 <!-- NAVIGATIE -->
-<nav class="nav">
+<nav class="nav" role="navigation" aria-label="Hoofdnavigatie">
   <div class="nav-inner">
-    <a href="index.html" class="nav-logo">
-      <img src="images/logo.png" alt="DGAwijzer.nl" height="34"
-        onerror="this.parentElement.innerHTML='<span style=&quot;font-size:1.1rem;font-weight:800;color:#0f2d52&quot;>DGAwijzer.nl</span>'"/>
+    <a href="index.html" class="nav-logo" aria-label="DGAwijzer.nl - ga naar homepage">
+      <img src="images/logo.png" alt="DGAwijzer" height="36"
+        onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+      <span class="nav-logo-text" style="display:none">
+        <span class="nav-logo-name">DGAwijzer</span>
+        <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+      </span>
     </a>
-    <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html" class="active">DGA Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+    <ul class="nav-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html">Auto</a></li><li><a href="dga-beleggen.html" class="active" aria-current="page">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
     <div class="nav-ctas">
       <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-sm">Bereken salaris</a>
       <a href="vergelijkbaar-loon.html" class="btn btn-green btn-sm">Zoek loon &#8599;</a>
     </div>
-    <button class="nav-hamburger" onclick="openMobileNav()">
+    <button class="nav-hamburger" onclick="openMobileNav()" aria-label="Open menu" aria-expanded="false" id="hamburger-btn">
       <span></span><span></span><span></span>
     </button>
   </div>
 </nav>
-<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()"></div>
-<nav class="nav-mobile" id="mobileNav">
-  <button class="nav-mobile-close" onclick="closeMobileNav()">&#x2715;</button>
-  <ul class="nav-mobile-links"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">DGA Salaris</a></li><li><a href="dga-dividend.html">DGA Dividend</a></li><li><a href="dga-auto.html">DGA Auto</a></li><li><a href="dga-beleggen.html" class="active">DGA Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
+<div class="nav-overlay" id="navOverlay" onclick="closeMobileNav()" aria-hidden="true"></div>
+<nav class="nav-mobile" id="mobileNav" aria-label="Mobiele navigatie">
+  <button class="nav-mobile-close" onclick="closeMobileNav()" aria-label="Sluit menu">&#x2715;</button>
+  <div class="nav-logo" style="margin-bottom:20px">
+    <img src="images/logo.png" alt="DGAwijzer" height="32"
+      onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"/>
+    <span class="nav-logo-text" style="display:none">
+      <span class="nav-logo-name">DGAwijzer</span>
+      <span class="nav-logo-tagline">Tools voor DGA&apos;s</span>
+    </span>
+  </div>
+  <ul class="nav-mobile-links" role="list"><li><a href="index.html">Home</a></li><li><a href="dga-salaris.html">Salaris</a></li><li><a href="dga-dividend.html">Dividend</a></li><li><a href="dga-auto.html">Auto</a></li><li><a href="dga-beleggen.html" class="active" aria-current="page">Beleggen</a></li><li><a href="calculators.html">Calculators</a></li><li><a href="kennisbank.html">Kennisbank</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul>
   <div class="nav-mobile-ctas">
     <a href="calculators-optimaal-salaris.html" class="btn btn-navy btn-full">Bereken optimaal salaris</a>
     <a href="vergelijkbaar-loon.html" class="btn btn-green btn-full">Zoek vergelijkbaar loon &#8599;</a>
