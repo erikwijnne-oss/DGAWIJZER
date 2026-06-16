@@ -563,3 +563,11 @@ td.bold{font-weight:700;color:var(--navy)}
 @media(min-width:900px){
   .nav-links li:first-child{display:none}
 }
+
+/* ── Print/export header (alleen zichtbaar bij afdrukken/PDF-export) ── */
+.print-header{display:none}
+@media print{
+  .print-header{display:block!important;text-align:center;padding:20px 0 12px;border-bottom:2px solid #0f2d52;margin-bottom:20px}
+  .print-header img{height:32px;margin-bottom:8px}
+  .print-header h2{font-size:16pt;color:#0f2d52;margin:4px 0}
+}
