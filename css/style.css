@@ -514,6 +514,18 @@ td.bold{font-weight:700;color:var(--navy)}
 .tarieven-card tr.hl td:last-child{color:var(--green)}
 .tarieven-note{padding:7px 12px;font-size:11px;color:var(--text-light);background:var(--gray-50);border-top:1px solid var(--gray-100)}
 
+/* Stappenplan */
+.stap-lijst{display:flex;flex-direction:column;gap:0}
+.stap{display:flex;gap:20px;padding:0 0 32px;position:relative}
+.stap:not(:last-child)::after{content:'';position:absolute;left:19px;top:40px;bottom:0;width:2px;background:var(--gray-200)}
+.stap-nr{flex-shrink:0;width:40px;height:40px;border-radius:50%;background:var(--navy);color:#fff;font-size:15px;font-weight:700;display:flex;align-items:center;justify-content:center;position:relative;z-index:1}
+.stap-accent .stap-nr{background:var(--green)}
+.stap-body{padding-top:8px;flex:1}
+.stap-body h3{font-size:1rem;font-weight:700;color:var(--navy);margin-bottom:6px}
+.stap-body p{font-size:14px;color:var(--text-body);line-height:1.65}
+.stap-cta{margin-top:12px}
+@media(max-width:480px){.stap{gap:14px}.stap:not(:last-child)::after{left:16px}.stap-nr{width:34px;height:34px;font-size:13px}}
+
 /* Toets-grid (donkerblauw blok Art. 12a Wet LB) */
 .toets-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
 @media(max-width:600px){.toets-grid{grid-template-columns:1fr}}
