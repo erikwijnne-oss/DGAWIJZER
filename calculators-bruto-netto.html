@@ -45,6 +45,32 @@
       {"@type": "ListItem", "position": 2, "name": "Calculators", "item": "https://dgawijzer.nl/calculators.html"},
       {"@type": "ListItem", "position": 3, "name": "Bruto-netto DGA berekenen", "item": "https://dgawijzer.nl/calculators-bruto-netto.html"}
     ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Wat is het verschil tussen bruto en netto DGA salaris?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Het brutosalaris is het overeengekomen jaarsalaris vóór aftrek van belasting en Zvw. Hiervan gaan de inkomstenbelasting (na heffingskortingen) en de Zvw-bijdrage (4,85%) af. Het bedrag dat overblijft is het nettosalaris dat u maandelijks ontvangt. Het verschil loopt bij hogere salarissen op tot meer dan 40%."}
+      },
+      {
+        "@type": "Question",
+        "name": "Wat is de Zvw-bijdrage voor een DGA in 2026?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Als DGA betaalt u de inkomensafhankelijke bijdrage Zorgverzekeringswet zelf: 4,85% over maximaal €79.409 bruto salaris (2026). De maximale Zvw-bijdrage bedraagt daarmee €3.851 per jaar. Bij een werknemer draagt de werkgever dit bij; bij de DGA loopt dit via de aangifte inkomstenbelasting."}
+      },
+      {
+        "@type": "Question",
+        "name": "Waarom kan ik bijtelling invullen in deze calculator?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Bijtelling voor een auto van de zaak verhoogt uw belastbaar inkomen in box 1. De bijtelling wordt opgeteld bij uw brutosalaris voordat de inkomstenbelasting wordt berekend. Hypotheekrenteaftrek werkt omgekeerd: die verlaagt uw belastbaar inkomen en dus de verschuldigde belasting."}
+      },
+      {
+        "@type": "Question",
+        "name": "Is de uitkomst van deze calculator definitief?",
+        "acceptedAnswer": {"@type": "Answer", "text": "Nee, de uitkomst is een indicatie op basis van standaard tarieven 2026. De werkelijke belasting hangt af van overige inkomsten, alle aftrekposten, partnerinkomen en de definitieve aangifte inkomstenbelasting. Gebruik de uitkomst als richtlijn en laat de definitieve berekening uitvoeren door uw accountant."}
+      }
+    ]
   }
 ]
 </script>
@@ -91,7 +117,7 @@
   <div class="page-header-inner">
     <nav class="breadcrumb"><a href="index.html">Home</a><span class="breadcrumb-sep">›</span><a href="calculators.html">Calculators</a><span class="breadcrumb-sep">›</span>Bruto-Netto DGA</nav>
     <h1>Bruto-netto DGA berekenen</h1>
-    <p class="lead">Bereken uw netto DGA salaris op basis van uw bruto inkomen en de actuele belastingtarieven voor 2026. Inclusief heffingskortingen en Zvw-bijdrage.</p>
+    <p class="lead">Bereken uw netto DGA salaris op basis van uw bruto inkomen en de actuele belastingtarieven voor 2026. Inclusief bijtelling auto van de zaak, hypotheekrenteaftrek, heffingskortingen en Zvw-bijdrage.</p>
   </div>
 </div>
 
@@ -146,6 +172,54 @@
     </div>
   </aside>
 </div>
+
+<div style="max-width:var(--max-w);margin:0 auto;padding:40px 5%">
+
+  <div class="infobox" style="margin-bottom:32px">
+    <strong>Wil je begrijpen hoe loonheffing voor de DGA werkt?</strong> Deze calculator toont het nettoresultaat. Voor een stap-voor-stap uitleg van IB-schijven, heffingskortingen en Zvw-afdracht, zie de
+    <a href="loonheffing-dga-berekenen.html" style="color:var(--green);font-weight:600">loonheffing DGA pagina →</a>
+  </div>
+
+  <h2 style="font-size:1.25rem;font-weight:700;color:var(--navy);margin-bottom:20px">Veelgestelde vragen</h2>
+
+  <details style="border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden">
+    <summary style="padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50)">
+      Wat is het verschil tussen bruto en netto DGA salaris?
+    </summary>
+    <div style="padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75">
+      Het brutosalaris is het overeengekomen jaarsalaris vóór aftrek van belasting en Zvw. Hiervan gaan de inkomstenbelasting (na heffingskortingen) en de Zvw-bijdrage (4,85%) af. Het bedrag dat overblijft is het nettosalaris dat u maandelijks ontvangt. Het verschil loopt bij hogere salarissen op tot meer dan 40%.
+    </div>
+  </details>
+
+  <details style="border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden">
+    <summary style="padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50)">
+      Wat is de Zvw-bijdrage voor een DGA in 2026?
+    </summary>
+    <div style="padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75">
+      Als DGA betaalt u de inkomensafhankelijke bijdrage Zorgverzekeringswet zelf: 4,85% over maximaal €79.409 bruto salaris (2026). De maximale Zvw-bijdrage bedraagt daarmee €3.851 per jaar. Bij een werknemer draagt de werkgever dit bij; bij de DGA loopt dit via de aangifte inkomstenbelasting.
+    </div>
+  </details>
+
+  <details style="border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden">
+    <summary style="padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50)">
+      Waarom kan ik bijtelling invullen in deze calculator?
+    </summary>
+    <div style="padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75">
+      Bijtelling voor een auto van de zaak verhoogt uw belastbaar inkomen in box 1. De bijtelling wordt opgeteld bij uw brutosalaris voordat de inkomstenbelasting wordt berekend. Dit kan uw effectieve belastingdruk merkbaar verhogen. Hypotheekrenteaftrek werkt omgekeerd: die verlaagt uw belastbaar inkomen en dus de verschuldigde belasting.
+    </div>
+  </details>
+
+  <details style="border:1px solid var(--gray-200);border-radius:var(--radius-md);margin-bottom:8px;overflow:hidden">
+    <summary style="padding:14px 16px;font-size:14px;font-weight:600;color:var(--navy);cursor:pointer;background:var(--gray-50)">
+      Is de uitkomst van deze calculator definitief?
+    </summary>
+    <div style="padding:14px 16px;font-size:14px;color:var(--text-body);line-height:1.75">
+      Nee, de uitkomst is een indicatie op basis van standaard tarieven 2026. De werkelijke belasting hangt af van overige inkomsten (box 1, 2 en 3), alle aftrekposten, partnerinkomen en de definitieve aangifte inkomstenbelasting. Gebruik de uitkomst als richtlijn en laat de definitieve berekening uitvoeren door uw accountant.
+    </div>
+  </details>
+
+</div>
+
 <div class="ad-bar"><div class="ad-placeholder ad-728x90" style="margin:0 auto">Advertentie &middot; 728&times;90</div></div><footer class="footer"><div class="footer-grid"><div><div class="footer-logo"><img src="images/logo.png" alt="DGAwijzer.nl" height="26" onerror="this.parentElement.innerHTML='DGAwijzer.nl'"/></div><p class="footer-desc">Onafhankelijk fiscaal portaal voor directeur-grootaandeelhouders. Actuele tools voor belastingjaar 2026.</p></div><div class="footer-col"><h4>Calculators</h4><ul><li><a href="calculators-optimaal-salaris.html">Optimaal DGA Salaris</a></li><li><a href="calculators-bruto-netto.html">Bruto-Netto DGA</a></li><li><a href="bijtelling-berekenen.html">Bijtelling auto</a></li>
       <li><a href="calculators-salaris-vs-dividend.html">Salaris vs. Dividend</a></li><li><a href="calculators-bv-vs-eenmanszaak.html">BV vs. Eenmanszaak</a></li><li><a href="vergelijkbaar-loon.html">Vergelijkbaar Loon Zoeker</a></li></ul></div><div class="footer-col"><h4>Kennisbank</h4><ul><li><a href="kennisbank-gebruikelijk-loon-2026.html">Gebruikelijk loon 2026</a></li><li><a href="kennisbank-meest-vergelijkbare-dienstbetrekking.html">Vergelijkbaar loon</a></li><li><a href="kennisbank-dividend-uitkeren.html">Dividend uitkeren</a></li><li><a href="kennisbank-holding-structuur.html">Holdingstructuur</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li></ul></div><div class="footer-col"><h4>Over</h4><ul><li><a href="over-dgawijzer.html">Over DGAwijzer</a></li><li><a href="tarieven-2026.html">Tarieven 2026</a></li><li><a href="over-dgawijzer.html">Disclaimer</a></li></ul></div></div><div class="footer-bottom"><p>&copy; 2026 DGAwijzer.nl &mdash; Alle informatie is indicatief.</p><p>Raadpleeg altijd een fiscaal adviseur voor persoonlijk advies.</p></div></footer><div class="disclaimer-bar"><p>&#x26A0;&#xFE0F; <strong>Disclaimer:</strong> DGAwijzer.nl biedt algemene informatie. Raadpleeg altijd een fiscaal adviseur.</p></div>
 <script>
