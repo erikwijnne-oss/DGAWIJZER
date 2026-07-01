@@ -100,12 +100,29 @@
     <div class="calc-blok">
       <h3>Forfaitaire btw-correctie</h3>
       <p style="font-size:13px;color:var(--text-muted);margin-bottom:16px">Gebruikt u geen sluitende kilometeradministratie? Dan geldt het forfait: 2,7% van de catalogusprijs (incl. btw en bpm). Voor auto&apos;s die langer dan 4 jaar ná het jaar van eerste ingebruikname worden gebruikt: 1,5%.</p>
-      <div class="ig" style="margin-bottom:14px">
-        <div class="fg" style="margin-bottom:0">
-          <label for="f-cat">Catalogusprijs incl. btw en bpm</label>
-          <div style="position:relative"><span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-weight:600">&euro;</span>
+
+      <!-- Catalogusprijs: kenteken of handmatig -->
+      <div style="margin-bottom:16px">
+        <label style="font-size:13px;font-weight:600;color:var(--text-body);display:block;margin-bottom:8px">Catalogusprijs incl. btw en bpm</label>
+        <div class="tab-btns" style="margin-bottom:10px">
+          <button class="tab-btn active" id="cat-tab-btn-kn" onclick="switchCatTab('kenteken')">&#128269; Kenteken opzoeken</button>
+          <button class="tab-btn" id="cat-tab-btn-mn" onclick="switchCatTab('handmatig')">&#9998;&#65039; Handmatig invoeren</button>
+        </div>
+        <div id="cat-tab-kenteken">
+          <div style="display:flex;gap:8px;align-items:center;margin-bottom:8px">
+            <input type="text" id="kn-input" placeholder="bijv. AB-123-C" maxlength="8" style="text-transform:uppercase;font-family:var(--f);flex:1" oninput="this.value=this.value.toUpperCase()" onkeydown="if(event.key==='Enter')knZoekBtw()"/>
+            <button onclick="knZoekBtw()" class="btn btn-navy btn-sm" style="white-space:nowrap">Zoek</button>
+          </div>
+          <div id="kn-status" style="font-size:13px;color:var(--text-muted);min-height:18px"></div>
+          <div id="kn-auto-info" style="display:none;background:var(--navy-xlight);border:1px solid var(--navy-light);border-radius:var(--radius-md);padding:10px 14px;font-size:13px;margin-top:8px"></div>
+        </div>
+        <div id="cat-tab-handmatig" style="display:none">
+          <div style="position:relative;max-width:260px"><span style="position:absolute;left:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-weight:600">&euro;</span>
           <input type="number" id="f-cat" value="45000" min="0" max="500000" step="500" style="padding-left:28px" oninput="berekenForfait()"/></div>
         </div>
+      </div>
+
+      <div class="ig" style="margin-bottom:14px">
         <div class="fg" style="margin-bottom:0">
           <label for="f-pct">Forfaitpercentage</label>
           <select id="f-pct" onchange="berekenForfait()">
@@ -288,6 +305,36 @@ var forfaitUitkomst = 0, werkelijkUitkomst = 0;
 
 function fmt(v){return '\u20ac\u202f'+Math.round(Math.abs(v)).toLocaleString('nl-NL');}
 function fmtPct(v){return (v*100).toFixed(1)+'%';}
+
+function switchCatTab(t){
+  document.getElementById('cat-tab-kenteken').style.display = t==='kenteken' ? '' : 'none';
+  document.getElementById('cat-tab-handmatig').style.display = t==='handmatig' ? '' : 'none';
+  document.getElementById('cat-tab-btn-kn').className = 'tab-btn'+(t==='kenteken' ? ' active' : '');
+  document.getElementById('cat-tab-btn-mn').className = 'tab-btn'+(t==='handmatig' ? ' active' : '');
+}
+
+async function knZoekBtw(){
+  var kn = (document.getElementById('kn-input').value||'').replace(/[\s\-]/g,'').toUpperCase();
+  if(!kn){ document.getElementById('kn-status').textContent='Voer een kenteken in.'; return; }
+  document.getElementById('kn-status').innerHTML='&#8987; Gegevens ophalen&hellip;';
+  document.getElementById('kn-auto-info').style.display='none';
+  try{
+    var r = await fetch('https://dgawijzer-kenteken.erikwijnne.workers.dev/?plate='+encodeURIComponent(kn));
+    if(!r.ok) throw new Error('not found');
+    var d = await r.json();
+    if(!d.cataloguswaarde) throw new Error('geen waarde');
+    document.getElementById('f-cat').value = d.cataloguswaarde;
+    document.getElementById('kn-status').innerHTML='<span style="color:var(--green)">&#10003; Gevonden &mdash; cataloguswaarde ingevuld</span>';
+    var info = document.getElementById('kn-auto-info');
+    info.innerHTML = '<strong>'+(d.merk||'')+' '+(d.model||'')+'</strong><br>'
+      +'Cataloguswaarde: '+fmt(d.cataloguswaarde)
+      +'<br><span style="font-size:12px;color:var(--text-muted)">Controleer of de catalogusprijs de BPM bevat die gold bij eerste toelating. Pas het bedrag handmatig aan indien nodig.</span>';
+    info.style.display='';
+    berekenForfait();
+  }catch(e){
+    document.getElementById('kn-status').innerHTML='<span style="color:#dc2626">&#10007; Kenteken niet gevonden. Controleer het kenteken of voer handmatig in.</span>';
+  }
+}
 
 function switchTab(t){
   document.getElementById('tab-forfait').style.display  = t==='forfait'  ? '' : 'none';

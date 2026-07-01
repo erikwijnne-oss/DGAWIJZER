@@ -11,8 +11,8 @@
   <url><loc>https://dgawijzer.nl/dga-beleggen.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
 
   <!-- Calculator-hub en kennisbank-hub -->
-  <url><loc>https://dgawijzer.nl/calculators.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
-  <url><loc>https://dgawijzer.nl/kennisbank.html</loc><lastmod>2026-06-09</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/calculators.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
+  <url><loc>https://dgawijzer.nl/kennisbank.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
 
   <!-- Calculators -->
   <url><loc>https://dgawijzer.nl/calculators-optimaal-salaris.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.90</priority></url>
@@ -68,7 +68,7 @@
 
 
   <!-- Btw privégebruik auto -->
-  <url><loc>https://dgawijzer.nl/btw-privegebruik-auto.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
-  <url><loc>https://dgawijzer.nl/btw-correctie-privegebruik-auto.html</loc><lastmod>2026-06-16</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
+  <url><loc>https://dgawijzer.nl/btw-privegebruik-auto.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.85</priority></url>
+  <url><loc>https://dgawijzer.nl/btw-correctie-privegebruik-auto.html</loc><lastmod>2026-07-01</lastmod><changefreq>monthly</changefreq><priority>0.88</priority></url>
 
 </urlset>
