@@ -276,7 +276,10 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   const ibBruto = berekenIB(box1Inkomen);
   const ahk = berekenAHK(box1Inkomen);
   const ak = berekenArbeidskorting(Math.min(box1Inkomen, salaris)); // arbeidskorting op arbeidsinkomen
-  const ibNetto = Math.max(0, ibBruto - ahk - ak);
+  const hkTotaal = ahk + ak;
+  const ibNetto = Math.max(0, ibBruto - hkTotaal);
+  // Surplus HK na box 1 → verrekenen met box 2 (art. 8.7 IW 2001)
+  const hkSurplus = Math.max(0, hkTotaal - ibBruto);
 
   // Zvw DGA-bijdrage
   const zvwInk = Math.min(salaris, T.zvw.maxInk);
@@ -292,8 +295,9 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   const vpb = berekenVPB(winstNaSalaris);
   const winstNaVPB = winstNaSalaris - vpb;
 
-  // Box 2
-  const box2Bel = berekenBox2(winstNaVPB, partner);
+  // Box 2 — minus surplus heffingskorting uit box 1
+  const box2BrutoBel = berekenBox2(winstNaVPB, partner);
+  const box2Bel = Math.max(0, box2BrutoBel - hkSurplus);
   const dividendNetto = winstNaVPB - box2Bel;
 
   // Totalen
@@ -303,7 +307,7 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   // Druk = (IB netto + Zvw DGA + VPB + box 2) / BV-winst
   const druk = bvWinst > 0 ? totaalBelasting / bvWinst : 0;
 
-  return { salaris, box1Inkomen, ibBruto, ahk, ak, ibNetto, zvwDGA, zvwWg, winstNaSalaris, vpb, winstNaVPB, box2Bel, dividendNetto, totaalBelasting, netto, druk };
+  return { salaris, box1Inkomen, ibBruto, ahk, ak, hkSurplus, ibNetto, zvwDGA, zvwWg, winstNaSalaris, vpb, winstNaVPB, box2BrutoBel, box2Bel, dividendNetto, totaalBelasting, netto, druk };
 }
 
 // ─────────────────────────────────────────
@@ -494,7 +498,9 @@ function bereken() {
     ['BV-winst na salaris', opt.winstNaSalaris, false],
     ['— Vennootschapsbelasting (VPB)', -opt.vpb, true],
     ['Netto BV-winst (= beschikbaar dividend)', opt.winstNaVPB, false],
-    ['— Box 2 belasting over dividend', -opt.box2Bel, true],
+    ['— Box 2 belasting (bruto)', -opt.box2BrutoBel, true],
+    ...(opt.hkSurplus > 0 ? [['+ Surplus heffingskorting (verrekend met box 2)', opt.hkSurplus, false]] : []),
+    ['— Box 2 belasting (netto)', -opt.box2Bel, true],
     ['Netto dividend', opt.dividendNetto, false],
     ['IB bruto over DGA-salaris', -opt.ibBruto, true],
     ['+ Algemene heffingskorting', opt.ahk, false],
