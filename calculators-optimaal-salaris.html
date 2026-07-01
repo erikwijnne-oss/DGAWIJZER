@@ -145,7 +145,7 @@
             </div>
             <div class="tbl-hdr">Vergelijkingstabel</div>
             <div class="tbl-wrap"><table><thead><tr><th>Scenario</th><th>Salaris</th><th>IB netto</th><th>Zvw DGA</th><th>VPB</th><th>Box 2</th><th>Belastingdruk*</th><th>Netto</th></tr></thead><tbody id="vergBody"></tbody></table></div>
-            <p style="font-size:11px;color:var(--text-light);margin:6px 0 0;line-height:1.5">* Belastingdruk inclusief Zvw-werkgeversheffing BV (6,10% van salaris, max. loongrens €79.409). Deze last valt buiten IB/VPB/box&nbsp;2 maar drukt wel op de totale BV-winst.</p>
+            <p style="font-size:11px;color:var(--text-light);margin:6px 0 0;line-height:1.5">* Belastingdruk = (IB netto + Zvw DGA + VPB + box&nbsp;2) ÷ BV-winst. De DGA betaalt de Zvw-bijdrage (4,85%, max. €79.409) zelf via de aangifte inkomstenbelasting.</p>
             <div class="tbl-hdr" style="margin-top:16px">Gedetailleerde berekening</div>
             <div class="tbl-wrap"><table><thead><tr><th>Post</th><th>Bedrag</th></tr></thead><tbody id="detailBody"></tbody></table></div>
           </div>
@@ -211,7 +211,7 @@ const T = {
   vpb: { s1: { grens: 200000, tarief: 0.19 }, s2: { tarief: 0.258 } },
   box2: { s1: { grens: 68843, tarief: 0.245 }, s2: { tarief: 0.31 }, grensPartner: 137686 },
   gebruikelijkLoon: 58000,
-  zvw: { pct: 0.0485, maxInk: 79409, wgHeffing: 0.0610 },
+  zvw: { pct: 0.0485, maxInk: 79409, wgHeffing: 0 }, // DGA betaalt Zvw zelf via IB-aangifte (geen werkgeversheffing in dit model)
   ahk: { max: 3115, afbouwStart: 29736, afbouwPct: 0.06398, afbouwEind: 78426 },
   ak: { max: 5685, afbouwStart: 45592, afbouwPct: 0.0651, afbouwEind: 132290 }
 };
@@ -300,8 +300,8 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   const totaalBelasting = ibNetto + zvwDGA + vpb + box2Bel;
   const nettoSalaris = salaris - ibNetto - zvwDGA;
   const netto = nettoSalaris + dividendNetto; // = bvWinst - totaalBelasting - zvwWg
-  // Druk = alle lasten (inclusief zvwWg die ten laste van BV komt) gedeeld door BV-winst
-  const druk = bvWinst > 0 ? (totaalBelasting + zvwWg) / bvWinst : 0;
+  // Druk = (IB netto + Zvw DGA + VPB + box 2) / BV-winst
+  const druk = bvWinst > 0 ? totaalBelasting / bvWinst : 0;
 
   return { salaris, box1Inkomen, ibBruto, ahk, ak, ibNetto, zvwDGA, zvwWg, winstNaSalaris, vpb, winstNaVPB, box2Bel, dividendNetto, totaalBelasting, netto, druk };
 }
@@ -489,10 +489,9 @@ function bereken() {
   // Detailtabel optimaal
   const db = document.getElementById('detailBody');
   const rows = [
-    ['BV-winst vóór salaris', opt.salaris === 0 ? bvWinst : bvWinst, false],
+    ['BV-winst vóór salaris', bvWinst, false],
     ['DGA-salaris (bruto)', opt.salaris, false],
-    ['Zvw werkgeversheffing (BV)', -opt.zvwWg, true],
-    ['BV-winst na salaris en Zvw-WG', opt.winstNaSalaris, false],
+    ['BV-winst na salaris', opt.winstNaSalaris, false],
     ['— Vennootschapsbelasting (VPB)', -opt.vpb, true],
     ['Netto BV-winst (= beschikbaar dividend)', opt.winstNaVPB, false],
     ['— Box 2 belasting over dividend', -opt.box2Bel, true],
