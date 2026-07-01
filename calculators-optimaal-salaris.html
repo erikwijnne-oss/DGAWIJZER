@@ -155,7 +155,7 @@
 
     <div style="margin-top:32px;padding:24px 28px;background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-lg)">
       <h3 style="margin-bottom:12px;font-size:1rem">Hoe werkt de berekening?</h3>
-      <p style="font-size:14px;color:var(--text-muted);line-height:1.75">De calculator berekent voor elk salarisniveau van €0 tot uw BV-winst (stappen van €1.000) de totale belastingdruk: inkomstenbelasting (Box 1), Zvw-bijdrage DGA, vennootschapsbelasting (VPB) en Box 2-belasting over het dividend. Het punt met de laagste totale last is uw fiscaal optimale DGA-salaris. <a href="kennisbank-gebruikelijk-loon-2026.html" style="color:var(--green)">Lees meer over gebruikelijk loon 2026 →</a></p>
+      <p style="font-size:14px;color:var(--text-muted);line-height:1.75">De calculator berekent voor elk salarisniveau van €0 tot uw BV-winst (stappen van €1.000) de totale belastingdruk: inkomstenbelasting (Box 1), Zvw-bijdrage DGA, vennootschapsbelasting (VPB) en Box 2-belasting over het dividend. Het punt met de laagste totale last is uw fiscaal optimale DGA-salaris. <strong>Let op (2026):</strong> de afbouw van de algemene heffingskorting (AHK) is gebaseerd op het <em>verzamelinkomen</em> (box 1 + box 2). Dividend telt dus mee — bij een hoog dividend kan de AHK volledig verdwijnen. <a href="kennisbank-gebruikelijk-loon-2026.html" style="color:var(--green)">Lees meer over gebruikelijk loon 2026 →</a></p>
     </div>
   </div>
 
@@ -272,30 +272,31 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   // Box 1 inkomen
   const box1Inkomen = Math.max(0, salaris + bijtelling - hypotheek);
 
-  // IB bruto
+  // Zvw DGA-bijdrage (betaalt DGA zelf via aangifte IB)
+  const zvwInk = Math.min(salaris, T.zvw.maxInk);
+  const zvwDGA = zvwInk * T.zvw.pct;
+  const zvwWg = zvwInk * T.zvw.wgHeffing; // = 0 in huidig model
+
+  // BV-winst na salaris → VPB → beschikbaar dividend
+  // (eerst berekenen zodat verzamelinkomen bepaald kan worden voor AHK-afbouw)
+  const winstNaSalaris = Math.max(0, bvWinst - salaris - zvwWg);
+  const vpb = berekenVPB(winstNaSalaris);
+  const winstNaVPB = winstNaSalaris - vpb;
+
+  // Verzamelinkomen (box 1 + box 2) voor AHK-afbouw
+  // Vanaf 2025 telt box 2 dividend mee voor de afbouw (niet meer alleen box 1)
+  const verzamelinkomen = box1Inkomen + winstNaVPB;
+
+  // IB bruto + heffingskortingen
   const ibBruto = berekenIB(box1Inkomen);
-  const ahk = berekenAHK(box1Inkomen);
-  const ak = berekenArbeidskorting(Math.min(box1Inkomen, salaris)); // arbeidskorting op arbeidsinkomen
+  const ahk = berekenAHK(verzamelinkomen); // afbouw op verzamelinkomen (box 1 + box 2)
+  const ak = berekenArbeidskorting(Math.min(box1Inkomen, salaris)); // alleen op arbeidsinkomen
   const hkTotaal = ahk + ak;
   const ibNetto = Math.max(0, ibBruto - hkTotaal);
   // Surplus HK na box 1 → verrekenen met box 2 (art. 8.7 IW 2001)
   const hkSurplus = Math.max(0, hkTotaal - ibBruto);
 
-  // Zvw DGA-bijdrage
-  const zvwInk = Math.min(salaris, T.zvw.maxInk);
-  const zvwDGA = zvwInk * T.zvw.pct;
-
-  // Zvw werkgeversheffing (last voor de BV)
-  const zvwWg = zvwInk * T.zvw.wgHeffing;
-
-  // BV-winst na salaris en werkgeverslast
-  const winstNaSalaris = Math.max(0, bvWinst - salaris - zvwWg);
-
-  // VPB
-  const vpb = berekenVPB(winstNaSalaris);
-  const winstNaVPB = winstNaSalaris - vpb;
-
-  // Box 2 — minus surplus heffingskorting uit box 1
+  // Box 2 — minus surplus heffingskorting
   const box2BrutoBel = berekenBox2(winstNaVPB, partner);
   const box2Bel = Math.max(0, box2BrutoBel - hkSurplus);
   const dividendNetto = winstNaVPB - box2Bel;
@@ -303,8 +304,7 @@ function berekenScenario(bvWinst, salaris, partner, bijtelling, hypotheek) {
   // Totalen
   const totaalBelasting = ibNetto + zvwDGA + vpb + box2Bel;
   const nettoSalaris = salaris - ibNetto - zvwDGA;
-  const netto = nettoSalaris + dividendNetto; // = bvWinst - totaalBelasting - zvwWg
-  // Druk = (IB netto + Zvw DGA + VPB + box 2) / BV-winst
+  const netto = nettoSalaris + dividendNetto;
   const druk = bvWinst > 0 ? totaalBelasting / bvWinst : 0;
 
   return { salaris, box1Inkomen, ibBruto, ahk, ak, hkSurplus, ibNetto, zvwDGA, zvwWg, winstNaSalaris, vpb, winstNaVPB, box2BrutoBel, box2Bel, dividendNetto, totaalBelasting, netto, druk };
