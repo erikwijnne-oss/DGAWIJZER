@@ -314,6 +314,9 @@ p{line-height:1.7;color:var(--text-body)}
 .ad-728x90{width:min(728px,100%);height:90px}
 .ad-300x250{width:300px;height:250px}
 .ad-300x600{width:300px;height:600px}
+/* Zolang er geen echte advertenties actief zijn: placeholders sitebreed verbergen.
+   Verwijder de regel hieronder zodra advertenties live gaan. */
+.ad-bar,.ad-placeholder{display:none}
 
 /* ── FOOTER ─────────────────────────────────────────────────── */
 .footer{background:var(--navy-dark);padding:56px 0 28px}
