@@ -28,7 +28,7 @@
 
 <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://dgawijzer.nl/#organization","name":"DGAWijzer.nl","url":"https://dgawijzer.nl/"},{"@type":"WebSite","@id":"https://dgawijzer.nl/#website","url":"https://dgawijzer.nl/","name":"DGAWijzer.nl","publisher":{"@id":"https://dgawijzer.nl/#organization"},"inLanguage":"nl-NL"},{"@type":"WebPage","@id":"https://dgawijzer.nl/dga-beleggen.html#page","url":"https://dgawijzer.nl/dga-beleggen.html","name":"Beleggen in de BV of privé (2026) | DGA box 3 vs holding berekenen","description":"Bereken of beleggen via de BV of privé voordeliger is. Bekijk de fiscale gevolgen van box 3, vennootschapsbelasting, box 2 en de onzekerheid rond werkelijk rendement.","inLanguage":"nl-NL","isPartOf":{"@id":"https://dgawijzer.nl/#website"},"publisher":{"@id":"https://dgawijzer.nl/#organization"},"breadcrumb":{"@id":"https://dgawijzer.nl/dga-beleggen.html#breadcrumb"}},{"@type":"BreadcrumbList","@id":"https://dgawijzer.nl/dga-beleggen.html#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://dgawijzer.nl/"},{"@type":"ListItem","position":2,"name":"Beleggen in de BV of privé: wat is slimmer?","item":"https://dgawijzer.nl/dga-beleggen.html"}]}]}</script>
 </head>
-<body>
+<body class="page-refined investment-page">
 <a class="skip-link" href="#main-content">Direct naar de inhoud</a>
 
 <!-- NAVIGATIE -->
@@ -83,19 +83,19 @@
   </div>
 </div>
 
-<div style="max-width:var(--max-w);margin:0 auto;padding:40px 5%">
+<nav class="topic-jumps container" aria-label="Op deze pagina"><a href="#verschil">Privé of BV</a><a href="#rekentool">Direct berekenen</a><a href="#box-3">Box 3</a><a href="#voorbeelden">Voorbeelden</a><a href="#vragen">Veelgestelde vragen</a></nav><div class="topic-content">
 
   <!-- ══════════════════════════════════════════
        1. VERSCHIL PRIVÉ vs BV
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="verschil" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:8px">Privé beleggen of beleggen in de BV: wat is het verschil?</h2>
-    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:24px">De kern is simpel: waar u uw geld parkeert, bepaalt welke belasting u betaalt. Privé? Dan box 3. In uw BV of holding? Dan vennootschapsbelasting en later misschien box 2.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.8;margin-bottom:24px">De kern is simpel: waar u uw geld parkeert, bepaalt welke belasting u betaalt. Privé? Dan box 3. In uw BV of holding? Dan vennootschapsbelasting en later misschien box 2.</p>
 
     <div class="vergelijk-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:24px">
       <div class="vergelijk-kaart prive">
         <span class="label">Priv&eacute; beleggen &mdash; box 3</span>
-        <h3>&#127968; Vermogen in priv&eacute;</h3>
+        <h3>Vermogen in priv&eacute;</h3>
         <ul>
           <li>Beleggingen vallen in <strong>box 3</strong></li>
           <li>Belasting over fictief rendement: <strong>6,00%</strong> per jaar op beleggingen (2026)</li>
@@ -112,7 +112,7 @@
 
       <div class="vergelijk-kaart bv">
         <span class="label">Beleggen in BV / holding</span>
-        <h3>&#127970; Vermogen in de BV of holding</h3>
+        <h3>Vermogen in de BV of holding</h3>
         <ul>
           <li>Rendement valt <strong>niet</strong> in box 3</li>
           <li>Winst belast met <strong>VPB: 19%</strong> (t/m &euro;200.000) of 25,8%</li>
@@ -130,26 +130,26 @@
 
     <!-- Belastingladder -->
     <div style="background:var(--gray-50);border-radius:var(--radius-lg);padding:22px">
-      <div style="font-size:13px;font-weight:700;color:var(--navy);margin-bottom:14px">Hoe werkt de belastingladder in de BV?</div>
+      <div style="font-size:14px;font-weight:700;color:var(--navy);margin-bottom:14px">Hoe werkt de belastingladder in de BV?</div>
       <div class="ladder">
         <div class="ladder-stap">
-          <span style="font-size:18px">&#128182;</span>
+          <span style="font-size:18px"></span>
           <div class="ladder-box vpb">Winst in BV &rarr; <strong>VPB 19% of 25,8%</strong> &mdash; de BV betaalt belasting over de beleggingswinst</div>
         </div>
         <div class="ladder-stap" style="padding-left:28px">
           <span class="ladder-pijl">&#8595;</span>
-          <span style="font-size:13px;color:var(--text-muted)">Geld blijft in BV? Geen verdere heffing. Geld naar priv&eacute; via dividend? Dan:</span>
+          <span style="font-size:14px;color:var(--text-muted)">Geld blijft in BV? Geen verdere heffing. Geld naar priv&eacute; via dividend? Dan:</span>
         </div>
         <div class="ladder-stap">
-          <span style="font-size:18px">&#128176;</span>
+          <span style="font-size:18px"></span>
           <div class="ladder-box b2">Dividend naar priv&eacute; &rarr; <strong>Box 2: 24,5% of 31%</strong> &mdash; u betaalt belasting als aandeelhouder</div>
         </div>
         <div class="ladder-stap" style="padding-left:28px">
           <span class="ladder-pijl">&#8595;</span>
-          <span style="font-size:13px;color:var(--text-muted)">Priv&eacute; vermogen? Dan over resterende bedrag:</span>
+          <span style="font-size:14px;color:var(--text-muted)">Priv&eacute; vermogen? Dan over resterende bedrag:</span>
         </div>
         <div class="ladder-stap">
-          <span style="font-size:18px">&#127968;</span>
+          <span style="font-size:18px"></span>
           <div class="ladder-box b3">Priv&eacute; beleggen &rarr; <strong>Box 3: 36% over fictief rendement (6%)</strong> elk jaar opnieuw</div>
         </div>
       </div>
@@ -159,41 +159,41 @@
   <!-- ══════════════════════════════════════════
        2. BOX 3 UITLEG
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="box-3" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:8px">Box 3 in 2026: wat betaalt u precies?</h2>
-    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:16px">Box 3 is de belastingbox voor vermogen dat u in priv&eacute; aanhoudt: spaargeld, beleggingen, cryptovaluta, een tweede woning. U betaalt <em>niet</em> over wat u werkelijk verdiend heeft, maar over een <strong>fictief rendement</strong> dat de overheid vaststelt.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.8;margin-bottom:16px">Box 3 is de belastingbox voor vermogen dat u in priv&eacute; aanhoudt: spaargeld, beleggingen, cryptovaluta, een tweede woning. U betaalt <em>niet</em> over wat u werkelijk verdiend heeft, maar over een <strong>fictief rendement</strong> dat de overheid vaststelt.</p>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px">
+    <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px;margin-bottom:20px">
       <div style="background:var(--navy-xlight);border:1px solid var(--navy-light);border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--navy);margin-bottom:6px">Tarief</div>
+        <div style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--navy);margin-bottom:6px">Tarief</div>
         <div style="font-size:1.4rem;font-weight:800;color:var(--navy)">36%</div>
-        <div style="font-size:12px;color:var(--text-muted)">over het fictieve rendement</div>
+        <div style="font-size:14px;color:var(--text-muted)">over het fictieve rendement</div>
       </div>
       <div style="background:#fef9c3;border:1px solid #fef08a;border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#854d0e;margin-bottom:6px">Fictief rendement beleggingen</div>
+        <div style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#854d0e;margin-bottom:6px">Fictief rendement beleggingen</div>
         <div style="font-size:1.4rem;font-weight:800;color:#854d0e">6,00%</div>
-        <div style="font-size:12px;color:var(--text-muted)">per jaar (2026, overige bezittingen)</div>
+        <div style="font-size:14px;color:var(--text-muted)">per jaar (2026, overige bezittingen)</div>
       </div>
       <div style="background:var(--green-xlight);border:1px solid var(--green-light);border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green-dark);margin-bottom:6px">Heffingsvrij vermogen</div>
+        <div style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--green-dark);margin-bottom:6px">Heffingsvrij vermogen</div>
         <div style="font-size:1.4rem;font-weight:800;color:var(--navy)">&euro;59.357</div>
-        <div style="font-size:12px;color:var(--text-muted)">per persoon (met partner: &euro;118.714)</div>
+        <div style="font-size:14px;color:var(--text-muted)">per persoon (met partner: &euro;118.714)</div>
       </div>
       <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:6px">Effectieve druk op beleggingen</div>
+        <div style="font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:var(--text-muted);margin-bottom:6px">Effectieve druk op beleggingen</div>
         <div style="font-size:1.4rem;font-weight:800;color:var(--navy)">~2,16%</div>
-        <div style="font-size:12px;color:var(--text-muted)">6% &times; 36% = 2,16% per jaar van de waarde</div>
+        <div style="font-size:14px;color:var(--text-muted)">6% &times; 36% = 2,16% per jaar van de waarde</div>
       </div>
     </div>
 
     <div class="infobox" style="margin-bottom:14px">
-      &#128203; <strong>Let op: spaargeld is anders.</strong> Voor banktegoeden geldt een lager fictief rendement (voorlopig ca. 1,28% voor 2026). De 6%-grondslag geldt voor beleggingen en overige bezittingen. De definitieve percentages voor spaargeld worden begin 2027 vastgesteld.
+      <strong>Let op: spaargeld is anders.</strong> Voor banktegoeden geldt een lager fictief rendement (voorlopig ca. 1,28% voor 2026). De 6%-grondslag geldt voor beleggingen en overige bezittingen. De definitieve percentages voor spaargeld worden begin 2027 vastgesteld.
     </div>
 
     <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px">Wat verandert er? Werkelijk rendement per 2028</h3>
-    <p style="font-size:14px;color:var(--text-body);line-height:1.75;margin-bottom:10px">Het box 3-systeem staat al jaren ter discussie. Het Hoge Raad-arrest van 2021 (Kerstarrest) maakte duidelijk dat de fictieve heffing in sommige gevallen onrechtmatig was. Het kabinet wil per <strong>1 januari 2028</strong> overstappen op een systeem op basis van <strong>werkelijk rendement</strong>.</p>
-    <p style="font-size:14px;color:var(--text-body);line-height:1.75;margin-bottom:10px">Wat betekent dat? U betaalt dan belasting over wat u <em>daadwerkelijk</em> verdiend heeft met uw vermogen &mdash; inclusief ongerealiseerde koerswinsten. Of dat voor u gunstiger of ongunstiger uitpakt, hangt af van uw beleggingsstrategie.</p>
-    <p style="font-size:14px;color:var(--text-body);line-height:1.75">In de tussentijd geldt de <strong>tegenbewijsregeling</strong>: is uw werkelijk rendement l&oacute;ger dan het fictieve rendement? Dan kunt u dat aantonen bij de Belastingdienst en betaalt u belasting over het lagere werkelijke rendement.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.75;margin-bottom:10px">Het box 3-systeem staat al jaren ter discussie. Het Hoge Raad-arrest van 2021 (Kerstarrest) maakte duidelijk dat de fictieve heffing in sommige gevallen onrechtmatig was. Het kabinet wil per <strong>1 januari 2028</strong> overstappen op een systeem op basis van <strong>werkelijk rendement</strong>.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.75;margin-bottom:10px">Wat betekent dat? U betaalt dan belasting over wat u <em>daadwerkelijk</em> verdiend heeft met uw vermogen &mdash; inclusief ongerealiseerde koerswinsten. Of dat voor u gunstiger of ongunstiger uitpakt, hangt af van uw beleggingsstrategie.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.75">In de tussentijd geldt de <strong>tegenbewijsregeling</strong>: is uw werkelijk rendement l&oacute;ger dan het fictieve rendement? Dan kunt u dat aantonen bij de Belastingdienst en betaalt u belasting over het lagere werkelijke rendement.</p>
 
     <div class="waarschuwing" style="margin-top:14px">
       &#9888;&#65039; <strong>Peildatumarbitrage:</strong> probeert u beleggingen tijdelijk om te zetten naar spaargeld rond 1 januari (de peildatum)? De Belastingdienst kan dit als belastingontwijking aanmerken. Doe dit alleen als het een ge&euml;chte strategie is, niet alleen om box 3 te verlagen.
@@ -203,36 +203,36 @@
   <!-- ══════════════════════════════════════════
        3. PERSONAL HOLDING
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="holding" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:8px">Beleggen via een personal holding</h2>
-    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:16px">Een personal holding is een BV die u als enige aandeelhouder heeft. De holding heeft doorgaans aandelen in uw werk-BV en ontvangt via de deelnemingsvrijstelling winst of dividend van die werk-BV belastingvrij.</p>
-    <p style="font-size:15px;color:var(--text-body);line-height:1.8;margin-bottom:20px">Veel DGA's laten overtollige liquiditeit (geld dat niet direct nodig is) in de holding staan. Dat geld valt dan <em>niet</em> in box 3 en bouwt rendementen op binnen de BV-structuur &mdash; pas als u het uitkeert als dividend betaalt u box 2.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.8;margin-bottom:16px">Een personal holding is een BV die u als enige aandeelhouder heeft. De holding heeft doorgaans aandelen in uw werk-BV en ontvangt via de deelnemingsvrijstelling winst of dividend van die werk-BV belastingvrij.</p>
+    <p style="font-size:1rem;color:var(--text-body);line-height:1.8;margin-bottom:20px">Veel DGA's laten overtollige liquiditeit (geld dat niet direct nodig is) in de holding staan. Dat geld valt dan <em>niet</em> in box 3 en bouwt rendementen op binnen de BV-structuur &mdash; pas als u het uitkeert als dividend betaalt u box 2.</p>
 
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px">
+    <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:20px">
       <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px 18px">
-        <div style="font-size:18px;margin-bottom:8px">&#127775;</div>
+        <div style="font-size:18px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Voordeel: uitstel box 2</div>
-        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Zolang geld in de holding blijft, betaalt u geen box 2. Het rente-op-rente effect werkt in uw voordeel.</div>
+        <div style="font-size:14px;color:var(--text-body);line-height:1.65">Zolang geld in de holding blijft, betaalt u geen box 2. Het rente-op-rente effect werkt in uw voordeel.</div>
       </div>
       <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px 18px">
-        <div style="font-size:18px;margin-bottom:8px">&#127774;</div>
+        <div style="font-size:18px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Voordeel: geen box 3</div>
-        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Vermogen in de holding valt niet in box 3. U betaalt jaarlijks geen fictieve rendementsheffing over dat vermogen.</div>
+        <div style="font-size:14px;color:var(--text-body);line-height:1.65">Vermogen in de holding valt niet in box 3. U betaalt jaarlijks geen fictieve rendementsheffing over dat vermogen.</div>
       </div>
       <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px 18px">
-        <div style="font-size:18px;margin-bottom:8px">&#128203;</div>
+        <div style="font-size:18px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Nadeel: administratie</div>
-        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Een BV vereist jaarlijks een jaarrekening, VPB-aangifte, deponering bij KvK en eventueel een accountantscontrole.</div>
+        <div style="font-size:14px;color:var(--text-body);line-height:1.65">Een BV vereist jaarlijks een jaarrekening, VPB-aangifte, deponering bij KvK en eventueel een accountantscontrole.</div>
       </div>
       <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px 18px">
-        <div style="font-size:18px;margin-bottom:8px">&#128274;</div>
+        <div style="font-size:18px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Nadeel: minder vrij</div>
-        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Geld in de BV is niet zomaar uw geld. Wilt u het priv&eacute; besteden, dan moet u dividend uitkeren of een lening afsluiten.</div>
+        <div style="font-size:14px;color:var(--text-body);line-height:1.65">Geld in de BV is niet zomaar uw geld. Wilt u het priv&eacute; besteden, dan moet u dividend uitkeren of een lening afsluiten.</div>
       </div>
     </div>
 
     <div class="infobox">
-      &#128204; <strong>Excessief lenen van de eigen BV:</strong> heeft u meer dan <strong>&euro;500.000</strong> geleend van uw BV? Dan is het meerdere belast als inkomen uit aanmerkelijk belang (box 2). Dit heet de &lsquo;Wet excessief lenen&rsquo;. Schulden voor de eigen woning tellen niet mee.
+      <strong>Excessief lenen van de eigen BV:</strong> heeft u meer dan <strong>&euro;500.000</strong> geleend van uw BV? Dan is het meerdere belast als inkomen uit aanmerkelijk belang (box 2). Dit heet de &lsquo;Wet excessief lenen&rsquo;. Schulden voor de eigen woning tellen niet mee.
     </div>
   </section>
 
@@ -244,7 +244,7 @@
     De vergelijking tussen privé beleggen en beleggen via de BV hangt mede af van de toekomstige box 3-heffing. Het wetsvoorstel Wet werkelijk rendement box 3 is nog niet definitief aangenomen. Reken meerdere scenario's door en gebruik de uitkomst hieronder als indicatie &mdash; niet als definitief fiscaal advies.
   </div>
   <section style="margin-bottom:48px">
-    <div class="reken-wrap">
+    <div class="reken-wrap" id="rekentool">
       <div class="reken-header">
         <h2>Rekentool: privé beleggen vs beleggen in de BV</h2>
         <p>Vul uw situatie in en zie de indicatieve uitkomst per scenario. Dit is een vereenvoudigd model &mdash; geen fiscaal advies.</p>
@@ -252,7 +252,7 @@
       <div class="reken-body">
 
         <!-- Invoer -->
-        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin-bottom:16px">
+        <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:16px;margin-bottom:16px">
           <div class="fg" style="margin-bottom:0">
             <label for="rt-bedrag">Bedrag om te beleggen</label>
             <div style="position:relative">
@@ -274,12 +274,12 @@
             <div style="position:relative">
               <input type="number" id="rt-jaren" value="15" min="1" max="50" step="1"
                 style="padding-right:46px" oninput="rtBereken()"/>
-              <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:12px">jaar</span>
+              <span style="position:absolute;right:12px;top:50%;transform:translateY(-50%);color:var(--text-muted);font-size:14px">jaar</span>
             </div>
           </div>
         </div>
 
-        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:8px">
+        <div class="investment-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:8px">
           <div class="fg" style="margin-bottom:0">
             <label for="rt-vpb">VPB-tarief BV</label>
             <select id="rt-vpb" onchange="rtBereken()">
@@ -296,7 +296,7 @@
           </div>
         </div>
 
-        <div style="font-size:12px;color:var(--text-light);margin-bottom:20px;padding:10px 12px;background:var(--gray-50);border-radius:var(--radius-sm)">
+        <div style="font-size:14px;color:var(--text-light);margin-bottom:20px;padding:10px 12px;background:var(--gray-50);border-radius:var(--radius-sm)">
           Box 3: 36% tarief over 6,00% fictief rendement op beleggingen (2026) = effectief ~2,16% per jaar van de waarde. Heffingsvrij vermogen (&euro;59.357) is hier buiten beschouwing gelaten voor een zuivere vergelijking.
         </div>
 
@@ -305,7 +305,7 @@
           <!-- Gevuld door JS -->
         </div>
 
-        <div style="margin-top:16px;font-size:12px;color:var(--text-light);line-height:1.6;padding:12px;background:var(--gray-50);border-radius:var(--radius-sm)">
+        <div style="margin-top:16px;font-size:14px;color:var(--text-light);line-height:1.6;padding:12px;background:var(--gray-50);border-radius:var(--radius-sm)">
           &#9888;&#65039; <strong>Indicatie &mdash; geen advies:</strong> dit model gaat uit van een constant rendement, geen inflatie, geen andere inkomsten en geen wijzigingen in tarieven. De werkelijkheid is ingewikkelder. Door de onzekerheid rond de toekomstige box 3-heffing (werkelijk rendement per 2028) kan de fiscale uitkomst voor privé beleggen wijzigen. Gebruik de uitkomst als scenariovergelijking. Raadpleeg een fiscalist of financieel planner voor uw specifieke situatie.
         </div>
       </div>
@@ -315,9 +315,9 @@
   <!-- ══════════════════════════════════════════
        5. REKENVOORBEELDEN
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="voorbeelden" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:8px">Rekenvoorbeelden</h2>
-    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">Drie concrete voorbeelden om het verschil te illustreren. Aanname: 6% jaarlijks rendement, VPB 19%, box 2 24,5%.</p>
+    <p style="font-size:1rem;color:var(--text-muted);margin-bottom:20px">Drie concrete voorbeelden om het verschil te illustreren. Aanname: 6% jaarlijks rendement, VPB 19%, box 2 24,5%.</p>
 
     <!-- Voorbeeld 1 -->
     <div class="voorbeeld">
@@ -325,28 +325,28 @@
         <div class="voorbeeld-titel">Voorbeeld 1 &mdash; &euro;100.000 gedurende 10 jaar</div>
         <span class="voorbeeld-badge">10 jaar</span>
       </div>
-      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;100.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+      <p style="font-size:1rem;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;100.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
+      <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
         <div style="background:#f0f4ff;border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
+          <div style="font-size:14px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;157.800</div>
-          <div style="font-size:11px;color:var(--text-muted)">Netto na box 3 heffing</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;79.085 &bull; box 3 kosten &euro;21.285</div>
+          <div style="font-size:14px;color:var(--text-muted)">Netto na box 3 heffing</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;79.085 &bull; box 3 kosten &euro;21.285</div>
         </div>
         <div style="background:var(--green-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
+          <div style="font-size:14px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;143.900</div>
-          <div style="font-size:11px;color:var(--text-muted)">In BV na VPB (nog niet priv&eacute;)</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;79.085 &bull; VPB &euro;15.027 &bull; rest in BV</div>
+          <div style="font-size:14px;color:var(--text-muted)">In BV na VPB (nog niet priv&eacute;)</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;79.085 &bull; VPB &euro;15.027 &bull; rest in BV</div>
         </div>
         <div style="background:var(--navy-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;108.500</div>
-          <div style="font-size:11px;color:var(--text-muted)">Netto priv&eacute; na VPB + box 2</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">VPB &euro;15.027 + box 2 &euro;20.355 = totaal &euro;35.382 belasting</div>
+          <div style="font-size:14px;color:var(--text-muted)">Netto priv&eacute; na VPB + box 2</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">VPB &euro;15.027 + box 2 &euro;20.355 = totaal &euro;35.382 belasting</div>
         </div>
       </div>
-      <div style="font-size:12px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
+      <div style="font-size:14px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
         <strong>Conclusie:</strong> Priv&eacute; in box 3 levert hier het h&oacute;&oacute;gste netto priv&eacute;bedrag als u het geld aan het einde wilt ontvangen. Geld in de BV laten heeft alleen een voordeel als u het <em>lang</em> in de BV houdt en herinvesteert &mdash; het compound-effect werkt dan in uw voordeel.
       </div>
     </div>
@@ -357,26 +357,26 @@
         <div class="voorbeeld-titel">Voorbeeld 2 &mdash; &euro;250.000 gedurende 15 jaar</div>
         <span class="voorbeeld-badge">15 jaar</span>
       </div>
-      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;250.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+      <p style="font-size:1rem;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;250.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
+      <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
         <div style="background:#f0f4ff;border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
+          <div style="font-size:14px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;351.600</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;348.597 &bull; box 3 kosten ca. &euro;81.700</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Bruto groei &euro;348.597 &bull; box 3 kosten ca. &euro;81.700</div>
         </div>
         <div style="background:var(--green-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
+          <div style="font-size:14px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;453.500</div>
-          <div style="font-size:11px;color:var(--text-muted)">In BV na VPB (nog niet priv&eacute;)</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Hoger door compound-effect op het uitgestelde belastingkapitaal</div>
+          <div style="font-size:14px;color:var(--text-muted)">In BV na VPB (nog niet priv&eacute;)</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Hoger door compound-effect op het uitgestelde belastingkapitaal</div>
         </div>
         <div style="background:var(--navy-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;342.200</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">VPB + box 2 samen ca. &euro;161.300 &bull; compound werkt mee</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">VPB + box 2 samen ca. &euro;161.300 &bull; compound werkt mee</div>
         </div>
       </div>
-      <div style="font-size:12px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
+      <div style="font-size:14px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
         <strong>Conclusie:</strong> bij een langere horizon beginnen de voordelen van beleggen in de BV duidelijker te worden. Het geld in de BV heeft l&aacute;nger kunnen groeien op een grotere basis. Toch is ook hier het netto priv&eacute;bedrag na uitkeren nog vrijwel gelijk aan box 3.
       </div>
     </div>
@@ -387,25 +387,25 @@
         <div class="voorbeeld-titel">Voorbeeld 3 &mdash; &euro;500.000 gedurende 20 jaar</div>
         <span class="voorbeeld-badge">20 jaar</span>
       </div>
-      <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;500.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
-      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
+      <p style="font-size:1rem;color:var(--text-muted);margin-bottom:12px">Startbedrag &euro;500.000 &bull; 6% rendement &bull; VPB 19% &bull; box 2 24,5%</p>
+      <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,220px),1fr));gap:12px">
         <div style="background:#f0f4ff;border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
+          <div style="font-size:14px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Priv&eacute; box 3</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;616.400</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Box 3 knaagt elk jaar ~2,16% van de waarde af</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Box 3 knaagt elk jaar ~2,16% van de waarde af</div>
         </div>
         <div style="background:var(--green-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
+          <div style="font-size:14px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">BV &mdash; geld blijft in BV</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;1.125.500</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Compound op grotere basis 20 jaar lang &mdash; significant voordeel</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Compound op grotere basis 20 jaar lang &mdash; significant voordeel</div>
         </div>
         <div style="background:var(--navy-xlight);border-radius:var(--radius-md);padding:14px">
-          <div style="font-size:11px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
+          <div style="font-size:14px;font-weight:700;color:var(--navy);text-transform:uppercase;margin-bottom:6px">BV &rarr; uitkeren priv&eacute;</div>
           <div style="font-size:1.2rem;font-weight:800;color:var(--navy);margin-bottom:2px">&euro;849.600</div>
-          <div style="font-size:12px;color:var(--text-muted);margin-top:6px">Na VPB + box 2 nog steeds ca. &euro;233.200 meer dan box 3</div>
+          <div style="font-size:14px;color:var(--text-muted);margin-top:6px">Na VPB + box 2 nog steeds ca. &euro;233.200 meer dan box 3</div>
         </div>
       </div>
-      <div style="font-size:12px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
+      <div style="font-size:14px;color:var(--text-muted);margin-top:10px;padding:10px;background:var(--gray-50);border-radius:var(--radius-sm)">
         <strong>Conclusie:</strong> bij 20 jaar en een groot bedrag is de BV-route duidelijk aantrekkelijker &mdash; zelfs als u alles aan het einde naar priv&eacute; uitkeert. Het samengestelde groeiverschil wordt met de jaren groter.
       </div>
     </div>
@@ -420,7 +420,7 @@
   ══════════════════════════════════════════ -->
   <section style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:12px">Box 3 blijft onzeker: wat betekent dit voor DGA's die privé of via de BV beleggen?</h2>
-    <p style="font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px">De box 3-heffing staat al jaren ter discussie. Na meerdere rechtszaken &mdash; waaronder het arrest van de Hoge Raad in 2021 &mdash; heeft het kabinet besloten het stelsel grondig te herzien. Het wetsvoorstel Wet werkelijk rendement box 3 (WWR) is ingediend, maar nog niet definitief aangenomen. Invoering is voorzien per 1 januari 2028, maar vertraging is niet uitgesloten.</p>
+    <p style="font-size:1rem;color:var(--text);line-height:1.7;margin-bottom:16px">De box 3-heffing staat al jaren ter discussie. Na meerdere rechtszaken &mdash; waaronder het arrest van de Hoge Raad in 2021 &mdash; heeft het kabinet besloten het stelsel grondig te herzien. Het wetsvoorstel Wet werkelijk rendement box 3 (WWR) is ingediend, maar nog niet definitief aangenomen. Invoering is voorzien per 1 januari 2028, maar vertraging is niet uitgesloten.</p>
 
     <div class="infobox" style="margin-bottom:20px">
       <strong>Wat verandert er met werkelijk rendement?</strong>
@@ -433,22 +433,22 @@
     </div>
 
     <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px">Wat betekent dit voor de keuze tussen privé en BV beleggen?</h3>
-    <p style="font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px">De vergelijking in de rekentool hierboven gaat uit van het huidige box 3-stelsel (2026). Als het WWR-stelsel per 2028 ingaat, verandert de belastingdruk op privé beleggen. Of de BV dan gunstiger of ongunstiger wordt, hangt af van uw werkelijke rendement:</p>
+    <p style="font-size:1rem;color:var(--text);line-height:1.7;margin-bottom:16px">De vergelijking in de rekentool hierboven gaat uit van het huidige box 3-stelsel (2026). Als het WWR-stelsel per 2028 ingaat, verandert de belastingdruk op privé beleggen. Of de BV dan gunstiger of ongunstiger wordt, hangt af van uw werkelijke rendement:</p>
 
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
+    <div class="investment-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:20px">
       <div style="background:var(--green-xlight);border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:12px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">Hoog werkelijk rendement (&gt;6%)</div>
-        <p style="font-size:13px;color:var(--text);line-height:1.6;margin:0">Het nieuwe stelsel belast méér dan het huidige forfait. Beleggen via de BV kan relatief aantrekkelijker worden, omdat VPB en box 2 pas bij uitkering spelen.</p>
+        <div style="font-size:14px;font-weight:700;color:var(--green-dark);text-transform:uppercase;margin-bottom:6px">Hoog werkelijk rendement (&gt;6%)</div>
+        <p style="font-size:1rem;color:var(--text);line-height:1.6;margin:0">Het nieuwe stelsel belast méér dan het huidige forfait. Beleggen via de BV kan relatief aantrekkelijker worden, omdat VPB en box 2 pas bij uitkering spelen.</p>
       </div>
       <div style="background:#f0f4ff;border-radius:var(--radius-md);padding:16px">
-        <div style="font-size:12px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Laag werkelijk rendement (&lt;6%)</div>
-        <p style="font-size:13px;color:var(--text);line-height:1.6;margin:0">Het nieuwe stelsel belast minder dan het huidige forfait. Privé beleggen wordt relatief aantrekkelijker. De BV verliest een deel van zijn voordeel.</p>
+        <div style="font-size:14px;font-weight:700;color:#4f46e5;text-transform:uppercase;margin-bottom:6px">Laag werkelijk rendement (&lt;6%)</div>
+        <p style="font-size:1rem;color:var(--text);line-height:1.6;margin:0">Het nieuwe stelsel belast minder dan het huidige forfait. Privé beleggen wordt relatief aantrekkelijker. De BV verliest een deel van zijn voordeel.</p>
       </div>
     </div>
 
     <h3 style="font-size:1.05rem;font-weight:700;color:var(--navy);margin-bottom:8px">Dividend en de BV: blijft ongewijzigd</h3>
-    <p style="font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px">Beleggen via de BV valt buiten box 3. Het nieuwe stelsel heeft <em>geen directe invloed</em> op de BV-route: de BV betaalt VPB over winst en u betaalt box 2 bij <a href="dga-dividend.html" style="color:var(--green);font-weight:500">dividend uitkeren als DGA</a>. Wat wél kan veranderen: als privé beleggen relatief goedkoper wordt, verschuift de break-evenpoint in de vergelijking.</p>
-    <p style="font-size:15px;color:var(--text);line-height:1.7;margin-bottom:16px">Wilt u weten wanneer dividend uitkeren fiscaal optimaal is? Lees dan <a href="kennisbank-dividend-uitkeren.html" style="color:var(--green);font-weight:500">onze uitleg over dividend uitkeren als DGA</a>.</p>
+    <p style="font-size:1rem;color:var(--text);line-height:1.7;margin-bottom:16px">Beleggen via de BV valt buiten box 3. Het nieuwe stelsel heeft <em>geen directe invloed</em> op de BV-route: de BV betaalt VPB over winst en u betaalt box 2 bij <a href="dga-dividend.html" style="color:var(--green);font-weight:500">dividend uitkeren als DGA</a>. Wat wél kan veranderen: als privé beleggen relatief goedkoper wordt, verschuift de break-evenpoint in de vergelijking.</p>
+    <p style="font-size:1rem;color:var(--text);line-height:1.7;margin-bottom:16px">Wilt u weten wanneer dividend uitkeren fiscaal optimaal is? Lees dan <a href="kennisbank-dividend-uitkeren.html" style="color:var(--green);font-weight:500">onze uitleg over dividend uitkeren als DGA</a>.</p>
 
     <div class="waarschuwing">
       &#9888;&#65039; <strong>Onzekerheidswaarschuwing:</strong> de Wet werkelijk rendement box 3 is nog niet aangenomen. De tarieven, peildatums en definitieve systematiek kunnen nog wijzigen. Baseer uw beleggingsstrategie niet uitsluitend op dit wetsvoorstel. Laat u adviseren door een belastingadviseur of financieel planner die de actuele stand van zaken kent.
@@ -458,13 +458,13 @@
   <!-- ══════════════════════════════════════════
        6. WAT VERGETEN DGA'S?
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="aandachtspunten" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:6px">Wat vergeten DGA&apos;s vaak?</h2>
-    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px;max-width:700px">Beleggen in de BV klinkt aantrekkelijk. Maar er zijn valkuilen die mensen vaak vergeten.</p>
+    <p style="font-size:1rem;color:var(--text-muted);margin-bottom:20px;max-width:700px">Beleggen in de BV klinkt aantrekkelijk. Maar er zijn valkuilen die mensen vaak vergeten.</p>
 
     <div style="background:#fff;border:1px solid var(--gray-200);border-radius:var(--radius-lg);overflow:hidden">
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128260;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Box 2 komt later toch</div>
           <p class="vergeet-tekst">Het is uitstel, geen afstel. Zodra u geld uitkeert als dividend, betaalt u box 2. Dat kan heel anders uitpakken als tarieven zijn veranderd of als u een hogere box 2-schijf bereikt bij een grote eenmalige uitkering.</p>
@@ -472,7 +472,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128274;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Geld in de BV is minder vrij</div>
           <p class="vergeet-tekst">Geld in de BV is juridisch het vermogen van de BV, niet van u persoonlijk. Wilt u het gebruiken voor priv&eacute;-uitgaven? Dan moet u <a href="dga-dividend.html" style="color:var(--green);font-weight:500">dividend uitkeren</a> (box 2), een lening afsluiten of salaris ophogen. Dat kost altijd belasting of papierwerk.</p>
@@ -480,7 +480,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128203;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Administratielasten</div>
           <p class="vergeet-tekst">Een BV heeft jaarlijks een jaarrekening nodig, een VPB-aangifte, deponering bij de KvK en mogelijk accountantskosten. Tel hier een bedrag van &euro;2.000&ndash;&euro;5.000 per jaar bij op. Dat eet in kleinere vermogens snel in op het belastingvoordeel.</p>
@@ -488,7 +488,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128176;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Excessief lenen van de BV</div>
           <p class="vergeet-tekst">Leent u meer dan &euro;500.000 van uw eigen BV? Dan is het meerdere in box 2 belast &mdash; ook zonder dividend. Dit geldt voor alle schulden bij uw BV en verbonden BV&apos;s samen, behalve eigenwoningschuld.</p>
@@ -496,7 +496,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128101;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Effect van een fiscaal partner</div>
           <p class="vergeet-tekst">Met een fiscaal partner verdubbelt uw box 2-grens naar &euro;137.686 (2026). Dat kan het voordeel van gefaseerd uitkeren vergroten. Ook heffingsvrij vermogen in box 3 is dubbel (&euro;118.714). Dit kan de vergelijking significant veranderen.</p>
@@ -504,7 +504,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0;border-bottom:1px solid var(--gray-100)">
-        <div class="vergeet-icon">&#128200;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Tarieven kunnen veranderen</div>
           <p class="vergeet-tekst">VPB-tarieven, box 2-tarieven en box 3-tarieven zijn in de afgelopen jaren meerdere keren gewijzigd. Uw berekening van vandaag is gebaseerd op de tarieven van vandaag. Langetermijnplannen kunnen door tariefwijzigingen heel anders uitpakken. Gebruik de <a href="calculators-optimaal-salaris.html" style="color:var(--green);font-weight:500">optimaal salaris calculator</a> om uw actuele belastingdruk in kaart te brengen.</p>
@@ -512,7 +512,7 @@
       </div>
 
       <div class="vergeet-item" style="padding:18px 22px;margin:0">
-        <div class="vergeet-icon">&#127981;</div>
+        <div class="vergeet-icon"></div>
         <div>
           <div class="vergeet-titel">Liquiditeitsverschil: priv&eacute; vs BV</div>
           <p class="vergeet-tekst">Heeft u het geld snel nodig voor priv&eacute;doeleinden (huis, studiekosten, onverwachte uitgaven)? Dan is priv&eacute; beleggen vaak praktischer. Geld uit de BV halen kost tijd, papierwerk en belasting op het moment dat u het nodig heeft.</p>
@@ -524,7 +524,7 @@
   <!-- ══════════════════════════════════════════
        7. FAQ
   ══════════════════════════════════════════ -->
-  <section style="margin-bottom:48px">
+  <section id="vragen" style="margin-bottom:48px">
     <h2 style="font-size:1.35rem;font-weight:700;color:var(--navy);margin-bottom:20px">Veelgestelde vragen over beleggen als DGA</h2>
 
     <details class="faq-item">
@@ -573,41 +573,41 @@
   ══════════════════════════════════════════ -->
   <section style="padding-top:40px;border-top:1px solid var(--gray-200)">
     <h2 style="font-size:1.2rem;font-weight:700;color:var(--navy);margin-bottom:6px">Verder rekenen en verdiepen</h2>
-    <p style="font-size:14px;color:var(--text-muted);margin-bottom:20px">Beleggen in de BV hangt samen met uw salaris, dividend en de totale belastingdruk. Gebruik de tools van DGAwijzer om uw situatie door te rekenen.</p>
-    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
+    <p style="font-size:1rem;color:var(--text-muted);margin-bottom:20px">Beleggen in de BV hangt samen met uw salaris, dividend en de totale belastingdruk. Gebruik de tools van DGAwijzer om uw situatie door te rekenen.</p>
+    <div class="investment-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px">
 
       <a href="dga-salaris.html" style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:18px;text-decoration:none;transition:box-shadow .2s,border-color .2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
-        <div style="font-size:20px;margin-bottom:8px">&#9878;&#65039;</div>
+        <div style="font-size:20px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">DGA Salaris stappenplan</div>
-        <div style="font-size:12px;color:var(--text-muted);line-height:1.6;flex:1">Gebruikelijkloonregeling en wettelijke toetsen.</div>
+        <div style="font-size:14px;color:var(--text-muted);line-height:1.6;flex:1">Gebruikelijkloonregeling en wettelijke toetsen.</div>
         <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:12px">Bekijk</span>
       </a>
 
       <a href="dga-dividend.html" style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:18px;text-decoration:none;transition:box-shadow .2s,border-color .2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
-        <div style="font-size:20px;margin-bottom:8px">&#128176;</div>
+        <div style="font-size:20px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">DGA Dividend</div>
-        <div style="font-size:12px;color:var(--text-muted);line-height:1.6;flex:1">Bereken bruto netto dividend inclusief box 2 en vastlegging.</div>
+        <div style="font-size:14px;color:var(--text-muted);line-height:1.6;flex:1">Bereken bruto netto dividend inclusief box 2 en vastlegging.</div>
         <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:12px">Bereken</span>
       </a>
 
       <a href="calculators-salaris-vs-dividend.html" style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:18px;text-decoration:none;transition:box-shadow .2s,border-color .2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
-        <div style="font-size:20px;margin-bottom:8px">&#9878;&#65039;</div>
+        <div style="font-size:20px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Salaris vs. dividend</div>
-        <div style="font-size:12px;color:var(--text-muted);line-height:1.6;flex:1">Vergelijk wat netto meer oplevert in 2026.</div>
+        <div style="font-size:14px;color:var(--text-muted);line-height:1.6;flex:1">Vergelijk wat netto meer oplevert in 2026.</div>
         <span class="btn btn-navy btn-sm" style="align-self:flex-start;margin-top:12px">Vergelijk</span>
       </a>
 
             <a href="calculators-bv-vs-eenmanszaak.html" style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:18px;text-decoration:none;transition:box-shadow .2s,border-color .2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
-        <div style="font-size:20px;margin-bottom:8px">&#128703;</div>
+        <div style="font-size:20px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">BV vs. eenmanszaak</div>
-        <div style="font-size:12px;color:var(--text-muted);line-height:1.6;flex:1">Twijfelt u nog over uw rechtsvorm? Vergelijk BV en eenmanszaak op belasting en kosten.</div>
+        <div style="font-size:14px;color:var(--text-muted);line-height:1.6;flex:1">Twijfelt u nog over uw rechtsvorm? Vergelijk BV en eenmanszaak op belasting en kosten.</div>
         <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:12px">Vergelijk</span>
       </a>
 
       <a href="kennisbank-holding-structuur.html" style="display:flex;flex-direction:column;background:#fff;border:1.5px solid var(--gray-200);border-radius:var(--radius-lg);padding:18px;text-decoration:none;transition:box-shadow .2s,border-color .2s" onmouseover="this.style.boxShadow='var(--shadow-md)';this.style.borderColor='var(--navy)'" onmouseout="this.style.boxShadow='';this.style.borderColor='var(--gray-200)'">
-        <div style="font-size:20px;margin-bottom:8px">&#127970;</div>
+        <div style="font-size:20px;margin-bottom:8px"></div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Holdingstructuur</div>
-        <div style="font-size:12px;color:var(--text-muted);line-height:1.6;flex:1">Hoe werkt een holding- en werkmaatschappijstructuur?</div>
+        <div style="font-size:14px;color:var(--text-muted);line-height:1.6;flex:1">Hoe werkt een holding- en werkmaatschappijstructuur?</div>
         <span class="btn btn-outline btn-sm" style="align-self:flex-start;margin-top:12px">Lees meer</span>
       </a>
 
