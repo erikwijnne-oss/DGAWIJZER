@@ -157,7 +157,7 @@
 
         <!-- Handmatig invoeren link -->
         <div style="text-align:center;margin-top:12px">
-          <a href="bijtelling-berekenen.html" style="font-size:12px;color:var(--text-muted);text-decoration:none">Liever handmatig invoeren? &#8594;</a>
+          <a href="bijtelling-auto-berekenen.html#tab-handmatig" style="font-size:12px;color:var(--text-muted);text-decoration:none">Liever handmatig invoeren? &#8594;</a>
         </div>
       </div>
     </div>
@@ -247,7 +247,7 @@
       <div style="background:var(--gray-50);border:1px solid var(--gray-200);border-radius:var(--radius-md);padding:16px 18px">
         <div style="font-size:15px;margin-bottom:8px">&#127919;</div>
         <div style="font-size:.9rem;font-weight:700;color:var(--navy);margin-bottom:5px">Fiscale optimalisatie</div>
-        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Weeg de bijtelling af tegen de kosten van een priv&eacute;auto + &euro;0,23/km vergoeding. Onze <a href="calculators-optimaal-salaris.html" style="color:var(--green);font-weight:500">salaris calculator</a> helpt hierbij.</div>
+        <div style="font-size:13px;color:var(--text-body);line-height:1.65">Weeg de bijtelling af tegen de kosten van een priv&eacute;auto + maximaal &euro;0,25/km onbelaste vergoeding (2026). Onze <a href="calculators-optimaal-salaris.html" style="color:var(--green);font-weight:500">salaris calculator</a> helpt hierbij.</div>
       </div>
     </div>
     <div style="background:#fffbeb;border:1px solid #fef08a;border-left:3px solid #f59e0b;border-radius:0 var(--radius-md) var(--radius-md) 0;padding:13px 16px;font-size:13px;color:#92400e">
@@ -339,7 +339,7 @@
 </div>
 
 
-<section class="source-panel page-sources" aria-label="Bronnen en gebruik"><h2>Bronnen en gebruik van deze pagina</h2><p>Controleer de voorwaarden bij de officiële bron. Een berekening is een indicatie; uw persoonlijke situatie kan een andere behandeling vereisen.</p><ul><li><a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/reizen-werk-privegebruik-werknemer-wat-is-mijn-bijtelling" target="_blank" rel="noopener noreferrer">Belastingdienst: bijtelling voor werknemers</a></li></ul><p class="source-byline">DGAWijzer.nl · <a href="over-dgawijzer.html">Over de informatie en rekentools</a></p></section><section class="related-reading"><div class="container"><h2>Verder met dit onderwerp</h2><div class="related-links"><a href="dga-auto.html">Auto van de zaak: overzicht <span aria-hidden="true">→</span></a><a href="auto-prive-of-zakelijk-calculator.html">Auto privé of zakelijk vergelijken <span aria-hidden="true">→</span></a><a href="btw-correctie-privegebruik-auto.html">Btw-correctie berekenen <span aria-hidden="true">→</span></a><a href="bijtelling-per-automodel.html">Bijtelling per automodel <span aria-hidden="true">→</span></a></div></div></section></main><footer class="footer">
+<section class="source-panel page-sources" aria-label="Bronnen en gebruik"><h2>Bronnen en gebruik van deze pagina</h2><p>Controleer de voorwaarden bij de officiële bron. Een berekening is een indicatie; uw persoonlijke situatie kan een andere behandeling vereisen.</p><ul><li><a href="https://www.belastingdienst.nl/wps/wcm/connect/nl/personeel-en-loon/content/reizen-werk-privegebruik-werknemer-wat-is-mijn-bijtelling" target="_blank" rel="noopener noreferrer">Belastingdienst: bijtelling voor werknemers</a></li></ul><p class="source-byline">DGAWijzer.nl · <a href="over-dgawijzer.html">Over de informatie en rekentools</a></p></section><p class="source-byline page-sources">Kilometervergoeding 2026: maximaal €0,25/km onbelast, toegestaan via beleidsgoedkeuring met terugwerkende kracht vanaf 1 januari 2026. Een lagere afgesproken vergoeding blijft mogelijk. <a href="https://www.belastingdienst.nl/wps/wcm/connect/bldcontentnl/berichten/nieuws/verhoging-onbelaste-kilometervergoeding-hoe-verwerkt-u-dit-in-de-loonaangifte">Bron: Belastingdienst</a> · gecontroleerd 30 oktober 2026.</p><section class="related-reading"><div class="container"><h2>Verder met dit onderwerp</h2><div class="related-links"><a href="dga-auto.html">Auto van de zaak: overzicht <span aria-hidden="true">→</span></a><a href="auto-prive-of-zakelijk-calculator.html">Auto privé of zakelijk vergelijken <span aria-hidden="true">→</span></a><a href="btw-correctie-privegebruik-auto.html">Btw-correctie berekenen <span aria-hidden="true">→</span></a><a href="bijtelling-per-automodel.html">Bijtelling per automodel <span aria-hidden="true">→</span></a></div></div></section></main><footer class="footer">
   <div class="footer-grid">
     <div>
       <div class="footer-logo">
@@ -382,24 +382,6 @@
 
 /* ─── HELPERS ────────────────────────────────────────────────── */
 const btFmt = v => '€ ' + Math.round(v).toLocaleString('nl-NL');
-
-/* ─── TAB SWITCHER ───────────────────────────────────────────── */
-function switchCalcTab(tab) {
-  var isKenteken = tab === 'kenteken';
-  document.getElementById('tab-kenteken').style.display  = isKenteken ? 'block' : 'none';
-  document.getElementById('tab-handmatig').style.display = isKenteken ? 'none'  : 'block';
-
-  var btnK = document.getElementById('tab-btn-kenteken');
-  var btnH = document.getElementById('tab-btn-handmatig');
-
-  btnK.style.background  = isKenteken ? '#fff'         : 'transparent';
-  btnK.style.color       = isKenteken ? 'var(--navy)'  : 'var(--text-muted)';
-  btnK.style.boxShadow   = isKenteken ? 'var(--shadow-sm)' : 'none';
-
-  btnH.style.background  = isKenteken ? 'transparent' : '#fff';
-  btnH.style.color       = isKenteken ? 'var(--text-muted)' : 'var(--navy)';
-  btnH.style.boxShadow   = isKenteken ? 'none' : 'var(--shadow-sm)';
-}
 
 /* ─── KENTEKEN API ───────────────────────────────────────────── */
 async function knZoek() {
@@ -466,69 +448,8 @@ async function knZoek() {
   }
 }
 
-/* ─── HANDMATIGE CALCULATOR ──────────────────────────────────── */
-function btBereken() {
-  var cat       = parseFloat(document.getElementById('bt-cat').value) || 0;
-  var type      = document.getElementById('bt-type').value;
-  var prive     = document.getElementById('bt-prive').checked;
-  var tariefVal = parseFloat(document.getElementById('bt-tarief').value) || 0.3756;
-  var vek       = parseFloat(document.getElementById('bt-vek').value) || 0;
-
-  document.getElementById('bt-vek-wrap').style.display = type === 'youngtimer' ? 'block' : 'none';
-
-  if (!prive) {
-    ['bt-pct','bt-grondslag','bt-jaar','bt-maand','bt-netto-jaar','bt-netto-maand'].forEach(function(id) {
-      document.getElementById(id).textContent = id === 'bt-pct' ? '0%' : btFmt(0);
-    });
-    document.getElementById('bt-uitleg').textContent = 'Geen bijtelling: privégebruik minder dan 500 kilometer per jaar.';
-    return;
-  }
-
-  var bijtelling = 0, grondslag = 0, pctTekst = '', uitleg = '';
-
-  if (type === 'youngtimer') {
-    grondslag  = vek;
-    bijtelling = vek * 0.35;
-    pctTekst   = '35%';
-    uitleg     = 'Youngtimer (ouder dan 16 jaar): 35% over de waarde in het economisch verkeer (' + btFmt(vek) + ').';
-  } else if (type === '22') {
-    grondslag  = cat;
-    bijtelling = cat * 0.22;
-    pctTekst   = '22%';
-    uitleg     = 'Auto met CO₂-uitstoot: 22% over de cataloguswaarde (' + btFmt(cat) + ').';
-  } else {
-    var grens = 30000;
-    if (cat <= grens) {
-      grondslag  = cat;
-      bijtelling = cat * 0.18;
-      pctTekst   = '18%';
-      uitleg     = 'Elektrische auto: 18% over de volledige cataloguswaarde (' + btFmt(cat) + '). Cataloguswaarde niet boven €30.000.';
-    } else {
-      var deel18 = grens * 0.18;
-      var deel22 = (cat - grens) * 0.22;
-      grondslag  = cat;
-      bijtelling = deel18 + deel22;
-      var effPct = (bijtelling / cat * 100).toFixed(1);
-      pctTekst   = '18%/22% (gem. ' + effPct + '%)';
-      uitleg     = 'Elektrische auto boven €30.000: 18% over eerste €30.000 (' + btFmt(deel18) + ') + 22% over het resterende deel (' + btFmt(deel22) + ').';
-    }
-  }
-
-  var nettoKosten = bijtelling * tariefVal;
-  var tariefPct   = (tariefVal * 100).toFixed(2);
-
-  document.getElementById('bt-pct').textContent        = pctTekst;
-  document.getElementById('bt-grondslag').textContent  = btFmt(grondslag);
-  document.getElementById('bt-jaar').textContent       = btFmt(bijtelling);
-  document.getElementById('bt-maand').textContent      = btFmt(bijtelling / 12);
-  document.getElementById('bt-netto-jaar').textContent = btFmt(nettoKosten);
-  document.getElementById('bt-netto-maand').textContent= btFmt(nettoKosten / 12);
-  document.getElementById('bt-uitleg').textContent     = uitleg + ' Indicatie netto kosten bij ' + tariefPct + '% marginaal tarief: ' + btFmt(nettoKosten) + '/jaar.';
-}
-
 /* ─── INIT ───────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function() {
-  btBereken();
   /* Laad spinner CSS animatie */
   if (!document.getElementById('spin-style')) {
     var s = document.createElement('style');

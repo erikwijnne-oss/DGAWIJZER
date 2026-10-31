@@ -568,6 +568,7 @@ function btBereken() {
 
 /* ─── INIT ───────────────────────────────────────────────────── */
 document.addEventListener('DOMContentLoaded', function() {
+  if (window.location.hash === "#tab-handmatig") switchCalcTab("handmatig");
   btBereken();
   /* Laad spinner CSS animatie */
   if (!document.getElementById('spin-style')) {
